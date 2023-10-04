@@ -1,33 +1,32 @@
+"use strict";
 const model = {
     app: {
-        currentPage: "",
-        // Legg inn AllPages Array
-        loggedInAs: "",
-            user: {
-                owner: { 
-                    fullName: false,
-                    birthday: false,
-                    location: false,
-                    emailadress: false,
-                    profilePicture: false,
-                },
-                petProfile: {
-                    petprofile1: {},
-                    petprofile2: {},
-        }
+        allPages: ["login.html", "oprett bruker.html", "legg til dyr.html", "hovedside.html", "bruker profil.html", "chat.html", "gi en tilbakemelding.html"],
+        currentPage: 0,
+        currentUser: "",
+        user: {
+            owner: {
+                fullName: false,
+                birthday: false,
+                location: false,
+                emailadress: false,
+                profilePicture: false,
+            },
+            petProfile: {
+                petprofile1: {},
+                petprofile2: {},
+            }
         },
         themes: [
             { name: 'barkmode', maincolor: 'black', color: 'white' },
             { name: 'lightmode', maincolor: 'white', color: 'black' },
         ],
     },
+
     input: {
         loginPage: {
             email: '',
             password: '',
-            login: false,
-            registerUserProfil: false,
-            forgottenPassword: false,
             rememberMeCheckBox: false,
         },
 
@@ -49,165 +48,103 @@ const model = {
             favoriteToy: "",
             descripton: "",
         },
+        userProfile: {
+            changeImage: "",
+            changeType: '',
+            changeName: "",
+            changeAge: "",
+        },
+        chatPage: {
+            messageToOthers: "",
+        },
+        forgottenPasswordPage: {
+            emailInput: "",
+        },
+        feedbackPage: {
+            name: "",
+            emailAdress: "",
+            subject: "",
+            message: "",
+        },
+    },
     // data
-    fakeUsers: {
-        Easy: {
-            img: 'img/Easy1.jpg',
-            type: 'Husky-Samoyed-mix',
-            name: "Easy",
-            age: '3',
-            favoriteToy: 'Ball',
-        },
-        Frøya: {
-            age: '3',
-            type: 'dachshund',
-            favoriteToy: 'Puten hennes/ hånden min',
-        },
-        Ludo: {
-            age: '3',
-            type: 'Staffordshire Bullterrier',
-            favoriteToy: 'Hender',
-        },
-        newUser
-    }
-    },
-
-    //data
-    /*         petProfilePage:{
-            name: '',
-            age: '',
-            race: '',
-            gender: '',
-            description: '',
-            image: '',
-        },
-        humanProfilePage:{
-            name: '',
-            age: '',
-            gender: '',
-            description: '',
-            image: '',
-            location: '',
-        } */
-
-
-}
-
-
-
-
-/* const model2 = {
-    app: {
-        loggedInAs: null,
-        currentPage: null,
-        user: {
-            firstName: null,
-            imageUrl: null,
-        },
-    },
-    inputs: {
-        loginPage: {
-            userName: '',
-            password: '',
-            error: '',
-        },
-        profilePage: {
-            firstName: '',
-            imageUrl: '',
-        },
-        mainPage: {
-        },
-    },
-    themes: [
-        {name: 'light', foreColor: 'black', backColor: 'white'},
-        {name: 'dark', foreColor: 'lightgray', backColor: '#222222'},
-        {name: 'mix', foreColor: 'white', backColor: 'darkblue'},
-    ]
-};
-
-
-
-
-const model3 = {
-    app: {
-        loggedInUser: null,
-        currentPage: 'productDetailPage',
-        displayMode: 'dark',
-        language: 'no',
-    },
-    inputs: {
-        shoppingCartPage: {
-            items: [
-                {
-                    productId: 123,
-                    count: 1,
-                },
-                {
-                    productId: 124,
-                    count: 2,
-                },
-            ],
-        },
-        productListPage: {
-            searchText: null,
-            sort: {
-                field: 'price',
-                isAscending: true,
+    users: {
+        owners: {
+            Sondre: {
+                age: '30',
+                location: 'Lillestrøm',
+                password: 'abcs23',
+                pets: [
+                    {
+                        img: 'img/Easy1.jpg', //default verdi burde være et standard bilde
+                        type: 'Husky-Samoyed-mix',
+                        name: "Easy",
+                        age: '3',
+                        favoriteToy: 'Ball',
+                    },
+                ],
             },
-            layout: 'list',
-        },
-        productDetailPage: {
-            productId: 123,
-            zipCode: '3292',
-            currentImageIndex: 0,
-
+            Aleksander: {
+                age: '23',
+                location: 'Gressvik',
+                img: 'imgurl',
+                password: "123",
+                pets:[
+                    {
+                        img: 'imgurl',
+                        type: 'dachshund',
+                        name: "Frøya",
+                        age: '3',
+                        favoriteToy: 'Puten hennes/ hånden min',
+                    },
+                ],
+            },
+            LarsPetter: {
+                age: "25",
+                location: "Nøtterøy",
+                password: '21345',
+                pets: [
+                    {
+                        img: 'imgurl',
+                        type: 'Staffordshire Bullterrier',
+                        name: "Ludo",
+                        age: '3',
+                        favoriteToy: 'Hender',
+                    },
+                ],
+            },
         },
     },
-    // data
-    shoppingCart: [
-        {
-            productId: 123,
-            count: 1,
-        },
-    ],
-    purchases: [
+    inbox: {
+        allEmails: [
+            { name: "", email: "", subject: "", message: "", }
+        ],
+    },
+    chat: {
+        Aleksander_Sondre: [
+            {
+                from: "Sondre",
+                to: "Aleksander",
+                timestamp: "2023-10-04 12:00",
+                content: "Hold kjeft."
+            },
+            {
+                from: "Aleksander",
+                to: "Sondre",
+                timestamp: "2023-10-04 12:03",
+                content: "No u"
+            },
+        ],
+    },
+}
+//newMessage: [
+//    {from: "", to:"", timestamp: "", content: ""}
+//],
+//possibleMessages: ["Hei!", "Hvordan går det?",],//Ferdig koda spørsmål knyttet til appens tema
+//chatAnswers: ["blablabla", "loremipsum"],//Ferdig koda svar
+//    },
+//}
 
-    ],
-    products: [
-        {
-            id: 123,
-            title: 'Svive Oberon switch Gaming Tastatur',
-            description: 'Full størrelse, mekanisk, nordisk-layout, TTC switches, RGB, USB',
-            beforePrice: null,
-            price: 1319,
-            stars: 4.5,
-            variants: ['Brown', 'Red'],
-            inStockCount: 50,
-            images: [],
-            brand: 1,
-        },
-        {
-            id: 124,
-            title: 'Svive Triton...',
-            description: '60%....',
-            beforePrice: 799,
-            price: 499,
-            stars: 3.5,
-            variants: null,
-            inStockCount: 50,
-            images: [],
-            brand: 1,
-        },
-    ],
-    brands: [
-        { id: 1, name: 'Svive', url: 'www.svive.com' },
-        { id: 2, name: 'Logitech', url: 'www.logitech.com' },
-    ],
-};
-
- - Per side: 
-   1: Hvilke data vises her - og hvordan skal de ligge i 
-      modellen for at vi skal kunne tegne opp siden?
-   2: Hva kan brukeren gjøre på denne siden - og hvilke 
-      endringer i modellen følger av det?
-*/ 
+// let arrayName = sortAlphabetically(input.from + "_" + input.to)
+// if (model.chat.arrayName exists) model.chat.arrayName.push(newMessage)
+// else model.chat.add(arrayName + newMessage)
