@@ -77,7 +77,7 @@ const model = {
                 img: 'imgurl',
                 pets: [
                     {
-                        img: 'img/Easy1.jpg', // default verdi burde være bilde
+                        img: '../img/Easy1.jpg', // default verdi burde være bilde
                         type: 'Husky-Samoyed-mix',
                         name: "Easy",
                         age: '3',
@@ -134,10 +134,10 @@ const model = {
                 age: '32',
                 location: 'Bergen',
                 password: 'catlover99',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Labrador Retriever',
                         name: "Buddy",
                         age: '2',
@@ -149,10 +149,10 @@ const model = {
                 age: '40',
                 location: 'Trondheim',
                 password: 'doggy123',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Golden Retriever',
                         name: "Max",
                         age: '4',

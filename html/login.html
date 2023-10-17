@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playdate Login</title>
-    <link rel="stylesheet" href="../css/">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
-    <h1>Playdate</h1>
-    <img src="Playdate.png" alt="bilde av hund">
-    <input type="text" placeholder="epost/brukernavn">
-    <input type="text" placeholder="passord">
-    <button>Logg inn</button>
-    <button>Ny bruker?</button>
-    <button>Glemt passord?</button>
-    <input type="checkbox" id="myCheckbox" placeholder="Forbli innlogget">
+    <div id="loginPage">
+        <h1 id="heading">Playdate</h1>
+        <img src="../img/Playdate.png" alt="bilde av hund">
+        <input type="text" placeholder="epost/brukernavn" id="inputDiv">
+        <input type="text" placeholder="passord" id="inputDiv">
+        <div id="buttons">
+            <button id="button">Logg inn</button>
+            <button id="button"><a href="create-user.html">Ny bruker?</a></button>
+            <button id="button">Glemt passord?</button>
+        </div>
+        <div>
+            <label for="">Husk meg</label>
+            <input type="checkbox" id="myCheckbox" placeholder="Forbli innlogget">
+        </div>
+    </div>
 </body>
 
 </html>
