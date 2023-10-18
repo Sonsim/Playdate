@@ -15,7 +15,7 @@
     grid-area: head;
     display: flex;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: white;
     border-bottom: solid 1px black;
 }
 
@@ -52,7 +52,7 @@
 #page > main {
     grid: main;
     height: 100%;
-    background-color: antiquewhite;
+    background-color: white;
 }
 #petcategories {
     height: 170px;

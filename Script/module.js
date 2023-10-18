@@ -176,14 +176,14 @@ const model = {
                 ],
             },
             Edgar: {
-                age: '35',
+                age: '40',
                 location: 'Tromsø',
                 password: 'martinpass',
                 img: 'imgurl',
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Ravn', //endre dyr
+                        type: 'Ravn', 
                         name: "Verma",
                         age: '6',
                         favoriteToy: 'Pallas-byste',
