@@ -1,0 +1,43 @@
+#sendMessage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Additional styles for your sendMessage div go here */
+    text-align: center; /* Center align the content horizontally */
+    margin: 20px; /* Add some margin for spacing */
+}
+
+#chatinput {
+    padding: 10px;
+    width: 70%; /* Adjust the width as needed */
+    border: 1px solid #ccc; /* Add a border for input */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+#sendButton {
+    padding: 10px 20px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    margin-left: 10px; /* Add some spacing between input and button */
+}
+#userchats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px; /* Add margin for spacing */
+}
+
+.user-chat {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    background-color: #f5f5f5;
+}
