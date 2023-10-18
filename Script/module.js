@@ -175,7 +175,7 @@ const model = {
                     },
                 ],
             },
-            Martin: {
+            Edgar: {
                 age: '35',
                 location: 'Tromsø',
                 password: 'martinpass',
@@ -183,10 +183,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Beagle', //endre dyr
-                        name: "Charlie",
+                        type: 'Ravn', //endre dyr
+                        name: "Verma",
                         age: '6',
-                        favoriteToy: 'Plush squirrel',
+                        favoriteToy: 'Pallas-byste',
                     },
                 ],
             },
