@@ -213,10 +213,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Bulldog', //endre dyr
+                        type: 'Hamster', 
                         name: "Rocky",
                         age: '4',
-                        favoriteToy: 'Squeaky bone',
+                        favoriteToy: 'Løpeball',
                     },
                 ],
             },
@@ -243,10 +243,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'German Shepherd', // endre dyr
+                        type: 'Hamster', 
                         name: "Rex",
                         age: '5',
-                        favoriteToy: 'Tug toy',
+                        favoriteToy: 'Klatrestativ',
                     },
                 ],
             },
@@ -273,10 +273,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Border Collie', // endre dyr
+                        type: 'Hamster', 
                         name: "Riley",
                         age: '3',
-                        favoriteToy: 'Frisbee',
+                        favoriteToy: 'Løpehjul',
                     },
                 ],
             },
@@ -288,10 +288,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Rottweiler', // endre dyr
+                        type: 'Hamster', 
                         name: "Bruno",
                         age: '4',
-                        favoriteToy: 'Kong toy',
+                        favoriteToy: 'Klatrestativ',
                     },
                 ],
             },
@@ -303,10 +303,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Siberian Husky', // endre dyr
+                        type: 'Hamster',
                         name: "Sky",
                         age: '3',
-                        favoriteToy: 'Rope toy',
+                        favoriteToy: 'Løpehjul',
                     },
                 ],
             },
@@ -333,10 +333,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Bengal', // endre
+                        type: 'Araberhest', 
                         name: "Simba",
                         age: '2',
-                        favoriteToy: 'Mouse toy',
+                        favoriteToy: 'Ball',
                     },
                 ],
             },
@@ -348,10 +348,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Cavalier King Charles Spaniel', // endre
+                        type: 'Andalusier', 
                         name: "Charlie",
                         age: '3',
-                        favoriteToy: 'Chew toy',
+                        favoriteToy: 'Ball',
                     },
                 ],
             },
@@ -363,10 +363,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Sphynx', // endre
+                        type: 'Berberhest', 
                         name: "Nala",
                         age: '2',
-                        favoriteToy: 'Feather wand',
+                        favoriteToy: 'Ball',
                     },
                 ],
             },
@@ -378,10 +378,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Labradoodle', // endre
+                        type: 'Dølahest',
                         name: "Bella",
                         age: '3',
-                        favoriteToy: 'Bouncy ball',
+                        favoriteToy: 'Ball',
                     },
                 ],
             },
@@ -393,10 +393,10 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Ragdoll', // endre
+                        type: 'Dala sau', 
                         name: "Milo",
                         age: '2',
-                        favoriteToy: 'Feather ball',
+                        favoriteToy: 'Ball',
                     },
                 ],
             },
@@ -408,7 +408,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Doberman Pinscher', // endre
+                        type: 'Dala sau',
                         name: "Thor",
                         age: '4',
                         favoriteToy: 'Tug rope',
@@ -423,7 +423,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Abyssinian', // endre
+                        type: 'Merino', 
                         name: "Leo",
                         age: '2',
                         favoriteToy: 'Feather teaser',
@@ -438,7 +438,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Bulldog', // endre
+                        type: 'Oxford down',
                         name: "Rocky",
                         age: '3',
                         favoriteToy: 'Squeaky bone',
@@ -453,7 +453,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Sphynx', // endre
+                        type: 'Merino', 
                         name: "Luna",
                         age: '2',
                         favoriteToy: 'Laser pointer',
@@ -468,7 +468,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'German Shepherd', // endre
+                        type: 'German Shepherd',
                         name: "Rex",
                         age: '5',
                         favoriteToy: 'Tug toy',
@@ -483,7 +483,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Persian', // endre
+                        type: 'Persian',
                         name: "Whiskers",
                         age: '4',
                         favoriteToy: 'Feather wand',
@@ -498,7 +498,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Ragdoll', // endre
+                        type: 'Hamster', 
                         name: "Kitty",
                         age: '3',
                         favoriteToy: 'Mouse toy',
@@ -513,7 +513,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Bengal', // endre
+                        type: 'Araberhest', 
                         name: "Simba",
                         age: '2',
                         favoriteToy: 'Laser pointer',
@@ -528,7 +528,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Labrador Retriever', //endre
+                        type: 'Dalasau', 
                         name: "Bella",
                         age: '3',
                         favoriteToy: 'Squeaky ball',
@@ -543,7 +543,7 @@ const model = {
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Siberian Husky', //endre
+                        type: 'Pappegøye',
                         name: "Sky",
                         age: '3',
                         favoriteToy: 'Frisbee',
@@ -592,6 +592,66 @@ const model = {
                         name: "Leo",
                         age: '2',
                         favoriteToy: 'Feather teaser',
+                    },
+                ],
+            },
+            Emily: {
+                age: '32',
+                location: 'Bergen',
+                password: 'emilypass',
+                img: 'imgurl',
+                pets: [
+                    {
+                        img: 'imgurl',
+                        type: 'Parrot',
+                        name: "Rio",
+                        age: '5',
+                        favoriteToy: 'Colorful rings',
+                    },
+                ],
+            },
+            Lucas: {
+                age: '28',
+                location: 'Oslo',
+                password: 'lucaspass',
+                img: 'imgurl',
+                pets: [
+                    {
+                        img: 'imgurl',
+                        type: 'Canary',
+                        name: "Sunny",
+                        age: '2',
+                        favoriteToy: 'Swinging perch',
+                    },
+                ],
+            },
+            Isabella: {
+                age: '24',
+                location: 'Trondheim',
+                password: 'isabellapass',
+                img: 'imgurl',
+                pets: [
+                    {
+                        img: 'imgurl',
+                        type: 'Budgerigar',
+                        name: "Skye",
+                        age: '3',
+                        favoriteToy: 'Mirror bell',
+                    },
+                ],
+            },
+            Oliver: {
+                age: '30',
+                location: 'Drammen',
+                password: 'oliver123',
+                img: 'imgurl',
+                pets: [
+                    {
+                        img: 'imgurl',
+                        type: 'Cockatiel',
+                        name: "Peaches",
+                        age: '4',
+                        favoriteToy: 'Bells and beads',
                     },
                 ],
             },
