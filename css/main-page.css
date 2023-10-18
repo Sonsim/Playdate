@@ -32,6 +32,9 @@
     background-color: darkgrey;
     color: white;
     padding: 10px;
+    right: 5px;
+    width: 150px;
+    text-decoration: none;
 }
 
 #user-profile-dropdown div {
@@ -111,7 +114,28 @@
 hr {
     width: 200px;
 }
-a {
+#users a {
     text-decoration: none;
     color: black;
+}
+
+#settings-dropdown {
+    display: none;
+}
+
+#settings:hover #settings-dropdown {
+    display: block;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+#user-profile-dropdown a {
+    color: white;
+    text-decoration: none;
+}
+
+#settings-dropdown a {
+    color: black;
+    text-decoration: none;
 }

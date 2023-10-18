@@ -1,5 +1,5 @@
 "use strict";
-const model = {
+export const model = {
     app: {
         allPages: ["login.html", "oprett bruker.html", "legg til dyr.html", "hovedside.html", "bruker profil.html", "chat.html", "gi en tilbakemelding.html"],
         currentPage: 0,
@@ -75,6 +75,7 @@ const model = {
                 location: 'Lillestrøm',
                 password: 'abcs23',
                 img: 'imgurl',
+                typeOfPet: "dog",
                 pets: [
                     {
                         img: '../img/Easy1.jpg', // default verdi burde være bilde
@@ -90,6 +91,7 @@ const model = {
                 location: 'Gressvik',
                 img: 'imgurl',
                 password: "123",
+                typeOfPet: "dog",
                 pets:[
                     {
                         img: 'imgurl',
@@ -105,6 +107,7 @@ const model = {
                 location: "Nøtterøy",
                 password: '21345',
                 img: 'imgurl',
+                typeOfPet: "dog",
                 pets: [
                     {
                         img: 'imgurl',
@@ -135,6 +138,7 @@ const model = {
                 location: 'Bergen',
                 password: 'catlover99',
                 img: '../img/userprofile/profilepic.png',
+                typeOfPet: "dog",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -150,6 +154,7 @@ const model = {
                 location: 'Trondheim',
                 password: 'doggy123',
                 img: '../img/userprofile/profilepic.png',
+                typeOfPet: "dog",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -465,6 +470,7 @@ const model = {
                 location: 'Tønsberg',
                 password: 'simenpass',
                 img: 'imgurl',
+                typeOfPet: "dog",
                 pets: [
                     {
                         img: 'imgurl',
