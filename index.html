@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playdate</title>
+</head>
+<link rel="stylesheet" href="css/main-page.css">
+<script src="Script/mainpageview.js"></script>
+<script src="Script/module.js"></script>
+<script src="Script/html.js"></script>
+<script src="Script/mainpagecontroller.js"></script>
+<body>
+    <div id="app"></div>
+</body>
+<script>
+        updateView();
+        function updateView() {
+            if (model.app.currentPage == 'mainPage') updateViewMain();
+        }
+        dogsByDefault();
+</script>
+</html>

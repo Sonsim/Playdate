@@ -1,8 +1,8 @@
 "use strict";
-export const model = {
+const model = {
     app: {
         allPages: ["login.html", "oprett bruker.html", "legg til dyr.html", "hovedside.html", "bruker profil.html", "chat.html", "gi en tilbakemelding.html"],
-        currentPage: 0,
+        currentPage: 'mainPage',
         currentUser: "",
         user: {
             owner: {
@@ -44,7 +44,7 @@ export const model = {
             imageOfPet: "",
             typeOfPet: "",
             petName: "",
-            petAge: "",
+            petage: "",
             favoriteToy: "",
             descripton: "",
         },
@@ -52,7 +52,7 @@ export const model = {
             changeImage: "",
             changeType: '',
             changeName: "",
-            changeAge: "",
+            changeage: "",
         },
         chatPage: {
             messageToOthers: "",
@@ -74,11 +74,11 @@ export const model = {
                 age: '30',
                 location: 'Lillestrøm',
                 password: 'abcs23',
-                img: 'imgurl',
-                typeOfPet: "dog",
+                img: '../img/userprofile/sondre.jpg',
+                typeOfPet: "Hund",
                 pets: [
                     {
-                        img: '../img/Easy1.jpg', // default verdi burde være bilde
+                        img: '../img/petprofile/dogs/Easy1.jpg', // default verdi burde være bilde
                         type: 'Husky-Samoyed-mix',
                         name: "Easy",
                         age: '3',
@@ -89,12 +89,12 @@ export const model = {
             Aleksander: {
                 age: '23',
                 location: 'Gressvik',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 password: "123",
-                typeOfPet: "dog",
+                typeOfPet: "Hund",
                 pets:[
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Dachshund',
                         name: "Frøya",
                         age: '3',
@@ -106,11 +106,11 @@ export const model = {
                 age: "25",
                 location: "Nøtterøy",
                 password: '21345',
-                img: 'imgurl',
-                typeOfPet: "dog",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hund",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Staffordshire Bullterrier',
                         name: "Ludo",
                         age: '3',
@@ -122,11 +122,11 @@ export const model = {
                 age: '28',
                 location: 'Oslo',
                 password: 'password123',
-                img: 'imgurl',
-                typeOfPet: "cat",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Katt",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Maine Coon',
                         name: "Fluffy",
                         age: '5',
@@ -139,7 +139,7 @@ export const model = {
                 location: 'Bergen',
                 password: 'catlover99',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "dog",
+                typeOfPet: "Hund",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -155,7 +155,7 @@ export const model = {
                 location: 'Trondheim',
                 password: 'doggy123',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "dog",
+                typeOfPet: "Hund",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -170,11 +170,11 @@ export const model = {
                 age: '27',
                 location: 'Stavanger',
                 password: 'pawprint22',
-                img: 'imgurl',
-                typeOfPet: "cat",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Katt",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Siamese', 
                         name: "Luna",
                         age: '2',
@@ -186,11 +186,11 @@ export const model = {
                 age: '40',
                 location: 'Tromsø',
                 password: 'martinpass',
-                img: 'imgurl',
-                typeOfPet: "bird",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Ravn', 
                         name: "Verma",
                         age: '6',
@@ -202,11 +202,11 @@ export const model = {
                 age: '29',
                 location: 'Drammen',
                 password: 'julie123',
-                img: 'imgurl',
-                typeOfPet: "cat",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Katt",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Persian', 
                         name: "Leo",
                         age: '4',
@@ -218,11 +218,11 @@ export const model = {
                 age: '33',
                 location: 'Kristiansand',
                 password: 'sara567',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster', 
                         name: "Rocky",
                         age: '4',
@@ -234,11 +234,11 @@ export const model = {
                 age: '31',
                 location: 'Fredrikstad',
                 password: 'andy123',
-                img: 'imgurl',
-                typeOfPet: "cat",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Katt",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Ragdoll', 
                         name: "Mittens",
                         age: '3',
@@ -250,11 +250,11 @@ export const model = {
                 age: '26',
                 location: 'Ålesund',
                 password: 'karolinepass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster', 
                         name: "Rex",
                         age: '5',
@@ -266,11 +266,11 @@ export const model = {
                 age: '37',
                 location: 'Drammen',
                 password: 'thomas456',
-                img: 'imgurl',
-                typeOfPet: "cat",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Katt",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Tabby',
                         name: "Whiskers",
                         age: '4',
@@ -282,11 +282,11 @@ export const model = {
                 age: '28',
                 location: 'Bodø',
                 password: 'kristinepass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster', 
                         name: "Riley",
                         age: '3',
@@ -298,11 +298,11 @@ export const model = {
                 age: '24',
                 location: 'Haugesund',
                 password: 'oskarpass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster', 
                         name: "Bruno",
                         age: '4',
@@ -314,11 +314,11 @@ export const model = {
                 age: '29',
                 location: 'Molde',
                 password: 'sandra89',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster',
                         name: "Sky",
                         age: '3',
@@ -330,11 +330,11 @@ export const model = {
                 age: '34',
                 location: 'Sandefjord',
                 password: 'christianpass',
-                img: 'imgurl',
-                typeOfPet: "cat",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Katt",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Persian',
                         name: "Fluffy",
                         age: '4',
@@ -346,11 +346,11 @@ export const model = {
                 age: '27',
                 location: 'Moss',
                 password: 'henriettepass',
-                img: 'imgurl',
-                typeOfPet: "Horse",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hest",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Araberhest', 
                         name: "Simba",
                         age: '2',
@@ -362,11 +362,11 @@ export const model = {
                 age: '25',
                 location: 'Halden',
                 password: 'emilpass',
-                img: 'imgurl',
-                typeOfPet: "Horse",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hest",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Andalusier', 
                         name: "Charlie",
                         age: '3',
@@ -378,11 +378,11 @@ export const model = {
                 age: '29',
                 location: 'Ås',
                 password: 'martinepass',
-                img: 'imgurl',
-                typeOfPet: "Horse",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hest",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Berberhest', 
                         name: "Nala",
                         age: '2',
@@ -394,11 +394,11 @@ export const model = {
                 age: '32',
                 location: 'Gjøvik',
                 password: 'andyo123',
-                img: 'imgurl',
-                typeOfPet: "Horse",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hest",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img:'../img/petprofile/petplaceholder.png',
                         type: 'Dølahest',
                         name: "Bella",
                         age: '3',
@@ -410,11 +410,11 @@ export const model = {
                 age: '27',
                 location: 'Larvik',
                 password: 'anettepass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Dala sau', 
                         name: "Milo",
                         age: '2',
@@ -426,11 +426,11 @@ export const model = {
                 age: '36',
                 location: 'Kristiansund',
                 password: 'fredrikpass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Dala sau',
                         name: "Thor",
                         age: '4',
@@ -442,11 +442,11 @@ export const model = {
                 age: '24',
                 location: 'Mandal',
                 password: 'vildepass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Merino', 
                         name: "Leo",
                         age: '2',
@@ -458,11 +458,11 @@ export const model = {
                 age: '30',
                 location: 'Drammen',
                 password: 'tom123',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Oxford down',
                         name: "Rocky",
                         age: '3',
@@ -474,11 +474,11 @@ export const model = {
                 age: '31',
                 location: 'Stavanger',
                 password: 'maria123',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Merino', 
                         name: "Luna",
                         age: '2',
@@ -490,11 +490,11 @@ export const model = {
                 age: '28',
                 location: 'Tønsberg',
                 password: 'simenpass',
-                img: 'imgurl',
-                typeOfPet: "dog",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hund",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'German Shepherd',
                         name: "Rex",
                         age: '5',
@@ -506,11 +506,11 @@ export const model = {
                 age: '32',
                 location: 'Haugesund',
                 password: 'oliver123',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster', 
                         name: "Kitty",
                         age: '3',
@@ -522,11 +522,11 @@ export const model = {
                 age: '29',
                 location: 'Molde',
                 password: 'amanda123',
-                img: 'imgurl',
-                typeOfPet: "Horse",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hest",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Araberhest', 
                         name: "Simba",
                         age: '2',
@@ -538,11 +538,11 @@ export const model = {
                 age: '24',
                 location: 'Lillestrøm',
                 password: 'petterpass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Dalasau', 
                         name: "Bella",
                         age: '3',
@@ -554,11 +554,11 @@ export const model = {
                 age: '29',
                 location: 'Bergen',
                 password: 'louisepass',
-                img: 'imgurl',
-                typeOfPet: "bird",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Pappegøye',
                         name: "Sky",
                         age: '3',
@@ -570,11 +570,11 @@ export const model = {
                 age: '34',
                 location: 'Stavanger',
                 password: 'jonathan123',
-                img: 'imgurl',
-                typeOfPet: "Horse",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Hest",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Araberhest', 
                         name: "Whiskers",
                         age: '4',
@@ -586,11 +586,11 @@ export const model = {
                 age: '27',
                 location: 'Tromsø',
                 password: 'norapass',
-                img: 'imgurl',
+                img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Hamster', 
                         name: "Rocky",
                         age: '3',
@@ -602,11 +602,11 @@ export const model = {
                 age: '32',
                 location: 'Bergen',
                 password: 'emilypass',
-                img: 'imgurl',
-                typeOfPet: "bird",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Parrot',
                         name: "Rio",
                         age: '5',
@@ -618,11 +618,11 @@ export const model = {
                 age: '28',
                 location: 'Oslo',
                 password: 'lucaspass',
-                img: 'imgurl',
-                typeOfPet: "bird",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img:'../img/petprofile/petplaceholder.png',
                         type: 'Canary',
                         name: "Sunny",
                         age: '2',
@@ -634,11 +634,11 @@ export const model = {
                 age: '24',
                 location: 'Trondheim',
                 password: 'isabellapass',
-                img: 'imgurl',
-                typeOfPet: "bird",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'imgurl',
+                        img: '../img/petprofile/petplaceholder.png',
                         type: 'Budgerigar',
                         name: "Skye",
                         age: '3',
@@ -648,17 +648,17 @@ export const model = {
             },
             Oliver: {
                 age: '30',
-                location: 'Drammen',
+                location: 'Lillestrøm',
                 password: 'oliver123',
-                img: 'imgurl',
-                typeOfPet: "bird",
+                img: '../img/userprofile/profilepic.png',
+                typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'imgurl',
-                        type: 'Cockatiel',
-                        name: "Peaches",
+                        img: '../img/petprofile/petplaceholder.png',
+                        type: 'Canary',
+                        name: "Gullik",
                         age: '4',
-                        favoriteToy: 'Bells and beads',
+                        favoriteToy: 'Fotball',
                     },
                 ],
             },
