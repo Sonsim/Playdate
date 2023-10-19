@@ -2,7 +2,7 @@
 const model = {
     app: {
         allPages: ["login.html", "oprett bruker.html", "legg til dyr.html", "hovedside.html", "bruker profil.html", "chat.html", "gi en tilbakemelding.html"],
-        currentPage: 'mainPage',
+        currentPage: 'loginPage',
         currentUser: "",
         user: {
             owner: {
@@ -94,7 +94,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets:[
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/dogs/Froya.jpg',
                         type: 'Dachshund',
                         name: "Frøya",
                         age: '3',
@@ -110,7 +110,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile//dogs/ludo.jpg',
                         type: 'Staffordshire Bullterrier',
                         name: "Ludo",
                         age: '3',
@@ -126,7 +126,7 @@ const model = {
                 typeOfPet: "Katt",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/cats/fluffy.jpg',
                         type: 'Maine Coon',
                         name: "Fluffy",
                         age: '5',
@@ -186,11 +186,11 @@ const model = {
                 age: '40',
                 location: 'Tromsø',
                 password: 'martinpass',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/edgar.jpg',
                 typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/birds/verma.jpg',
                         type: 'Ravn', 
                         name: "Verma",
                         age: '6',
@@ -222,7 +222,7 @@ const model = {
                 typeOfPet: "Hamster",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/hamsters/hamster1.jpg',
                         type: 'Hamster', 
                         name: "Rocky",
                         age: '4',
@@ -350,7 +350,7 @@ const model = {
                 typeOfPet: "Hest",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/horses/Arabian1.jpg',
                         type: 'Araberhest', 
                         name: "Simba",
                         age: '2',
@@ -414,7 +414,7 @@ const model = {
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/sheep/dala.jpg',
                         type: 'Dala sau', 
                         name: "Milo",
                         age: '2',

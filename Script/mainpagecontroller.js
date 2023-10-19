@@ -24,5 +24,12 @@ function addUsers (htmlElement) {
     });
 };
 
-function Blank() {
-    document.getElementById('').innerHTML = '';}
+function showDropdown () {
+    let dropdown = document.querySelector(".user-profile-dropdown");
+    dropdown.classList.toggle("show-hide-dropdown");
+}
+
+function logoff() {
+    model.app.currentPage = 'loginPage'
+    updateView();
+}

@@ -1,5 +1,0 @@
-function html () {
-    return  /*HTML*/ `
-   
-    `;
-};

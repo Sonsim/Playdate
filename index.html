@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playdate</title>
 </head>
-<link rel="stylesheet" href="css/main-page.css">
-<script src="Script/mainpageview.js"></script>
 <script src="Script/module.js"></script>
-<script src="Script/html.js"></script>
+
+<script src="Script/mainpageview.js"></script>
 <script src="Script/mainpagecontroller.js"></script>
+<link rel="stylesheet" href="css/main-page.css">
+
+<script src="Script/loginview.js"></script>
+<script src="Script/logincontroller.js"></script>
+<link rel="stylesheet" href="css/login.css">
+
+<script src="Script/createuserview.js"></script>
+<script src="Script/createusercontroller.js"></script>
+<link rel="stylesheet" href="css/create-user.css">
+
+<script src="Script/createPetView.js"></script>
+<script src="Script/createPetController.js"></script>
+<link rel="stylesheet" href="css/create-pet.css">
 <body>
     <div id="app"></div>
 </body>
 <script>
         updateView();
         function updateView() {
-            if (model.app.currentPage == 'mainPage') updateViewMain();
+            if (model.app.currentPage == 'mainPage') updateViewMain(), dogsByDefault();
+            else if (model.app.currentPage == 'loginPage') updateViewLogin();
+            else if (model.app.currentPage == 'createUserPage') updateViewCreateUser();
+            else if (model.app.currentPage == 'createPetPage') updateViewCreatePet();
         }
-        dogsByDefault();
 </script>
 </html>
