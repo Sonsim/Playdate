@@ -502,21 +502,6 @@ export const model = {
                     },
                 ],
             },
-            Malin: {
-                age: '26',
-                location: 'Kristiansand',
-                password: 'malinpass',
-                img: 'imgurl',
-                pets: [
-                    {
-                        img: 'imgurl',
-                        type: 'Persian',
-                        name: "Whiskers",
-                        age: '4',
-                        favoriteToy: 'Feather wand',
-                    },
-                ],
-            },
             Oliver: {
                 age: '32',
                 location: 'Haugesund',
@@ -602,28 +587,14 @@ export const model = {
                 location: 'Tromsø',
                 password: 'norapass',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Bulldog', //endre
+                        type: 'Hamster', 
                         name: "Rocky",
                         age: '3',
                         favoriteToy: 'Squeaky bone',
-                    },
-                ],
-            },
-            Tobias: {
-                age: '32',
-                location: 'Drammen',
-                password: 'tobiaspass',
-                img: 'imgurl',
-                pets: [
-                    {
-                        img: 'imgurl',
-                        type: 'Ragdoll', //endre
-                        name: "Leo",
-                        age: '2',
-                        favoriteToy: 'Feather teaser',
                     },
                 ],
             },
