@@ -123,6 +123,7 @@ export const model = {
                 location: 'Oslo',
                 password: 'password123',
                 img: 'imgurl',
+                typeOfPet: "cat",
                 pets: [
                     {
                         img: 'imgurl',
@@ -170,6 +171,7 @@ export const model = {
                 location: 'Stavanger',
                 password: 'pawprint22',
                 img: 'imgurl',
+                typeOfPet: "cat",
                 pets: [
                     {
                         img: 'imgurl',
@@ -185,6 +187,7 @@ export const model = {
                 location: 'Tromsø',
                 password: 'martinpass',
                 img: 'imgurl',
+                typeOfPet: "bird",
                 pets: [
                     {
                         img: 'imgurl',
@@ -200,6 +203,7 @@ export const model = {
                 location: 'Drammen',
                 password: 'julie123',
                 img: 'imgurl',
+                typeOfPet: "cat",
                 pets: [
                     {
                         img: 'imgurl',
@@ -215,6 +219,7 @@ export const model = {
                 location: 'Kristiansand',
                 password: 'sara567',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
@@ -230,6 +235,7 @@ export const model = {
                 location: 'Fredrikstad',
                 password: 'andy123',
                 img: 'imgurl',
+                typeOfPet: "cat",
                 pets: [
                     {
                         img: 'imgurl',
@@ -245,6 +251,7 @@ export const model = {
                 location: 'Ålesund',
                 password: 'karolinepass',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
@@ -260,6 +267,7 @@ export const model = {
                 location: 'Drammen',
                 password: 'thomas456',
                 img: 'imgurl',
+                typeOfPet: "cat",
                 pets: [
                     {
                         img: 'imgurl',
@@ -275,6 +283,7 @@ export const model = {
                 location: 'Bodø',
                 password: 'kristinepass',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
@@ -290,6 +299,7 @@ export const model = {
                 location: 'Haugesund',
                 password: 'oskarpass',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
@@ -305,6 +315,7 @@ export const model = {
                 location: 'Molde',
                 password: 'sandra89',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
@@ -320,6 +331,7 @@ export const model = {
                 location: 'Sandefjord',
                 password: 'christianpass',
                 img: 'imgurl',
+                typeOfPet: "cat",
                 pets: [
                     {
                         img: 'imgurl',
@@ -335,6 +347,7 @@ export const model = {
                 location: 'Moss',
                 password: 'henriettepass',
                 img: 'imgurl',
+                typeOfPet: "Horse",
                 pets: [
                     {
                         img: 'imgurl',
@@ -350,6 +363,7 @@ export const model = {
                 location: 'Halden',
                 password: 'emilpass',
                 img: 'imgurl',
+                typeOfPet: "Horse",
                 pets: [
                     {
                         img: 'imgurl',
@@ -365,6 +379,7 @@ export const model = {
                 location: 'Ås',
                 password: 'martinepass',
                 img: 'imgurl',
+                typeOfPet: "Horse",
                 pets: [
                     {
                         img: 'imgurl',
@@ -380,6 +395,7 @@ export const model = {
                 location: 'Gjøvik',
                 password: 'andyo123',
                 img: 'imgurl',
+                typeOfPet: "Horse",
                 pets: [
                     {
                         img: 'imgurl',
@@ -395,6 +411,7 @@ export const model = {
                 location: 'Larvik',
                 password: 'anettepass',
                 img: 'imgurl',
+                typeOfPet: "Sau",
                 pets: [
                     {
                         img: 'imgurl',
@@ -410,6 +427,7 @@ export const model = {
                 location: 'Kristiansund',
                 password: 'fredrikpass',
                 img: 'imgurl',
+                typeOfPet: "Sau",
                 pets: [
                     {
                         img: 'imgurl',
@@ -425,6 +443,7 @@ export const model = {
                 location: 'Mandal',
                 password: 'vildepass',
                 img: 'imgurl',
+                typeOfPet: "Sau",
                 pets: [
                     {
                         img: 'imgurl',
@@ -440,6 +459,7 @@ export const model = {
                 location: 'Drammen',
                 password: 'tom123',
                 img: 'imgurl',
+                typeOfPet: "Sau",
                 pets: [
                     {
                         img: 'imgurl',
@@ -455,6 +475,7 @@ export const model = {
                 location: 'Stavanger',
                 password: 'maria123',
                 img: 'imgurl',
+                typeOfPet: "Sau",
                 pets: [
                     {
                         img: 'imgurl',
@@ -501,6 +522,7 @@ export const model = {
                 location: 'Haugesund',
                 password: 'oliver123',
                 img: 'imgurl',
+                typeOfPet: "Hamster",
                 pets: [
                     {
                         img: 'imgurl',
@@ -516,6 +538,7 @@ export const model = {
                 location: 'Molde',
                 password: 'amanda123',
                 img: 'imgurl',
+                typeOfPet: "Horse",
                 pets: [
                     {
                         img: 'imgurl',
@@ -531,6 +554,7 @@ export const model = {
                 location: 'Lillestrøm',
                 password: 'petterpass',
                 img: 'imgurl',
+                typeOfPet: "Sau",
                 pets: [
                     {
                         img: 'imgurl',
@@ -546,6 +570,7 @@ export const model = {
                 location: 'Bergen',
                 password: 'louisepass',
                 img: 'imgurl',
+                typeOfPet: "bird",
                 pets: [
                     {
                         img: 'imgurl',
@@ -561,10 +586,11 @@ export const model = {
                 location: 'Stavanger',
                 password: 'jonathan123',
                 img: 'imgurl',
+                typeOfPet: "Horse",
                 pets: [
                     {
                         img: 'imgurl',
-                        type: 'Maine Coon', //endre
+                        type: 'Araberhest', 
                         name: "Whiskers",
                         age: '4',
                         favoriteToy: 'Feather ball',
@@ -606,6 +632,7 @@ export const model = {
                 location: 'Bergen',
                 password: 'emilypass',
                 img: 'imgurl',
+                typeOfPet: "bird",
                 pets: [
                     {
                         img: 'imgurl',
@@ -621,6 +648,7 @@ export const model = {
                 location: 'Oslo',
                 password: 'lucaspass',
                 img: 'imgurl',
+                typeOfPet: "bird",
                 pets: [
                     {
                         img: 'imgurl',
@@ -636,6 +664,7 @@ export const model = {
                 location: 'Trondheim',
                 password: 'isabellapass',
                 img: 'imgurl',
+                typeOfPet: "bird",
                 pets: [
                     {
                         img: 'imgurl',
@@ -651,6 +680,7 @@ export const model = {
                 location: 'Drammen',
                 password: 'oliver123',
                 img: 'imgurl',
+                typeOfPet: "bird",
                 pets: [
                     {
                         img: 'imgurl',
