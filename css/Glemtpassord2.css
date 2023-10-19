@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#displaybox {
+    height: 600px;
+    width: 550px;
+    background-color: rgb(202, 198, 198);
+    position: relative;
+}
+
+#header {
+    height: 50px;
+    width: 300px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    font-size: 45px;
+    margin: 20px;
+}
+
+#text-box {
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    font-size: 20px;
+
+}
+#email {
+    width: 150px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+}
+#bilde {
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#return {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
