@@ -1,8 +1,8 @@
 function updateViewCreateUser() {
     let page = document.getElementById('app');
 
-    app.innerHTML = /*HTML*/ `
-    <div id="app">
+    page.innerHTML = /*HTML*/ `
+    <div id="createUserBody">
         <div id="backbox">
             <div class="Topline"><h2>Opprett bruker</h2> </div>
                 <img id="profilepic" src="../img/userprofile/profilepic.png" alt="Profilbilde placeholder">
@@ -29,12 +29,10 @@ function updateViewCreateUser() {
                     <input type="password" placeholder="Gjenta passord">
                     <hr>
             </div>
-                <button><a href="create-pet.html">Videre </a></button> <br>
+                <button onclick="next()">Videre</button> <br>
                 <div><img id="logo" src="../img/Playdate.png" alt="Playdate Logo"> </div><br>
-                <button id="backbutton"><a href="login.html">Tilbake</a></button>
+                <button id="backbutton" onclick="goBack()">Tilbake</button>
         </div>
-    </div>
-
-    `
+    </div>`;
 
 }

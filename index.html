@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playdate</title>
 </head>
+<!----------------- Modell ----------------------------------------------------------------------------------------------------------------------------->
 <script src="Script/module.js"></script>
 
-<script src="Script/mainpageview.js"></script>
-<script src="Script/mainpagecontroller.js"></script>
+<!----------------Mainpage ----------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/mainpage/mainPageView.js"></script>
+<script src="Script/mainpage/mainPageController.js"></script>
 <link rel="stylesheet" href="css/main-page.css">
 
-<script src="Script/loginview.js"></script>
-<script src="Script/logincontroller.js"></script>
+<!---------------- Login ------------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/login/loginView.js"></script>
+<script src="Script/login/loginController.js"></script>
 <link rel="stylesheet" href="css/login.css">
 
-<script src="Script/createuserview.js"></script>
-<script src="Script/createusercontroller.js"></script>
+<!--------------- Create user -------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/createuser/createUserView.js"></script>
+<script src="Script/createuser/createUserController.js"></script>
 <link rel="stylesheet" href="css/create-user.css">
 
-<script src="Script/createPetView.js"></script>
-<script src="Script/createPetController.js"></script>
+<!--------------- Create pet --------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/createpet/createPetView.js"></script>
+<script src="Script/createpet/createPetController.js"></script>
 <link rel="stylesheet" href="css/create-pet.css">
+
+<!--------------- Edit user ---------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/edituser/editUserView.js"></script>
+<script src="Script/edituser/editUserController.js"></script>
+<link rel="stylesheet" href="css/edit-user.css">
+
+<!--------------- Chat page ---------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/chat/chatView.js"></script>
+<link rel="stylesheet" href="css/chatpage.css">
+
+<!--------------- Feedback page ------------------------------------------------------------------------------------------------------------------------->
+<script src="Script/feedback/feedbackView.js"></script>
+<script src="Script/feedback/feedbackController.js"></script>
+<link rel="stylesheet" href="css/feedback-page.css">
+<link rel="stylesheet" href="fontawesome/css/all.css">
+
+<!------------- Forgot Password page -------------------------------------------------------------------------------------------------------------------->
+<script src="Script/forgottenpassword/forgotPasswordView.js"></script>
+<script src="Script/forgottenpassword/forgotPasswordController.js"></script>
+<link rel="stylesheet" href="css/forgot-password.css">
+
 <body>
     <div id="app"></div>
 </body>
 <script>
-        updateView();
-        function updateView() {
-            if (model.app.currentPage == 'mainPage') updateViewMain(), dogsByDefault();
-            else if (model.app.currentPage == 'loginPage') updateViewLogin();
-            else if (model.app.currentPage == 'createUserPage') updateViewCreateUser();
-            else if (model.app.currentPage == 'createPetPage') updateViewCreatePet();
-        }
+    updateView();
+    function updateView() {
+         if (model.app.currentPage == 'mainPage') updateViewMain(), dogsByDefault();
+        else if (model.app.currentPage == 'loginPage') updateViewLogin();
+        else if (model.app.currentPage == 'createUserPage') updateViewCreateUser();
+        else if (model.app.currentPage == 'createPetPage') updateViewCreatePet();
+    }
+    // lag et array med navn på alle html sider - sleng med navn/index som parameter. 
+    // function updateView(page)
+    // src/pages/" + page
+
+   // updateview(page) {
+    //    let currentPage = model.app.currentPage
+    //    app.innerhtml = allpages[currentPage];
+   // }
 </script>
+
 </html>

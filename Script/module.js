@@ -1,8 +1,8 @@
 "use strict";
 const model = {
     app: {
-        allPages: ["login.html", "oprett bruker.html", "legg til dyr.html", "hovedside.html", "bruker profil.html", "chat.html", "gi en tilbakemelding.html"],
-        currentPage: 'loginPage',
+        allPages: ["mainPage", "chatView.js", "mainPageView.js", "createUserView.js"],
+        currentPage: "loginPage",
         currentUser: "",
         user: {
             owner: {
@@ -366,9 +366,9 @@ const model = {
                 typeOfPet: "Hest",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/horses/bojak.jpg',
                         type: 'Andalusier', 
-                        name: "Charlie",
+                        name: "Bojack",
                         age: '3',
                         favoriteToy: 'Ball',
                     },

@@ -2,7 +2,8 @@ function updateViewLogin () {
     let page = document.getElementById('app');
 
     page.innerHTML = /*HTML*/ `
-    <div id="loginPage">
+    <div id="loginBody">
+        <div id="loginPage">
         <h1 id="heading">Playdate</h1>
         <img src="../img/Playdate.png" alt="bilde av hund">
         <input type="text" placeholder="epost/brukernavn" id="inputDiv">
@@ -15,6 +16,7 @@ function updateViewLogin () {
         <div>
             <label for="">Husk meg</label>
             <input type="checkbox" id="myCheckbox" placeholder="Forbli innlogget">
+        </div>
         </div>
     </div>
     `

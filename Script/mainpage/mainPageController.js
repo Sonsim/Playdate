@@ -24,9 +24,14 @@ function addUsers (htmlElement) {
     });
 };
 
-function showDropdown () {
-    let dropdown = document.querySelector(".user-profile-dropdown");
-    dropdown.classList.toggle("show-hide-dropdown");
+function userProfileDropdown () {
+    let userProfiledropdown = document.querySelector(".user-profile-dropdown");
+    userProfiledropdown.classList.toggle("show-hide-dropdown");
+}
+
+function settingsDropdown () {
+    let settingsDropdown = document.querySelector(".settings-dropdown");
+    settingsDropdown.classList.toggle("show-hide-dropdown");
 }
 
 function logoff() {

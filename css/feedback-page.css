@@ -1,7 +1,8 @@
-body {
+.feedbackBody {
     margin: 0;
     box-sizing: border-box;
     display: flex;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -11,35 +12,35 @@ body {
 }
 
 /* Header styles */
-header {
+.feedback-header {
     margin: 40px 0 0 25px;
 }
 
-.logo {
+.feedback-header .logo {
     width: 60px;
     height: 60px;
 }
 
 /* Main styles */
-main {
+.feedback-main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-input {
+.feedback-main input {
     width: 200px;
     margin-bottom: 10px;
     padding: 2.5px 0 2.5px 0;
 }
 
-textarea {
+.feedback-main textarea {
     margin-top: 20px;
     width: 300px;
     margin-bottom: 20px;
 }
 
-button {
+.feedback-main button {
     width: 120px;
     border: none;
     padding: 12px 0 12px 0;
@@ -48,11 +49,11 @@ button {
 }
 
 /* Footer styles */
-footer {
+.feedback-footer {
     margin-left: 25px;
 }
 
-.back-btn {
+.feedback-footer .back-btn {
     text-decoration: none;
     color: black;
 }

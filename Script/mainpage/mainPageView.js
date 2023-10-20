@@ -3,42 +3,40 @@ function updateViewMain() {
     document.getElementById('app').innerHTML = /*HTML*/ `
 
     <section id="page">
-
-         <header id="header">
-            <img id="logo" src="../img/Playdate.png" alt="logo">
-            <div id="user-profile">
-            <div id="name">John Doe</div>
-            <div id="profile-picture-box">
-                <img id="profile-picture" src="../img/userprofile/profilepic.png" alt="Profile Picture">
-                <div id="user-profile-dropdown">
+            <header>
+              <img id="main-Logo" src="../img/Playdate.png" alt="logo">
+              <div id="user-profile">
+                <div id="name">John Doe</div>
+                <div id="profile-picture-box">
+                  <img id="profile-picture" onclick="userProfileDropdown()" src="../img/userprofile/profilepic.png" alt="Profile Picture">
+                  <div class="user-profile-dropdown">
                     <div>Profil</div>
                     <div>Innboks</div>
                     <div> 
-                        <div id="settings">Innstillinger<div>
-                        <div id="settings-dropdown">
-                            <div>Barkmode</div>
-                            <div>Bytte passord</div>
-                            <div>Tillat posisjon</div>
-                            <div><a href="feedback-page.html">Send Tilbakemelding</a></div>
-                        </div>
+                      <div id="settings" onclick="settingsDropdown()">Innstillinger<div>
+                      <div class="settings-dropdown">
+                        <div>Barkmode</div>
+                        <div>Bytte passord</div>
+                        <div>Tillat posisjon</div>
+                        <div><a href="feedback-page.html">Send Tilbakemelding</a></div>
+                      </div>
                     </div>
                     <div><a id="logout-link" href="login.html">Logg av</a></div>
                 </div>
-            </div>
+              </div>
            </div>
-            </header>  
-            <nav id="sidebar">
+           </div>
+           </div>
+            </header>
+              <nav id="sidebar">
                 <div id="petcategories" onclick="addUsers(this)">Hund</div>
                 <div id="petcategories" onclick="addUsers(this)">Katt</div>
                 <div id="petcategories" onclick="addUsers(this)">Hamster</div> 
                 <div id="petcategories" onclick="addUsers(this)">Hest</div> 
                 <div id="petcategories" onclick="addUsers(this)">Sau</div> 
                 <div id="petcategories" onclick="addUsers(this)">Fugl</div> 
-            </nav>
-            <main id="users">
-              
-            </div>
-            </main>
+              </nav>
+            <main id="users"></main>
     </section>
     `;
 };

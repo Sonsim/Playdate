@@ -1,7 +1,5 @@
 function login () {
-    console.log("hi");
-    model.app.currentPage = "mainPage";
-    console.log(model.app.currentPage);
+    model.app.currentPage = updateViewMain(), dogsByDefault();
     updateView();
 }
 

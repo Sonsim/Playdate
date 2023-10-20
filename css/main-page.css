@@ -42,21 +42,15 @@
     cursor: pointer;
 }
 
-.show-hide-dropdown {
-    display: block;
-}
-
-
-
 /* Settings dropdown */
-#settings-dropdown {
+.settings-dropdown {
     display: none;
     padding-left: 20px;
     margin-top: 10px;
     color: black;
 }
 
-.show-hide-settings-dropdown {
+.show-hide-dropdown {
     display: block;
 }
 
@@ -92,7 +86,7 @@
     font-size: xx-large;
     cursor: pointer;
 }
-#logo {
+#main-Logo {
     height: 100px;
 }
 #users{
