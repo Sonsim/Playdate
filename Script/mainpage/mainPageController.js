@@ -1,4 +1,5 @@
 function addUsers (htmlElement) {
+    const path = model.app.allPages;
     let users = document.getElementById('users');
     users.innerHTML = "";
 
@@ -17,7 +18,7 @@ function addUsers (htmlElement) {
                 <div id="type">Rase: ${owners[name].pets[0].type}</div> <hr>
                 <div id="toy">Favorittleke: ${owners[name].pets[0].favoriteToy}</div> <hr>
                 <div id="owner"><img id="owner-profilepicture" src=${owners[name].img} alt=""></div>
-                <div id="chatbutton"><button><a href="chatpage.html">Send et voff</a></button></div>
+                <div id="chatbutton"><button onclick="updateView('${path.chatPage}')">Send et ${owners[name].pets[0].chatbutton}</button></div>
             </div>
             `
         }

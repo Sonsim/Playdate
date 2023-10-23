@@ -1,5 +1,6 @@
 function updateViewCreateUser() {
     let page = document.getElementById('app');
+    const path = model.app.allPages;
 
     page.innerHTML = /*HTML*/ `
     <div id="createUserBody">
@@ -11,27 +12,27 @@ function updateViewCreateUser() {
                 <hr>
             <div id="userData">
                 
-                    <input type="text" placeholder="Fullt navn">
+                    <input id="nameInput"type="text" placeholder="Fullt navn">
                      <hr>
                 
-                    <div><input type="text" placeholder="Fødelsdato"></div>
+                    <div><input id="birthdayInput" type="text" placeholder="Fødelsdato"></div>
                      <hr>
                 
-                    <input type="text" placeholder="Boststed">
+                    <input id="locationInput" type="text" placeholder="Boststed">
                     <hr>
             
-                    <input type="text" placeholder="Epostadresse">
+                    <input id="emailInput"type="text" placeholder="Epostadresse">
                     <hr>
             
-                    <input type="password" placeholder="Passord">
+                    <input id="passwordInput" type="password" placeholder="Passord">
                     <hr>
             
-                    <input type="password" placeholder="Gjenta passord">
+                    <input id="reapeatPasswordInput" type="password" placeholder="Gjenta passord">
                     <hr>
             </div>
-                <button onclick="next()">Videre</button> <br>
+                <button onclick="updateView('${path.createPetPage}')">Videre</button> <br>
                 <div><img id="logo" src="../img/Playdate.png" alt="Playdate Logo"> </div><br>
-                <button id="backbutton" onclick="goBack()">Tilbake</button>
+                <button id="backbutton" onclick="updateView('${path.loginPage}')">Tilbake</button>
         </div>
     </div>`;
 

@@ -1,5 +1,6 @@
 function updateViewCreatePet() {
     let page = document.getElementById('app');
+    let path = model.app.allPages;
 
     page.innerHTML = /*HTML*/ `
     <div id=create-pet-background>
@@ -18,7 +19,7 @@ function updateViewCreatePet() {
             <div id="petsAdded">Eks: easy added</div>
             <div class="create-pet-btn-box">
                 <button class="pet-button" style="margin-right: 2.5px;">Legg til flere dyr</button>
-                <button class="pet-button"><a class="main-page-link" href="main-page.html">Opprett bruker</button>
+                <button class="pet-button" onclick="updateView('${path.mainPage}')">Opprett bruker</button>
             </div>
             <img class="pet-logo" src="../img/Playdate.png" alt="">
         </div>

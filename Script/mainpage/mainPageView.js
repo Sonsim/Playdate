@@ -1,5 +1,6 @@
 function updateViewMain() {
-
+  console.log("test");
+  const path = model.app.allPages;
     document.getElementById('app').innerHTML = /*HTML*/ `
 
     <section id="page">
@@ -10,18 +11,18 @@ function updateViewMain() {
                 <div id="profile-picture-box">
                   <img id="profile-picture" onclick="userProfileDropdown()" src="../img/userprofile/profilepic.png" alt="Profile Picture">
                   <div class="user-profile-dropdown">
-                    <div>Profil</div>
-                    <div>Innboks</div>
+                    <div onclick="updateView('${path.editUserPage}')">Profil</div>
+                    <div onclick="updateView('${path.chatPage}')">Innboks</div>
                     <div> 
                       <div id="settings" onclick="settingsDropdown()">Innstillinger<div>
                       <div class="settings-dropdown">
                         <div>Barkmode</div>
-                        <div>Bytte passord</div>
+                        <div onclick="updateView('${path.editUserPage}')">Bytte passord</div>
                         <div>Tillat posisjon</div>
-                        <div><a href="feedback-page.html">Send Tilbakemelding</a></div>
+                        <div onclick="updateView('${path.feedbackPage}')">Send Tilbakemelding</div>
                       </div>
                     </div>
-                    <div><a id="logout-link" href="login.html">Logg av</a></div>
+                    <div onclick="updateView('${path.loginPage}')">Logg av</div>
                 </div>
               </div>
            </div>
@@ -31,7 +32,7 @@ function updateViewMain() {
               <nav id="sidebar">
                 <div id="petcategories" onclick="addUsers(this)">Hund</div>
                 <div id="petcategories" onclick="addUsers(this)">Katt</div>
-                <div id="petcategories" onclick="addUsers(this)">Hamster</div> 
+                <div id="petcategories" onclick="addUsers(this)">Gnagere</div> 
                 <div id="petcategories" onclick="addUsers(this)">Hest</div> 
                 <div id="petcategories" onclick="addUsers(this)">Sau</div> 
                 <div id="petcategories" onclick="addUsers(this)">Fugl</div> 
@@ -40,6 +41,7 @@ function updateViewMain() {
     </section>
     `;
 };
+
 
 function dogsByDefault () {
     let users = document.getElementById('users');
@@ -51,6 +53,7 @@ function dogsByDefault () {
 
     arrayOfNames.forEach(function (name) {
         if (owners[name].typeOfPet == "Hund") {
+          let path = model.app.allPages;
             users.innerHTML += /*HTML*/ `
             <div id="fakeusers">
                 <div id="photo"><img id="petprofile-picture"src=${owners[name].pets[0].img} alt=""></div>
@@ -59,9 +62,15 @@ function dogsByDefault () {
                 <div id="type">Rase: ${owners[name].pets[0].type}</div> <hr>
                 <div id="toy">Favorittleke: ${owners[name].pets[0].favoriteToy}</div> <hr>
                 <div id="owner"><img id="owner-profilepicture" src=${owners[name].img} alt=""></div>
-                <div id="chatbutton"><button><a href="chatpage.html">Send et voff</a></button></div>
+                <div id="chatbutton"><button onclick="updateView('${path.chatPage}')">Send et ${owners[name].pets[0].chatbutton}</button></div>
             </div>
             `
         }
     });
+}
+
+function mainPageFunction() {
+  updateViewMain();
+  dogsByDefault();
+
 }

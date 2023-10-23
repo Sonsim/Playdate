@@ -41,33 +41,20 @@
 <!--------------- Feedback page ------------------------------------------------------------------------------------------------------------------------->
 <script src="Script/feedback/feedbackView.js"></script>
 <script src="Script/feedback/feedbackController.js"></script>
-<link rel="stylesheet" href="css/feedback-page.css">
 <link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="stylesheet" href="./css/feedback-page.css">
 
 <!------------- Forgot Password page -------------------------------------------------------------------------------------------------------------------->
 <script src="Script/forgottenpassword/forgotPasswordView.js"></script>
 <script src="Script/forgottenpassword/forgotPasswordController.js"></script>
 <link rel="stylesheet" href="css/forgot-password.css">
-
 <body>
     <div id="app"></div>
 </body>
 <script>
-    updateView();
-    function updateView() {
-         if (model.app.currentPage == 'mainPage') updateViewMain(), dogsByDefault();
-        else if (model.app.currentPage == 'loginPage') updateViewLogin();
-        else if (model.app.currentPage == 'createUserPage') updateViewCreateUser();
-        else if (model.app.currentPage == 'createPetPage') updateViewCreatePet();
-    }
-    // lag et array med navn på alle html sider - sleng med navn/index som parameter. 
-    // function updateView(page)
-    // src/pages/" + page
-
-   // updateview(page) {
-    //    let currentPage = model.app.currentPage
-    //    app.innerhtml = allpages[currentPage];
-   // }
+    updateViewLogin();
+     function updateView(pageFunction) {
+        eval(pageFunction + '()');
+    };
 </script>
-
 </html>

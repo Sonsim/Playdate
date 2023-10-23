@@ -1,5 +1,6 @@
-function updateViewLogin () {
+function updateViewLogin() {
     let page = document.getElementById('app');
+    let path = model.app.allPages;
 
     page.innerHTML = /*HTML*/ `
     <div id="loginBody">
@@ -9,9 +10,21 @@ function updateViewLogin () {
         <input type="text" placeholder="epost/brukernavn" id="inputDiv">
         <input type="text" placeholder="passord" id="inputDiv">
         <div id="buttons">
-            <button id="button" onclick="login()">Logg inn</button>
-            <button id="button" onclick="newuser()">Ny bruker?</button>
-            <button id="button">Glemt passord?</button>
+        
+            <button id="button"
+             onclick="updateView(
+                '${path.mainPage}')
+                ">Logg inn</button>
+
+            <button id="button"
+             onclick="updateView(
+                '${path.createUserPage}')
+                ">Ny bruker?</button>
+
+            <button id="button"
+            onclick="updateView(
+                '${path.forgottenPasswordPage}')
+                ">Glemt passord?</button>
         </div>
         <div>
             <label for="">Husk meg</label>

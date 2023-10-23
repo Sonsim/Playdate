@@ -1,10 +1,13 @@
-function goBack() {
-    model.app.currentPage = 'loginPage';
-    updateView();
+function createNewUser() {
+   const newUser = Object.create(model.input.newUserForm);
 
+   newUser.FullName = "Geir";
+
+   console.log(newUser)
+   
 }
 
-function next() {
-    model.app.currentPage = 'createPetPage';
-    updateView();
-}
+createNewUser();
+
+
+

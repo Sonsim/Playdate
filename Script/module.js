@@ -1,7 +1,16 @@
 "use strict";
 const model = {
     app: {
-        allPages: ["mainPage", "chatView.js", "mainPageView.js", "createUserView.js"],
+        allPages: {
+            mainPage: "mainPageFunction",
+            loginPage: "updateViewLogin",
+            chatPage: "updateChatView",
+            createPetPage: "updateViewCreatePet",
+            createUserPage: "updateViewCreateUser",
+            editUserPage: "updateViewEditUser",
+            feedbackPage: "updateFeedbackView",
+            forgottenPasswordPage: "updateForgotPasswordView",
+        },
         currentPage: "loginPage",
         currentUser: "",
         user: {
@@ -83,6 +92,7 @@ const model = {
                         name: "Easy",
                         age: '3',
                         favoriteToy: 'Ball',
+                        chatbutton: 'voff',
                     },
                 ],
             },
@@ -99,6 +109,7 @@ const model = {
                         name: "Frøya",
                         age: '3',
                         favoriteToy: 'Puten hennes/ hånden min',
+                        chatbutton: 'voff',
                     },
                 ],
             },
@@ -115,6 +126,7 @@ const model = {
                         name: "Ludo",
                         age: '3',
                         favoriteToy: 'Hender',
+                        chatbutton: 'voff',
                     },
                 ],
             },
@@ -131,6 +143,7 @@ const model = {
                         name: "Fluffy",
                         age: '5',
                         favoriteToy: 'Feather wand',
+                        chatbutton: 'mjau',
                     },
                 ],
             },
@@ -147,6 +160,7 @@ const model = {
                         name: "Buddy",
                         age: '2',
                         favoriteToy: 'Squeaky ball',
+                        chatbutton: 'voff',
                     },
                 ],
             },
@@ -163,6 +177,7 @@ const model = {
                         name: "Max",
                         age: '4',
                         favoriteToy: 'Tennis ball',
+                        chatbutton: 'voff',
                     },
                 ],
             },
@@ -179,6 +194,7 @@ const model = {
                         name: "Luna",
                         age: '2',
                         favoriteToy: 'Feather teaser',
+                        chatbutton: 'mjau',
                     },
                 ],
             },
@@ -211,6 +227,7 @@ const model = {
                         name: "Leo",
                         age: '4',
                         favoriteToy: 'Feather ball',
+                        chatbutton: 'mjau',
                     },
                 ],
             },
@@ -219,7 +236,7 @@ const model = {
                 location: 'Kristiansand',
                 password: 'sara567',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
                         img: '../img/petprofile/hamsters/hamster1.jpg',
@@ -243,6 +260,7 @@ const model = {
                         name: "Mittens",
                         age: '3',
                         favoriteToy: 'Yarn ball',
+                        chatbutton: 'mjau',
                     },
                 ],
             },
@@ -251,14 +269,14 @@ const model = {
                 location: 'Ålesund',
                 password: 'karolinepass',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Hamster', 
-                        name: "Rex",
-                        age: '5',
-                        favoriteToy: 'Klatrestativ',
+                        img: '../img/petprofile/hamsters/bakke.jpg',
+                        type: 'Rotte', 
+                        name: "Geir",
+                        age: '54',
+                        favoriteToy: 'Penger',
                     },
                 ],
             },
@@ -275,6 +293,7 @@ const model = {
                         name: "Whiskers",
                         age: '4',
                         favoriteToy: 'Feather wand',
+                        chatbutton: 'mjau',
                     },
                 ],
             },
@@ -283,7 +302,7 @@ const model = {
                 location: 'Bodø',
                 password: 'kristinepass',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -299,7 +318,7 @@ const model = {
                 location: 'Haugesund',
                 password: 'oskarpass',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -315,7 +334,7 @@ const model = {
                 location: 'Molde',
                 password: 'sandra89',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -339,6 +358,7 @@ const model = {
                         name: "Fluffy",
                         age: '4',
                         favoriteToy: 'Feather teaser',
+                        chatbutton: 'mjau',
                     },
                 ],
             },
@@ -499,6 +519,7 @@ const model = {
                         name: "Rex",
                         age: '5',
                         favoriteToy: 'Tug toy',
+                        chatbutton: 'voff',
                     },
                 ],
             },
@@ -507,7 +528,7 @@ const model = {
                 location: 'Haugesund',
                 password: 'oliver123',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
@@ -587,7 +608,7 @@ const model = {
                 location: 'Tromsø',
                 password: 'norapass',
                 img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Hamster",
+                typeOfPet: "Gnagere",
                 pets: [
                     {
                         img: '../img/petprofile/petplaceholder.png',
