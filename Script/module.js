@@ -155,7 +155,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/dogs/Buddy.jpg',
                         type: 'Labrador Retriever',
                         name: "Buddy",
                         age: '2',
@@ -172,7 +172,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/dogs/max.jpg',
                         type: 'Golden Retriever',
                         name: "Max",
                         age: '4',
@@ -181,19 +181,19 @@ const model = {
                     },
                 ],
             },
-            Ingrid: {
+            Jon: {
                 age: '27',
                 location: 'Stavanger',
                 password: 'pawprint22',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/garfieldowner.png',
                 typeOfPet: "Katt",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Siamese', 
-                        name: "Luna",
+                        img: '../img/petprofile/cats/garfield.png',
+                        type: 'orange tabby Persian', 
+                        name: "Garfield",
                         age: '2',
-                        favoriteToy: 'Feather teaser',
+                        favoriteToy: 'Lasagne',
                         chatbutton: 'mjau',
                     },
                 ],
@@ -211,6 +211,7 @@ const model = {
                         name: "Verma",
                         age: '6',
                         favoriteToy: 'Pallas-byste',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -222,7 +223,7 @@ const model = {
                 typeOfPet: "Katt",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/cats/leo.jpg',
                         type: 'Persian', 
                         name: "Leo",
                         age: '4',
@@ -255,7 +256,7 @@ const model = {
                 typeOfPet: "Katt",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/cats/mittens.jpg',
                         type: 'Ragdoll', 
                         name: "Mittens",
                         age: '3',
@@ -264,11 +265,11 @@ const model = {
                     },
                 ],
             },
-            Karoline: {
-                age: '26',
-                location: 'Ålesund',
+            Joacim: {
+                age: '49',
+                location: 'Valle',
                 password: 'karolinepass',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/Joacim.jpg',
                 typeOfPet: "Gnagere",
                 pets: [
                     {
@@ -276,7 +277,7 @@ const model = {
                         type: 'Rotte', 
                         name: "Geir",
                         age: '54',
-                        favoriteToy: 'Penger',
+                        favoriteToy: 'Penga til Trøim',
                     },
                 ],
             },
@@ -288,7 +289,7 @@ const model = {
                 typeOfPet: "Katt",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/cats/whiskers.jpg',
                         type: 'Tabby',
                         name: "Whiskers",
                         age: '4',
@@ -305,11 +306,11 @@ const model = {
                 typeOfPet: "Gnagere",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Hamster', 
+                        img: '../img/petprofile/hamsters/mus1.jpg',
+                        type: 'Mus', 
                         name: "Riley",
                         age: '3',
-                        favoriteToy: 'Løpehjul',
+                        favoriteToy: 'Ost',
                     },
                 ],
             },
@@ -321,7 +322,7 @@ const model = {
                 typeOfPet: "Gnagere",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/hamsters/hamster2.jpg',
                         type: 'Hamster', 
                         name: "Bruno",
                         age: '4',
@@ -329,19 +330,19 @@ const model = {
                     },
                 ],
             },
-            Sandra: {
+            Clint: {
                 age: '29',
                 location: 'Molde',
                 password: 'sandra89',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/clint.jpg',
                 typeOfPet: "Gnagere",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Hamster',
-                        name: "Sky",
+                        img: '../img/petprofile/hamsters/jery.png',
+                        type: 'Mus',
+                        name: "Jerry",
                         age: '3',
-                        favoriteToy: 'Løpehjul',
+                        favoriteToy: 'Tom',
                     },
                 ],
             },
@@ -353,7 +354,7 @@ const model = {
                 typeOfPet: "Katt",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/cats/fluffy2.jpg',
                         type: 'Persian',
                         name: "Fluffy",
                         age: '4',
@@ -375,14 +376,15 @@ const model = {
                         name: "Simba",
                         age: '2',
                         favoriteToy: 'Ball',
+                        chatbutton: 'neigh',
                     },
                 ],
             },
-            Emil: {
+            Todd: {
                 age: '25',
                 location: 'Halden',
                 password: 'emilpass',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/todd.jpg',
                 typeOfPet: "Hest",
                 pets: [
                     {
@@ -391,38 +393,41 @@ const model = {
                         name: "Bojack",
                         age: '3',
                         favoriteToy: 'Ball',
+                        chatbutton: 'neigh',
                     },
                 ],
             },
-            Martine: {
+            Poseidon: {
                 age: '29',
                 location: 'Ås',
                 password: 'martinepass',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/poseidon.jpg',
                 typeOfPet: "Hest",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Berberhest', 
-                        name: "Nala",
+                        img: '../img/petprofile/horses/pegasus.jpg',
+                        type: 'Camarillo White Horse', 
+                        name: "Pegasus",
                         age: '2',
                         favoriteToy: 'Ball',
+                        chatbutton: 'neigh',
                     },
                 ],
             },
-            AndreasO: {
-                age: '32',
+            Gandalf: {
+                age: '54962',
                 location: 'Gjøvik',
                 password: 'andyo123',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/gandalf.jpg',
                 typeOfPet: "Hest",
                 pets: [
                     {
-                        img:'../img/petprofile/petplaceholder.png',
-                        type: 'Dølahest',
-                        name: "Bella",
+                        img:'../img/petprofile/horses/shadow.jpg',
+                        type: 'Andalusier',
+                        name: "Shadowfax",
                         age: '3',
                         favoriteToy: 'Ball',
+                        chatbutton: 'neigh',
                     },
                 ],
             },
@@ -439,6 +444,7 @@ const model = {
                         name: "Milo",
                         age: '2',
                         favoriteToy: 'Ball',
+                        chatbutton: 'bahh',
                     },
                 ],
             },
@@ -450,11 +456,12 @@ const model = {
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Dala sau',
-                        name: "Thor",
+                        img: '../img/petprofile/sheep/dolly.jpg',
+                        type: 'Finn-Dorset',
+                        name: "Dolly",
                         age: '4',
                         favoriteToy: 'Tug rope',
+                        chatbutton: 'bahh',
                     },
                 ],
             },
@@ -466,11 +473,12 @@ const model = {
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/sheep/merino1.jpg',
                         type: 'Merino', 
                         name: "Leo",
                         age: '2',
                         favoriteToy: 'Feather teaser',
+                        chatbutton: 'bahh'
                     },
                 ],
             },
@@ -482,11 +490,12 @@ const model = {
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/sheep/oxford.jpg',
                         type: 'Oxford down',
                         name: "Rocky",
                         age: '3',
                         favoriteToy: 'Squeaky bone',
+                        chatbutton: 'bahh'
                     },
                 ],
             },
@@ -498,11 +507,12 @@ const model = {
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/sheep/merino2.jpg',
                         type: 'Merino', 
                         name: "Luna",
                         age: '2',
                         favoriteToy: 'Laser pointer',
+                        chatbutton: 'bahh'
                     },
                 ],
             },
@@ -514,7 +524,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/dogs/rex.jpg',
                         type: 'German Shepherd',
                         name: "Rex",
                         age: '5',
@@ -523,7 +533,7 @@ const model = {
                     },
                 ],
             },
-            Oliver: {
+            Alfredo: {
                 age: '32',
                 location: 'Haugesund',
                 password: 'oliver123',
@@ -531,11 +541,11 @@ const model = {
                 typeOfPet: "Gnagere",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Hamster', 
-                        name: "Kitty",
+                        img: '../img/petprofile/hamsters/rata.jpg',
+                        type: 'Rotte', 
+                        name: "Remy",
                         age: '3',
-                        favoriteToy: 'Mouse toy',
+                        favoriteToy: 'Matlaging',
                     },
                 ],
             },
@@ -547,11 +557,12 @@ const model = {
                 typeOfPet: "Hest",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/horses/Arabian2.jpg',
                         type: 'Araberhest', 
-                        name: "Simba",
+                        name: "Nala",
                         age: '2',
                         favoriteToy: 'Laser pointer',
+                        chatbutton: 'neigh',
                     },
                 ],
             },
@@ -563,11 +574,12 @@ const model = {
                 typeOfPet: "Sau",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/sheep/lance.jpg',
                         type: 'Dalasau', 
-                        name: "Bella",
+                        name: "Lance Corporal Derby XXX",
                         age: '3',
-                        favoriteToy: 'Squeaky ball',
+                        favoriteToy: 'Skru på julelys',
+                        chatbutton: 'bahh'
                     },
                 ],
             },
@@ -584,70 +596,59 @@ const model = {
                         name: "Sky",
                         age: '3',
                         favoriteToy: 'Frisbee',
+                        chatbutton: 'pip',
                     },
                 ],
             },
-            Jonathan: {
+            Trygve: {
                 age: '34',
                 location: 'Stavanger',
-                password: 'jonathan123',
+                password: 'trygve123',
                 img: '../img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
+                        img: '../img/petprofile/horses/Arabian3.jpg',
                         type: 'Araberhest', 
                         name: "Whiskers",
                         age: '4',
                         favoriteToy: 'Feather ball',
+                        chatbutton: 'neigh',
                     },
                 ],
             },
-            Nora: {
-                age: '27',
-                location: 'Tromsø',
-                password: 'norapass',
-                img: '../img/userprofile/profilepic.png',
-                typeOfPet: "Gnagere",
-                pets: [
-                    {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Hamster', 
-                        name: "Rocky",
-                        age: '3',
-                        favoriteToy: 'Squeaky bone',
-                    },
-                ],
-            },
-            Emily: {
+     
+            Aladdin: {
                 age: '32',
                 location: 'Bergen',
                 password: 'emilypass',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/aladdin.jpg',
                 typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Parrot',
-                        name: "Rio",
+                        img: '../img/petprofile/birds/jago.jpg',
+                        type: 'Papegøye',
+                        name: "Jaro",
                         age: '5',
                         favoriteToy: 'Colorful rings',
+                        chatbutton: 'pip',
                     },
                 ],
             },
-            Lucas: {
+            Harry: {
                 age: '28',
                 location: 'Oslo',
                 password: 'lucaspass',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/Harry.jpg',
                 typeOfPet: "Fugl",
                 pets: [
                     {
-                        img:'../img/petprofile/petplaceholder.png',
-                        type: 'Canary',
-                        name: "Sunny",
+                        img:'../img/petprofile/birds/hedwig.jpg',
+                        type: 'Snøugle',
+                        name: "Hedwig",
                         age: '2',
                         favoriteToy: 'Swinging perch',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -664,22 +665,24 @@ const model = {
                         name: "Skye",
                         age: '3',
                         favoriteToy: 'Mirror bell',
+                        chatbutton: 'pip',
                     },
                 ],
             },
-            Oliver: {
+            Frode: {
                 age: '30',
                 location: 'Lillestrøm',
                 password: 'oliver123',
-                img: '../img/userprofile/profilepic.png',
+                img: '../img/userprofile/frode.jpg',
                 typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: '../img/petprofile/petplaceholder.png',
-                        type: 'Canary',
+                        img: '../img/petprofile/birds/gullik.jpg',
+                        type: 'Kanarifugl',
                         name: "Gullik",
                         age: '4',
                         favoriteToy: 'Fotball',
+                        chatbutton: 'pip',
                     },
                 ],
             },
