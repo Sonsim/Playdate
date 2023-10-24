@@ -23,10 +23,7 @@ function updateViewCreatePet() {
             </div>
             <img class="pet-logo" src="img/Playdate.png" alt="">
         </div>
-
     </div>
     </div>
-    
-    ` 
-
+    `
 }

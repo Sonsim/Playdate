@@ -48,13 +48,16 @@
 <script src="Script/forgottenpassword/forgotPasswordView.js"></script>
 <script src="Script/forgottenpassword/forgotPasswordController.js"></script>
 <link rel="stylesheet" href="css/forgot-password.css">
+
 <body>
     <div id="app"></div>
 </body>
 <script>
     updateViewLogin();
-     function updateView(pageFunction) {
+    function updateView(pageFunction) {
+        console.log(pageFunction);
         eval(pageFunction + '()');
     };
 </script>
+
 </html>
