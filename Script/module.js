@@ -85,6 +85,13 @@ const model = {
                 password: 'abcs23',
                 img: 'img/userprofile/sondre.jpg',
                 typeOfPet: "Hund",
+                chatAnswers:  [
+                    {
+                    greeting: "Hei!",
+                    meetQ: "Møtes på hundejordet?",
+                    meetA: "Ja, når vil du møtes?",
+                    },
+                ],
                 pets: [
                     {
                         img: 'img/petprofile/dogs/Easy1.jpg', // default verdi burde være bilde

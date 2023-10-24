@@ -62,7 +62,8 @@ function dogsByDefault () {
                 <div id="type">Rase: ${owners[name].pets[0].type}</div> <hr>
                 <div id="toy">Favorittleke: ${owners[name].pets[0].favoriteToy}</div> <hr>
                 <div id="owner"><img id="owner-profilepicture" src=${owners[name].img} alt=""></div>
-                <div id="chatbutton"><button onclick="updateView('${path.chatPage}')">Send et ${owners[name].pets[0].chatbutton}</button></div>
+                <div hidden>${owners[name]}</div>
+                <div id="chatbutton"><button onclick="updateView('${path.chatPage}'); addUsersToChat(this)">Send et ${owners[name].pets[0].chatbutton}</button></div>
             </div>
             `
         }

@@ -38,7 +38,7 @@
     border: 1px solid #ccc;
     text-align: center;
     width: 200px;
-    height: 100px;
+    height: 250px;
     background-color: #f5f5f5;
 }
 #messageFrame {
@@ -52,4 +52,16 @@
     bottom: 90px;
     right: 0;
     margin: 10px;
+}
+
+#chatbox {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+#chatoutput {
+    width: 100%;
+}
+#chatpic {
+    border-radius: 50%;
 }
