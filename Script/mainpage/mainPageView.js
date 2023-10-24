@@ -5,11 +5,11 @@ function updateViewMain() {
 
     <section id="page">
             <header>
-              <img id="main-Logo" src="../img/Playdate.png" alt="logo">
+              <img id="main-Logo" src="img/Playdate.png" alt="logo">
               <div id="user-profile">
                 <div id="name">John Doe</div>
                 <div id="profile-picture-box">
-                  <img id="profile-picture" onclick="userProfileDropdown()" src="../img/userprofile/profilepic.png" alt="Profile Picture">
+                  <img id="profile-picture" onclick="userProfileDropdown()" src="img/userprofile/profilepic.png" alt="Profile Picture">
                   <div class="user-profile-dropdown">
                     <div onclick="updateView('${path.editUserPage}')">Profil</div>
                     <div onclick="updateView('${path.chatPage}')">Innboks</div>

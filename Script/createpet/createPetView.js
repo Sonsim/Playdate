@@ -21,7 +21,7 @@ function updateViewCreatePet() {
                 <button class="pet-button" style="margin-right: 2.5px;">Legg til flere dyr</button>
                 <button class="pet-button" onclick="updateView('${path.mainPage}')">Opprett bruker</button>
             </div>
-            <img class="pet-logo" src="../img/Playdate.png" alt="">
+            <img class="pet-logo" src="img/Playdate.png" alt="">
         </div>
 
     </div>

@@ -6,7 +6,7 @@ function updateViewCreateUser() {
     <div id="createUserBody">
         <div id="backbox">
             <div class="Topline"><h2>Opprett bruker</h2> </div>
-                <img id="profilepic" src="../img/userprofile/profilepic.png" alt="Profilbilde placeholder">
+                <img id="profilepic" src="img/userprofile/profilepic.png" alt="Profilbilde placeholder">
                 <hr>
                 <button>Last opp bilde</button>
                 <hr>
@@ -31,7 +31,7 @@ function updateViewCreateUser() {
                     <hr>
             </div>
                 <button onclick="updateView('${path.createPetPage}')">Videre</button> <br>
-                <div><img id="logo" src="../img/Playdate.png" alt="Playdate Logo"> </div><br>
+                <div><img id="logo" src="img/Playdate.png" alt="Playdate Logo"> </div><br>
                 <button id="backbutton" onclick="updateView('${path.loginPage}')">Tilbake</button>
         </div>
     </div>`;

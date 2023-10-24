@@ -17,7 +17,7 @@ function updateForgotPasswordView () {
       </div>
       <br> <br>
       <div id="bilde">
-        <img src="../img/Playdate.png" alt="bilde av hund">
+        <img src="img/Playdate.png" alt="bilde av hund">
       </div>
       <br> <br>
       <div id="return">

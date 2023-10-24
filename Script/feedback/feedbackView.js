@@ -6,7 +6,7 @@ function updateFeedbackView() {
     <div class="feedbackBody" style="margin: 0;box-sizing: border-box;display: flex;height: 100vh;justify-content: center;">
       <div class="box" style="{width: 500px;}">
         <header class="feedback-header style="margin: 40px 0 0 25px;">
-          <img class="logo" style="width: 60px;height: 60px;" src="../img/Playdate.png" alt="Logo" />
+          <img class="logo" style="width: 60px;height: 60px;" src="img/Playdate.png" alt="Logo" />
         </header>
         <main class="feedback-main" style="display: flex;flex-direction: column;align-items: center;">
           <input style="width: 200px;margin-bottom: 10px;padding: 2.5px 0 2.5px 0;" type="text" placeholder="Navn" />

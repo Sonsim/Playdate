@@ -5,7 +5,7 @@ function updateViewEditUser() {
     <div id="box">
     <div id="editpage">
         <div id="user">
-            <div><img id="userpic" src="../img/userprofile/sondre.jpg" alt=""></div><br>
+            <div><img id="userpic" src="img/userprofile/sondre.jpg" alt=""></div><br>
             <div id="changeimg"><button>Endre bilde</button></div>
             
             <div id="edituser">
@@ -20,7 +20,7 @@ function updateViewEditUser() {
             </div>
         </div>
         <div id="pet">
-            <div><img id="petpic" src="../img/petprofile/dogs/Easy1.jpg" alt=""></div><br>
+            <div><img id="petpic" src="img/petprofile/dogs/Easy1.jpg" alt=""></div><br>
             <div id="changepetimg"><button>Endre bilde</button></div>
             <div id="editpet">
                 <div><input type="text" placeholder="Navn"></div>

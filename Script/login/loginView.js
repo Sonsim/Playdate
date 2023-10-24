@@ -6,7 +6,7 @@ function updateViewLogin() {
     <div id="loginBody">
         <div id="loginPage">
         <h1 id="heading">Playdate</h1>
-        <img src="../img/Playdate.png" alt="bilde av hund">
+        <img src="img/Playdate.png" alt="bilde av hund">
         <input type="text" placeholder="epost/brukernavn" id="inputDiv">
         <input type="text" placeholder="passord" id="inputDiv">
         <div id="buttons">
