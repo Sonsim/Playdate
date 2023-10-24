@@ -121,7 +121,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets: [
                     {
-                        img: 'img/petprofile/dogs/ludo.jpg',
+                        img: 'img/petprofile/dogs/Ludo.jpg',
                         type: 'Staffordshire Bullterrier',
                         name: "Ludo",
                         age: '3',
