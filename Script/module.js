@@ -121,7 +121,7 @@ const model = {
                 typeOfPet: "Hund",
                 pets: [
                     {
-                        img: 'img/petprofile//dogs/ludo.jpg',
+                        img: 'img/petprofile/dogs/ludo.jpg',
                         type: 'Staffordshire Bullterrier',
                         name: "Ludo",
                         age: '3',
@@ -626,7 +626,7 @@ const model = {
                 typeOfPet: "Fugl",
                 pets: [
                     {
-                        img: 'img/petprofile/birds/jago.jpg',
+                        img: 'img/petprofile/birds/Jago.jpg',
                         type: 'Papegøye',
                         name: "Jaro",
                         age: '5',
