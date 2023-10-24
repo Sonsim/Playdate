@@ -1,7 +1,8 @@
-function updateForgotPasswordView () {
-    let app = document.getElementById('app');
+function updateForgotPasswordView() {
+  let app = document.getElementById('app');
+  let path = model.app.allPages;
 
-    app.innerHTML = /*HTML*/
+  app.innerHTML = /*HTML*/
     `
     <div id="forgotPasswordBody">
       <div>
@@ -13,7 +14,7 @@ function updateForgotPasswordView () {
       </div>
       <br> <br>
       <div id="email">
-        <button onclick id="email">Send epost</button>
+        <button id="email" onclick="updateView('${path.loginPage}')">Send epost</button>
       </div>
       <br> <br>
       <div id="bilde">
@@ -21,7 +22,7 @@ function updateForgotPasswordView () {
       </div>
       <br> <br>
       <div id="return">
-        <button id="return">Tilbake</button>
+        <button id="return" onclick="updateView('${path.loginPage}')">Tilbake</button>
       </div>
     </div>
     `
