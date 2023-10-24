@@ -16,11 +16,11 @@ function updateFeedbackView() {
           <button style="width: 120px;border: none;padding: 12px 0 12px 0;border-radius: 7px;cursor: pointer;" onclick="updateView('${path.mainPage}')">Send inn</button>
         </main>
         <footer class="feedback-footer" style="margin-left: 25px;">
-          <a class="back-btn" style="text-decoration: none;color: black;"><i class="fa fa-arrow-left"></i> Tilbake </a>
+          <a class="back-btn" style="text-decoration: none;color: black;" onclick="updateView('${path.mainPage}')"><i class="fa fa-arrow-left" ></i > Tilbake </a>
         </footer>
       </div>
     </div>
     `
 
 
-}
+}S
