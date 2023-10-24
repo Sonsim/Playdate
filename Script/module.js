@@ -83,7 +83,7 @@ const model = {
                 age: '30',
                 location: 'Lillestrøm',
                 password: 'abcs23',
-                img: '../img/userprofile/sondre.jpg',
+                img: './img/userprofile/sondre.jpg',
                 typeOfPet: "Hund",
                 pets: [
                     {
