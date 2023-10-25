@@ -37,9 +37,13 @@ function updateViewEditUser() {
         
     </div>
     </div>
-    <div id="editbuttons"><div>
-    <button onclick="updateView('${path.mainPage}')" id="savechanges" >Lagre endringer</button>
-    <button onclick="updateView('${path.createPetPage}')" id="addanimal">Legg til dyr</button>
-    <div  id="backbutton" >
-    <button onclick="updateView('${path.mainPage}')">Tilbake</button></div>
+    <div id="allbuttons">
+        <div class="saveChangesAndAddAnimals">
+          <button class="editUserHeightBtn" onclick="updateView('${path.mainPage}')" id="savechanges" >Lagre endringer</button>
+          <button class="editUserHeightBtn" onclick="updateView('${path.createPetPage}')" id="addanimal">Legg til dyr</button>
+        </div>
+        <div class="back-button">
+          <button class="editUserHeightBtn" onclick="updateView('${path.mainPage}')"><i class="arrow left" ></i >Tilbake</button>
+        </div>
+    </div>
     `}

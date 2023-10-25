@@ -1,4 +1,3 @@
-
 #editpage {
     height: 650px;
     width: 800px;
@@ -6,10 +5,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.13);
-    -webkit-box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.13);
-    -moz-box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.13);
+    box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
 }
+
 #user {
     display: flex;
     align-items: center;
@@ -18,6 +18,7 @@
     width: 600px;
 
 }
+
 #pet {
     display: flex;
     align-items: center;
@@ -25,72 +26,94 @@
     height: 600px;
     width: 600px;
 }
+
 #userpic {
     height: 300px;
     width: 300px;
     border-radius: 2%;
     position: relative;
-   
+
 }
+
 #petpic {
     height: 300px;
     width: 250px;
-    border-radius: 2%;  
-    position: relative; 
-    
+    border-radius: 2%;
+    position: relative;
+
 }
 
-#backbutton {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-}
-#editbuttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-}
-input[type="text"], input[type="number"]{
+input[type="text"],
+input[type="number"] {
     height: 15px;
     width: 150px;
 }
 
 #changeimg {
- margin-bottom: 5%;
-}
-#changepetimg{
     margin-bottom: 5%;
 }
+
+#changepetimg {
+    margin-bottom: 5%;
+}
+
 #edituser {
     display: flex;
     flex-direction: column;
     font-size: x-large;
 }
+
 #editpet {
     display: flex;
     flex-direction: column;
     font-size: x-large;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 #userinput {
     height: 500px;
 }
+
 hr {
     width: 175px;
 }
+
 #mainline {
     width: 300px;
 }
-#savechanges {
-    margin-right: 1500px;
-}
-#addanimal {
-    margin-left: 10px;
-}
+
 #box {
     display: flex;
     justify-content: center;
+}
+
+.arrow {
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.editUserHeightBtn{
+    height: 35px;
+}
+
+.saveChangesAndAddAnimals {
+    margin-top: 1%;
+    text-align: center;
+    height: 35px;
+}
+
+.back-button {
+    margin-top: 1%;
+    text-align: center;
 }
