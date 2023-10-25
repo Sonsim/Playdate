@@ -2,12 +2,10 @@
     display: flex;
     height: 100vh;
     justify-content: center;
+
 }
 
 .create-pet-frame {
-    box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.33);
-    -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.33);
-    -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.33);
     padding: 20px 20px 30px 20px;
     margin-top: 100px;
     width: 700px;
@@ -25,6 +23,7 @@
     width: 300px;
     height: 500px;
 }
+
 #heading {
     text-align: center;
     justify-content: center;
@@ -32,15 +31,21 @@
     width: 500px;
     margin: 100px;
 }
+
 #inputDiv {
     width: 200;
     height: 35px;
 }
-#button {
-    width: 70px;
-    height: 35px;
 
+.loginButtons {
+    position: relative;
+    height: 35px;
+    margin-top: 2px;
 }
-#buttons {
-position: relative;
+
+.loginButtonForgotPass {
+    position: relative;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 2px;
 }
