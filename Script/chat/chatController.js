@@ -1,6 +1,4 @@
 
-let selectedUser=  document.getElementById('fakeusers');
-
 let messageInput = "";
 let log = "";
 
@@ -14,7 +12,7 @@ function addUsersToChat(noe) {
     let chats = document.getElementById('userchats');
     chats.innerHTML += /*HTML*/ `
     
-    <div class="user-chat"><div id="chatpic">${petImg}<div>${petName}</div>
+    <div class="user-chat">${petImg}${petName}</div>
 
     `
 }

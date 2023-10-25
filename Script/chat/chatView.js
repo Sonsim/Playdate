@@ -2,6 +2,7 @@
 
 
 function updateChatView () {
+  let path = model.app.allPages;
     document.getElementById('app').innerHTML = /*HTML*/
     `
     <div id="sendMessage">
@@ -14,5 +15,6 @@ function updateChatView () {
         <div id="chatoutput">
         </div>
       </div>
+      <button id="sendButton" onclick="updateView('${path.mainPage}')">Tilbake</button>
     `
 };
