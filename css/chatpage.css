@@ -60,8 +60,14 @@
     border: 1px solid black;
 }
 #chatoutput {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 #chatpic {
     border-radius: 50%;
+}
+#botreply {
+    background-color: lightblue;
+    color: black;
 }
