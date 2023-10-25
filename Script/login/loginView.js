@@ -7,8 +7,8 @@ function updateViewLogin() {
         <div id="loginPage">
                 <h1 id="heading">Playdate</h1>
                 <img class="logo" src="img/Playdate.png" alt="bilde av hund">
-                <input type="text" placeholder="Epost" id="inputDiv">
-                <input type="text" placeholder="Passord" id="inputDiv">
+                <input type="email" placeholder="Epost" id="inputDiv">
+                <input type="password" placeholder="Passord" id="inputDiv">
             <div id="buttons">
                 <div class="loginButtonsBox">
                     <button class="loginBtn"onclick="updateView('${path.mainPage}')">Logg inn</button>
