@@ -15,6 +15,6 @@ function updateChatView () {
         <div id="chatoutput">
         </div>
       </div>
-      <button id="sendButton" onclick="updateView('${path.mainPage}')">Tilbake</button>
+      <button id="sendButton" onclick="updateView('${path.mainPage}'), clearChatlog()">Tilbake</button>
     `
 };

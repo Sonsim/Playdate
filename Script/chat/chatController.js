@@ -1,7 +1,9 @@
 
 let messageInput = "";
 let log = "";
-
+let ownerName = "";
+let greeting ="";
+let answer1= "";
 
 
 function addUsersToChat(noe) {
@@ -9,9 +11,10 @@ function addUsersToChat(noe) {
     let petImg = noe.parentNode.parentNode.children[0].innerHTML;
     
     let chats = document.getElementById('userchats');
-    let ownerName = "";
     let owners = model.users.owners;
     let arrayOfNames = Object.keys(owners);
+   
+    
 
 
     arrayOfNames.forEach(function(name) {
@@ -19,7 +22,7 @@ function addUsersToChat(noe) {
             ownerName = name;
             
         }
-       
+        
     })
     
 
@@ -46,26 +49,36 @@ function sendMessageToUser() {
    showChats();
    setTimeout(() => {
     answerFromBot();
-   }, 3000);
+   }, 1000);
  
 }
 
 
 function answerFromBot() {
     let messagefromuser = messageInput.toLowerCase();
-    let owners = model.users.owners;
-    let arrayOfNames = Object.keys(owners);
-    let greeting ="";
 
-    arrayOfNames.forEach(function (name)
-    {
-        if (owners[name] = )
-    }
-    )
+    let users = model.users.owners;
+    let arrayOfOwners = Object.keys(users);
+  
+ 
 
-   if(messagefromuser == "hei" || messagefromuser == "hallo") log  += '<div id="botreply">Heisann</div>';
-   if(messagefromuser == "vil du gå tur?") log += '<div id="botreply">Ja, når skal vi møtes?</div>';
-   else if(messagefromuser != "hei" && messagefromuser != "hallo") log += '<div id="botreply">Hva mener du?</div>';
+    arrayOfOwners.forEach(function (ownerObj) {
+        if(ownerObj = ownerName) {
+        greeting = users[ownerObj].chatAnswers.greeting;
+        answer1 = users[ownerObj].chatAnswers.walkanswer;
+        return greeting, answer1
+        }
+        
+    });
+
+
+   if(messagefromuser == "hei" || messagefromuser == "hallo") log  += `<div id="botreply"> ${greeting} </div>`;
+   if(messagefromuser == "vil du gå tur?") log += `<div id="botreply">${answer1}</div>`;
+   else if(messagefromuser != "hei" && messagefromuser != "hallo") log += `'<div id="botreply">Hva mener du?</div>'`;
       showChats();
-      // velge riktig eier - hvis eiernavn = eiernavn fra siden så skal chatanswers fra den 
   }
+
+function clearChatlog() {
+    log = "";
+}
+

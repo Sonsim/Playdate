@@ -85,13 +85,10 @@ const model = {
                 password: 'abcs23',
                 img: 'img/userprofile/sondre.jpg',
                 typeOfPet: "Hund",
-                chatAnswers:  [
-                    {
+                chatAnswers: {
                     greeting: "Hei!",
-                    meetQ: "Møtes på hundejordet?",
-                    meetA: "Ja, når vil du møtes?",
-                    },
-                ],
+                    walkanswer: "Ja, det blir bra"
+                },
                 pets: [
                     {
                         img: 'img/petprofile/dogs/Easy1.jpg', // default verdi burde være bilde
@@ -109,6 +106,10 @@ const model = {
                 img: 'img/userprofile/profilepic.png',
                 password: "123",
                 typeOfPet: "Hund",
+                chatAnswers: {
+                    greeting: "Halla",
+                    walkanswer: "Sorry, det passer ikke"
+                },
                 pets:[
                     {
                         img: 'img/petprofile/dogs/Froya.jpg',
@@ -211,6 +212,10 @@ const model = {
                 password: 'martinpass',
                 img: 'img/userprofile/edgar.jpg',
                 typeOfPet: "Fugl",
+                chatAnswers: {
+                    greeting: "Nevermore",
+                    walkanswer: "NEVERMORE"
+                },
                 pets: [
                     {
                         img: 'img/petprofile/birds/verma.jpg',
