@@ -53,6 +53,15 @@ function sendMessageToUser() {
 
 function answerFromBot() {
     let messagefromuser = messageInput.toLowerCase();
+    let owners = model.users.owners;
+    let arrayOfNames = Object.keys(owners);
+    let greeting ="";
+
+    arrayOfNames.forEach(function (name)
+    {
+        if (owners[name] = )
+    }
+    )
 
    if(messagefromuser == "hei" || messagefromuser == "hallo") log  += '<div id="botreply">Heisann</div>';
    if(messagefromuser == "vil du gå tur?") log += '<div id="botreply">Ja, når skal vi møtes?</div>';
