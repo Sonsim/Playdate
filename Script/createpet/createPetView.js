@@ -5,9 +5,16 @@ function updateViewCreatePet() {
     page.innerHTML = /*HTML*/ `
     <div id=create-pet-background>
     <div class="create-pet-frame">
-        <img class="pet-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcvmtYx9E-2KYQ0xX8JN9JN4J8_n3FqbXsA&usqp=CAU"
-            alt=""><br>
-        <button class="upload-image-btn">Legg til bilde</button><br>
+
+
+
+        <img class="pet-image" id="profilepic"
+         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcvmtYx9E-2KYQ0xX8JN9JN4J8_n3FqbXsA&usqp=CAU"
+         alt="Profilbilde Placeholder"><br>
+         
+        <div><span>Last opp bilde: </span><input onchange="uploadPetImage(this)" type="file" /></div><br>
+
+
         <input class="pet-input type-of-pet" type="text" placeholder="Type dyr">
         <hr>
         <input class="pet-input race" type="text" placeholder="Type rase">

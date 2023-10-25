@@ -11,7 +11,6 @@ function updateViewCreateUser() {
                 <div><span>Last opp bilde: </span><input onchange="uploadImage(this)" type="file" /></div>
                 <hr>
             <div id="userData">
-                
                     <input id="nameInput"type="text" placeholder="Fullt navn">
                      <hr>
                     <input id="birthdayInput" type="text" placeholder="Fødelsdato">
