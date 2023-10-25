@@ -19,6 +19,7 @@
 .feedback-header .logo {
     width: 60px;
     height: 60px;
+    margin: 40px 0 0 25px;
 }
 
 /* Main styles */
@@ -56,4 +57,32 @@
 .feedback-footer .back-btn {
     text-decoration: none;
     color: black;
+}
+
+.feedbackInput {
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 2.5px 0 2.5px 0;
+}
+
+.feedbackTextBox {
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.feedbackBackBtn {
+    text-decoration: none;
+}
+
+.arrow {
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
