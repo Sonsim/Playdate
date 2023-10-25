@@ -12,15 +12,15 @@ function updateViewCreatePet() {
         <hr>
         <input class="pet-input race" type="text" placeholder="Type rase">
         <hr>
-        <input class="pet-input name" type="text" placeholder="Navn">
+        <input class="pet-input name"  type="text" id="petInputField" placeholder="Navn">
         <hr>
         <input class="pet-input age" type="number" placeholder="Alder">
         <hr>
 
         <div class="create-pet-bottom-box">
-            <div id="petsAdded">Eks: easy added</div>
+            <ul id="petList"></ul>
             <div class="create-pet-btn-box">
-                <button class="pet-button" style="margin-right: 2.5px;">Legg til flere dyr</button>
+                <button class="pet-button" onclick="addPetToList()">Legg til flere dyr</button>
                 <button class="pet-button" onclick="addPetToUser(); updateView('${path.mainPage}')">Opprett bruker</button>
             </div>
             <img class="pet-logo" src="img/Playdate.png" alt="">
@@ -29,6 +29,6 @@ function updateViewCreatePet() {
     </div>
     </div>
     
-    ` 
+    `
 
 }

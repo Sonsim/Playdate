@@ -28,3 +28,19 @@ function addPetToUser() {
     //Så står vi igjen med at en ny bruker er lagret under riktig navn.
     console.log(model.users.owners);
 }
+
+// Legger navnet til på listen "Added pets".
+
+
+function addPetToList() {
+    let petInputField = document.getElementById("petInputField");
+    let petList = document.getElementById("petList");
+    let itemText = petInputField.value;
+    
+    if (itemText.trim() !== "") {
+        let listPet = document.createElement("li");
+        listPet.textContent = itemText;
+        petList.appendChild(listPet);
+        petInputField.value = "";
+    }
+}
