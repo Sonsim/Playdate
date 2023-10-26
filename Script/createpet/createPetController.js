@@ -1,4 +1,4 @@
-//Upload bilde Funsjonen
+//Upload bilde Funksjonen
 function uploadPetImage(htmlElement) {
     const selectedImage = htmlElement.files[0];
     const profileImage = document.getElementById("profilepic");
@@ -16,7 +16,10 @@ function addPetToUser() {
     const name = document.querySelector(".name").value;
     const age = document.querySelector(".age").value;
 
-
+    //Verifisere bruker input
+    let typeRegex = ^(hund|katt|gnagere|hest|sau|fugl)$
+    let typeVerify = typeRegex.test(typeofPet);
+    
     //Dette lager et nytt objekt med input verdiene
     const newPet = {
         img: img,
