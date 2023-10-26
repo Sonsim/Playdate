@@ -3,7 +3,12 @@ let messageInput = "";
 let log = "";
 let ownerName = "";
 let greeting ="";
-let answer1= "";
+let answerWalk= "";
+let answerPlay="";
+let answerConfused = "";
+let answerLocation = "";
+let answerTime = "";
+let chosenusers = ""
 
 
 function addUsersToChat(noe) {
@@ -24,13 +29,14 @@ function addUsersToChat(noe) {
         }
         
     })
-    
+ 
 
     chats.innerHTML += /*HTML*/ `
+    ${chosenusers}
+    <div class="user-chat">${petImg} <br>${ownerName} og ${petName}</div>
     
-    <div class="user-chat">${petImg} ${ownerName} og ${petName}</div>
-
     `
+    
 }
 
 function showChats() {
@@ -49,7 +55,7 @@ function sendMessageToUser() {
    showChats();
    setTimeout(() => {
     answerFromBot();
-   }, 1000);
+   }, 3000);
  
 }
 
@@ -64,17 +70,34 @@ function answerFromBot() {
 
     arrayOfOwners.forEach(function (ownerObj) {
         if(ownerObj = ownerName) {
-        greeting = users[ownerObj].chatAnswers.greeting;
-        answer1 = users[ownerObj].chatAnswers.walkanswer;
-        return greeting, answer1
-        }
+            greeting = users[ownerObj].chatAnswers.greeting;
+            answerWalk = users[ownerObj].chatAnswers.walkanswer;
+            answerPlay = users[ownerObj].chatAnswers.playAnswer;
+            answerTime = users [ownerObj].chatAnswers.timeAnswer
+            answerConfused = users[ownerObj].chatAnswers.confusedAnswer;
+            answerLocation = users[ownerObj].chatAnswers.loactionAnswer;
+
+        return greeting, answerWalk, answerPlay, answerConfused, answerLocation, answerLocation
+    }
         
     });
 
 
-   if(messagefromuser == "hei" || messagefromuser == "hallo") log  += `<div id="botreply"> ${greeting} </div>`;
-   if(messagefromuser == "vil du gå tur?") log += `<div id="botreply">${answer1}</div>`;
-   else if(messagefromuser != "hei" && messagefromuser != "hallo") log += `'<div id="botreply">Hva mener du?</div>'`;
+   if(messagefromuser == "hei" || messagefromuser == "hallo" || messagefromuser == "halla")
+                {log  += `<div id="botreply"> ${greeting} </div>`;}
+   if(messagefromuser == "vil du gå tur?" || messagefromuser == "skal vi gå tur?") 
+                {log += `<div id="botreply">${answerWalk}</div>`;}
+   if(messagefromuser == "kan du i morgen?" || messagefromuser == "har du tid i morgen?" || messagefromuser == "passer det i morgen")
+                {log += `<div id="botreply">${answerTime}</div>`;}
+   if(messagefromuser == "kan dyrene leke sammen?" || messagefromuser == "vil dyrene leke sammen?")
+                {log += `<div id="botreply">${answerPlay}</div>`;}
+   if (messagefromuser == "hvor bor du?" || messagefromuser == "hvor er du?")
+                {log += `<div id="botreply">${answerLocation}</div>`;}
+   else if(messagefromuser != "hei" && messagefromuser != "hallo" && messagefromuser != "vil du gå tur?" && messagefromuser != "skal vi gå tur?" &&
+            messagefromuser != "kan du i morgen?" && messagefromuser != "har du tid i morgen?" && messagefromuser != "kan dyrene leke sammen?" &&
+            messagefromuser != "vil dyrene leke sammen?" && messagefromuser != "hvor bor du?" && messagefromuser != "hvor er du?") 
+                {log += `<div id="botreply"> ${answerConfused}</div>`;};
+   
       showChats();
   }
 

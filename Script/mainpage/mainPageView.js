@@ -1,5 +1,5 @@
 function updateViewMain() {
-  console.log("test");
+
   const path = model.app.allPages;
     document.getElementById('app').innerHTML = /*HTML*/ `
 

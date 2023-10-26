@@ -87,7 +87,12 @@ const model = {
                 typeOfPet: "Hund",
                 chatAnswers: {
                     greeting: "Hei!",
-                    walkanswer: "Ja, det blir bra"
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Lillestrøm",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
                 },
                 pets: [
                     {
@@ -108,7 +113,11 @@ const model = {
                 typeOfPet: "Hund",
                 chatAnswers: {
                     greeting: "Halla",
-                    walkanswer: "Sorry, det passer ikke"
+                    walkanswer: "Sorry, det passer ikke",
+                    loactionAnswer: "Gressvik",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Kanskje",
+                    timeAnswer: "Tror ikke det passer",
                 },
                 pets:[
                     {
@@ -127,6 +136,15 @@ const model = {
                 password: '21345',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                chatAnswers: {
+                    greeting: "Hallo!",
+                    walkanswer: "Det blir morsomt!",
+                    loactionAnswer: "Nøtterøy",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, det burde gå fint!",
+                    timeAnswer: "Tror det skal passe!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/dogs/Ludo.jpg',
@@ -144,6 +162,15 @@ const model = {
                 password: 'password123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Nei, katten min liker ikke tur",
+                    loactionAnswer: "Oslo",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, katten elsker å leke",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/cats/fluffy.jpg',
@@ -161,6 +188,15 @@ const model = {
                 password: 'catlover99',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                chatAnswers: {
+                    greeting: "Halllaien!",
+                    walkanswer: "Ja, hunden min elsker tur",
+                    loactionAnswer: "Bergen",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Det har jeg og hunden kjempelyst til?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/dogs/Buddy.jpg',
@@ -178,6 +214,15 @@ const model = {
                 password: 'doggy123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Dessverre, jeg orker ikke",
+                    loactionAnswer: "Trondheim",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Hunden min liker ikke det",
+                    timeAnswer: "Passer ikke",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/dogs/max.jpg',
@@ -195,6 +240,15 @@ const model = {
                 password: 'pawprint22',
                 img: 'img/userprofile/garfieldowner.png',
                 typeOfPet: "Katt",
+                chatAnswers: {
+                    greeting: "Hi",
+                    walkanswer: "My cat just want to eat lasagna",
+                    loactionAnswer: "Stavanger",
+                    confusedAnswer: "What do you mean?",
+                    playAnswer: "Garfield hates anything related to exercise",
+                    timeAnswer: "If i can get Garfield away from the lasagna",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/cats/garfield.png',
@@ -214,7 +268,12 @@ const model = {
                 typeOfPet: "Fugl",
                 chatAnswers: {
                     greeting: "Nevermore",
-                    walkanswer: "NEVERMORE"
+                    walkanswer: "NEVERMORE",
+                    loactionAnswer: "NeVeRmOrE",
+                    confusedAnswer: "N E V E R M O R E",
+                    playAnswer: "NE ve ER mo RE",
+                    timeAnswer: "nEvErMoRe",
+
                 },
                 pets: [
                     {
@@ -233,6 +292,15 @@ const model = {
                 password: 'julie123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Drammen",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/cats/leo.jpg',
@@ -250,6 +318,15 @@ const model = {
                 password: 'sara567',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Kristiansand",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/hamsters/hamster1.jpg',
@@ -257,6 +334,7 @@ const model = {
                         name: "Rocky",
                         age: '4',
                         favoriteToy: 'Løpeball',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -266,6 +344,15 @@ const model = {
                 password: 'andy123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Fredrikstad",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/cats/mittens.jpg',
@@ -283,6 +370,15 @@ const model = {
                 password: 'karolinepass',
                 img: 'img/userprofile/Joacim.jpg',
                 typeOfPet: "Gnagere",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Dessverre, jeg er opptatt med å rykke ned med Vålerenga",
+                    loactionAnswer: "Intility Arena",
+                    confusedAnswer: "Det skjønte jeg ikke, akkurat som jeg ikke skjønner hvordan man leder en fotballklubb",
+                    playAnswer: "Ja, hvis vi kan se LSK slå Vålerenga samtidig",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/hamsters/bakke.jpg',
@@ -290,6 +386,7 @@ const model = {
                         name: "Geir",
                         age: '54',
                         favoriteToy: 'Penga til Trøim',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -299,6 +396,15 @@ const model = {
                 password: 'thomas456',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Drammen",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/cats/whiskers.jpg',
@@ -316,6 +422,15 @@ const model = {
                 password: 'kristinepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                chatAnswers: {
+                    greeting: "Heia!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Bodø",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/hamsters/mus1.jpg',
@@ -323,6 +438,7 @@ const model = {
                         name: "Riley",
                         age: '3',
                         favoriteToy: 'Ost',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -332,6 +448,15 @@ const model = {
                 password: 'oskarpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Haugesund",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/hamsters/hamster2.jpg',
@@ -339,6 +464,7 @@ const model = {
                         name: "Bruno",
                         age: '4',
                         favoriteToy: 'Klatrestativ',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -348,6 +474,15 @@ const model = {
                 password: 'sandra89',
                 img: 'img/userprofile/clint.jpg',
                 typeOfPet: "Gnagere",
+                chatAnswers: {
+                    greeting: "Hi!",
+                    walkanswer: "Yes, if we can annoy Tom the cat",
+                    loactionAnswer: "Molde",
+                    confusedAnswer: "What do you mean?",
+                    playAnswer: "Yes, lets do it!",
+                    timeAnswer: "That works, see you then!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/hamsters/jery.png',
@@ -355,6 +490,7 @@ const model = {
                         name: "Jerry",
                         age: '3',
                         favoriteToy: 'Tom',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -364,6 +500,15 @@ const model = {
                 password: 'christianpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Sandefjord",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/cats/fluffy2.jpg',
@@ -381,6 +526,15 @@ const model = {
                 password: 'henriettepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Moss",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/horses/Arabian1.jpg',
@@ -398,6 +552,15 @@ const model = {
                 password: 'emilpass',
                 img: 'img/userprofile/todd.jpg',
                 typeOfPet: "Hest",
+                chatAnswers: {
+                    greeting: "Hi!",
+                    walkanswer: "Yes, but Bojack needs a drink first",
+                    loactionAnswer: "Halden",
+                    confusedAnswer: "What do you mean?",
+                    playAnswer: "Bojack doesn't like playing",
+                    timeAnswer: "That wont work",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/horses/bojak.jpg',
@@ -411,10 +574,19 @@ const model = {
             },
             Poseidon: {
                 age: '29',
-                location: 'Ås',
+                location: 'Olympus',
                 password: 'martinepass',
                 img: 'img/userprofile/poseidon.jpg',
                 typeOfPet: "Hest",
+                chatAnswers: {
+                    greeting: "Good day mortal!",
+                    walkanswer: "We dont walk, we fly!",
+                    loactionAnswer: "Olympus",
+                    confusedAnswer: "speak plainly mortal",
+                    playAnswer: "We dont have time for such a trivial thing",
+                    timeAnswer: "A god doesnt have time for mortals",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/horses/pegasus.jpg',
@@ -432,6 +604,15 @@ const model = {
                 password: 'andyo123',
                 img: 'img/userprofile/gandalf.jpg',
                 typeOfPet: "Hest",
+                chatAnswers: {
+                    greeting: "Greetings!",
+                    walkanswer: "Fly you fools",
+                    loactionAnswer: "The Shire",
+                    confusedAnswer: "I was talking aloud to myself. A habit of the old: they choose the wisest person present to speak to.",
+                    playAnswer: "A wizard is never late, nor is he early. He arrives precisely when he means to.",
+                    timeAnswer: "I did not pass through fire And death to bandy crooked words with a witless worm.",
+
+                },
                 pets: [
                     {
                         img:'img/petprofile/horses/shadow.jpg',
@@ -449,6 +630,15 @@ const model = {
                 password: 'anettepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Larvik",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/sheep/dala.jpg',
@@ -466,6 +656,15 @@ const model = {
                 password: 'fredrikpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Larvik",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/sheep/dolly.jpg',
@@ -483,6 +682,15 @@ const model = {
                 password: 'vildepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Mandal",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/sheep/merino1.jpg',
@@ -500,6 +708,15 @@ const model = {
                 password: 'tom123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Drammen",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/sheep/oxford.jpg',
@@ -517,6 +734,15 @@ const model = {
                 password: 'maria123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Stavanger",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/sheep/merino2.jpg',
@@ -534,6 +760,15 @@ const model = {
                 password: 'simenpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Tønsberg",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/dogs/rex.jpg',
@@ -551,6 +786,15 @@ const model = {
                 password: 'oliver123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                chatAnswers: {
+                    greeting: "Bonjour!",
+                    walkanswer: "Remy liker ikke å gå tur",
+                    loactionAnswer: "Haugesund",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, hvis Remy kan lage mat",
+                    timeAnswer: "Det passer, remy ordner mat til oss!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/hamsters/rata.jpg',
@@ -558,6 +802,7 @@ const model = {
                         name: "Remy",
                         age: '3',
                         favoriteToy: 'Matlaging',
+                        chatbutton: 'pip',
                     },
                 ],
             },
@@ -567,6 +812,15 @@ const model = {
                 password: 'amanda123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Molde",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/horses/Arabian2.jpg',
@@ -580,10 +834,19 @@ const model = {
             },
             Petter: {
                 age: '24',
-                location: 'Lillestrøm',
+                location: 'Oslo',
                 password: 'petterpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Oslo",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/sheep/lance.jpg',
@@ -601,6 +864,15 @@ const model = {
                 password: 'louisepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Fugl",
+                chatAnswers: {
+                    greeting: "Hallaien!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Bergen",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/petplaceholder.png',
@@ -612,17 +884,26 @@ const model = {
                     },
                 ],
             },
-            Trygve: {
+            Aslak: {
                 age: '34',
                 location: 'Stavanger',
                 password: 'trygve123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Stavanger",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/horses/Arabian3.jpg',
                         type: 'Araberhest', 
-                        name: "Whiskers",
+                        name: "Odin",
                         age: '4',
                         favoriteToy: 'Feather ball',
                         chatbutton: 'neigh',
@@ -636,6 +917,15 @@ const model = {
                 password: 'emilypass',
                 img: 'img/userprofile/aladdin.jpg',
                 typeOfPet: "Fugl",
+                chatAnswers: {
+                    greeting: "Hallaien!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Bergen",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/birds/Jago.jpg',
@@ -653,6 +943,15 @@ const model = {
                 password: 'lucaspass',
                 img: 'img/userprofile/Harry.jpg',
                 typeOfPet: "Fugl",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Lillestrøm",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img:'img/petprofile/birds/hedwig.jpg',
@@ -670,6 +969,15 @@ const model = {
                 password: 'isabellapass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Fugl",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, det blir morro!",
+                    loactionAnswer: "Trondheim",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, når da?",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/petplaceholder.png',
@@ -687,6 +995,15 @@ const model = {
                 password: 'oliver123',
                 img: 'img/userprofile/frode.jpg',
                 typeOfPet: "Fugl",
+                chatAnswers: {
+                    greeting: "Hei!",
+                    walkanswer: "Ja, vi kan gå til Åråsen!",
+                    loactionAnswer: "Lillestrøm",
+                    confusedAnswer: "Hva mener du?",
+                    playAnswer: "Ja, så lenge det er fotball",
+                    timeAnswer: "Det passer, sees da!",
+
+                },
                 pets: [
                     {
                         img: 'img/petprofile/birds/gullik.jpg',
