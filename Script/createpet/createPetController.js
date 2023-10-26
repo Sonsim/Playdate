@@ -17,17 +17,28 @@ function addPetToUser() {
     const age = document.querySelector(".age").value;
 
     //Verifisere bruker input
-    let typeRegex = ^(hund|katt|gnagere|hest|sau|fugl)$
+    let typeRegex = /^(hund|katt|gnagere|hest|sau|fugl)$/;
     let typeVerify = typeRegex.test(typeofPet);
-    
-    //Dette lager et nytt objekt med input verdiene
-    const newPet = {
-        img: img,
-        type: typeofPet,
-        race: race,
-        name: name,
-        age: age
-    };
+
+    let raceRegex = /^[A-Za-z\s'-]+$/;
+    let raceVerify = typeRegex.test(race);
+
+    let nameRegex = /^[A-Za-z\s'-]+$/;
+    let nameVerify = typeRegex.test(name);
+
+    let ageRegex = /^\d+(\.\d{1,2})?$/;
+    let ageVerify = typeRegex.test(age);
+
+    if(typeVerify && raceVerify && nameVerify && ageVerify) {
+        //Dette lager et nytt objekt med input verdiene
+        const newPet = {
+            img: img,
+            type: typeofPet,
+            race: race,
+            name: name,
+            age: age
+        };
+    }
 
     //Dette lagrer newPet i newUser
     if (model.users.owners.newUser) {
