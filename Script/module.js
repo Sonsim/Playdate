@@ -84,7 +84,7 @@ const model = {
                 email:'eksempel@gmail.com',
                 location: 'Lillestrøm',
                 password: '123',
-                img: 'https://github.com/Sonsim/Playdate/blob/main/img/userprofile/sondre.jpg',
+                img: 'img/userprofile/sondre.jpg',
                 typeOfPet: "Hund",
                 chatAnswers: {
                     greeting: "Hei!",
