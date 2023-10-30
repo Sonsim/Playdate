@@ -42,14 +42,16 @@ function logoff() {
 
 function setProfilePicture() {
 
+
+    console.log("hi");
     let ownerNames = model.users.owners;
     let ownerArray = Object.keys(ownerNames)
 
     ownerArray.forEach(function (owner) {
         if (owner == model.app.currentUser) {
             let profilepic = document.getElementById('profile-picture');
-            profilepic.src = model.app.user[owner].img;
-
+            let profilePictureSrc = model.users.owners[owner].img;
+            profilepic.src = profilePictureSrc;
         }
     })
 }
