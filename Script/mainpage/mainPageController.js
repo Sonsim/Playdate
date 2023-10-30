@@ -1,4 +1,4 @@
-function addUsers (htmlElement) {
+function addUsers(htmlElement) {
     const path = model.app.allPages;
     let users = document.getElementById('users');
     users.innerHTML = "";
@@ -25,12 +25,12 @@ function addUsers (htmlElement) {
     });
 };
 
-function userProfileDropdown () {
+function userProfileDropdown() {
     let userProfiledropdown = document.querySelector(".user-profile-dropdown");
     userProfiledropdown.classList.toggle("show-hide-dropdown");
 }
 
-function settingsDropdown () {
+function settingsDropdown() {
     let settingsDropdown = document.querySelector(".settings-dropdown");
     settingsDropdown.classList.toggle("show-hide-dropdown");
 }
@@ -39,3 +39,20 @@ function logoff() {
     model.app.currentPage = 'loginPage'
     updateView();
 }
+
+function setProfilePicture() {
+
+    let ownerNames = model.users.owners;
+    let ownerArray = Object.keys(ownerNames)
+
+    ownerArray.forEach(function (owner) {
+        if (owner == model.app.currentUser) {
+            let profilepic = document.getElementById('profile-picture');
+            profilepic.src = "img/userprofile/sondre.jpg";
+
+        }
+    })
+}
+
+
+

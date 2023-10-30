@@ -7,11 +7,12 @@ function updateViewLogin() {
         <div id="loginPage">
                 <h1 id="heading">Playdate</h1>
                 <img class="logo" src="img/Playdate.png" alt="bilde av hund">
-                <input type="email" placeholder="Epost" id="inputDiv">
-                <input type="password" placeholder="Passord" id="inputDiv">
+                <input type="email" placeholder="Epost" id="inputDiv" class="inputEmail">
+                <input type="password" placeholder="Passord" id="inputDiv" class="inputPass"><br>
+                <div id="loginErrorMessage"></div>
             <div id="buttons">
                 <div class="loginButtonsBox">
-                    <button class="loginBtn"onclick="updateView('${path.mainPage}')">Logg inn</button>
+                    <button class="loginBtn"onclick=" checkLogin()">Logg inn</button>
                     <button class="loginButtonForgotPass"onclick="updateView('${path.forgottenPasswordPage}')">Glemt passord?</button>
                 </div>
                 <div class="forgot-password-box">

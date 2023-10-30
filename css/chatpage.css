@@ -68,3 +68,7 @@
     background-color: lightblue;
     color: black;
 }
+
+#loginErrorMessage {
+    color: red;
+}

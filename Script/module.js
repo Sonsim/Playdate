@@ -81,9 +81,10 @@ const model = {
         owners: {
             Sondre: {
                 age: '30',
+                email:'eksempel@gmail.com',
                 location: 'Lillestrøm',
-                password: 'abcs23',
-                img: 'img/userprofile/sondre.jpg',
+                password: '123',
+                img: 'https://github.com/Sonsim/Playdate/blob/main/img/userprofile/sondre.jpg',
                 typeOfPet: "Hund",
                 chatAnswers: {
                     greeting: "Hei!",
@@ -107,6 +108,7 @@ const model = {
             },
             Aleksander: {
                 age: '23',
+                email: 'eksempel@hotmail.com',
                 location: 'Gressvik',
                 img: 'img/userprofile/profilepic.png',
                 password: "123",
