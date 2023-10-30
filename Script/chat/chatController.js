@@ -77,7 +77,7 @@ function answerFromBot() {
             answerConfused = users[ownerObj].chatAnswers.confusedAnswer;
             answerLocation = users[ownerObj].chatAnswers.loactionAnswer;
 
-        return greeting, answerWalk, answerPlay, answerConfused, answerLocation, answerLocation
+       // return greeting, answerWalk, answerPlay, answerConfused, answerLocation, answerLocation
     }
         
     });

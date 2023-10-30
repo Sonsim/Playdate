@@ -939,14 +939,14 @@ const model = {
             },
             Harry: {
                 age: '28',
-                location: 'Oslo',
+                location: 'Galtvort',
                 password: 'lucaspass',
                 img: 'img/userprofile/Harry.jpg',
                 typeOfPet: "Fugl",
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
-                    loactionAnswer: "Lillestrøm",
+                    loactionAnswer: "Galtvort",
                     confusedAnswer: "Hva mener du?",
                     playAnswer: "Ja, når da?",
                     timeAnswer: "Det passer, sees da!",
