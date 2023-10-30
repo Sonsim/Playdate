@@ -7,7 +7,7 @@ function updateChatView () {
     `
     <div id="sendMessage">
       <input type="text" id="chatinput" placeholder="Si noe!" oninput="messageInput = this.value">
-      <button id="sendButton" onclick="sendMessageToUser()">Send</button>
+      <button id="sendButton" onclick="sendMessageToUser(), saveChats()">Send</button>
     </div>
     <div id="chatbox">
         <div id="userchats">
@@ -15,6 +15,6 @@ function updateChatView () {
         <div id="chatoutput">
         </div>
       </div>
-      <button id="sendButton" onclick="updateView('${path.mainPage}'), clearChatlog()">Tilbake</button>
+      <button id="backButton" onclick="updateView('${path.mainPage}'), clearChatlog()">Tilbake</button>
     `
 };

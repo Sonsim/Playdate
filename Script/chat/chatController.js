@@ -32,7 +32,7 @@ function addUsersToChat(noe) {
  
 
     chats.innerHTML += /*HTML*/ `
-    ${chosenusers}
+    
     <div class="user-chat">${petImg} <br>${ownerName} og ${petName}</div>
     
     `
@@ -69,17 +69,15 @@ function answerFromBot() {
  
 
     arrayOfOwners.forEach(function (ownerObj) {
-        if(ownerObj = ownerName) {
+        if(ownerObj == ownerName) {
             greeting = users[ownerObj].chatAnswers.greeting;
             answerWalk = users[ownerObj].chatAnswers.walkanswer;
             answerPlay = users[ownerObj].chatAnswers.playAnswer;
             answerTime = users [ownerObj].chatAnswers.timeAnswer
             answerConfused = users[ownerObj].chatAnswers.confusedAnswer;
             answerLocation = users[ownerObj].chatAnswers.loactionAnswer;
-
-       // return greeting, answerWalk, answerPlay, answerConfused, answerLocation, answerLocation
     }
-        
+       
     });
 
 
@@ -103,5 +101,20 @@ function answerFromBot() {
 
 function clearChatlog() {
     log = "";
+}
+
+function saveChats() {
+
+    let regex = /<div[^>]*>(.*?)<\/div>/;
+
+    content = log.replace(regex, "");
+    
+    const newChat = {
+        from: "John Doe", 
+        to: ownerName,
+        content: content,
+    };
+model.chat["newChat"] = newChat;
+console.log(model.chat)
 }
 
