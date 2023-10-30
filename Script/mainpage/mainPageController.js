@@ -48,7 +48,7 @@ function setProfilePicture() {
     ownerArray.forEach(function (owner) {
         if (owner == model.app.currentUser) {
             let profilepic = document.getElementById('profile-picture');
-            profilepic.src = "img/userprofile/sondre.jpg";
+            profilepic.src = model.app.user[owner].img;
 
         }
     })
