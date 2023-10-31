@@ -22,7 +22,7 @@ function createNewUser() {
    let nameRegex = /^[A-Za-z]+( [A-Za-z]+)+$/;
    let nameVerify = nameRegex.test(name);
 
-   let birthdayRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/;
+   let birthdayRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/; //Matches dd/mm/yyyy
    let birthdayVerify = birthdayRegex.test(birthday);
 
    let locationRegex = /^[\w\s,-]+$/;
@@ -31,7 +31,7 @@ function createNewUser() {
    let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
    let emailVerify = emailRegex.test(email);
 
-   let passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
+   let passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/; //Must contain one big letter, one digit, must be 8 long
    let passwordVerify = passwordRegex.test(password);
 
    let reapeatPasswordVerify = password == reapeatPassword;
