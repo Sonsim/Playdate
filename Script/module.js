@@ -86,6 +86,7 @@ const model = {
                 password: '123',
                 img: 'img/userprofile/sondre.jpg',
                 typeOfPet: "Hund",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -113,6 +114,7 @@ const model = {
                 img: 'img/userprofile/profilepic.png',
                 password: "123",
                 typeOfPet: "Hund",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Halla",
                     walkanswer: "Sorry, det passer ikke",
@@ -138,6 +140,7 @@ const model = {
                 password: '21345',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hallo!",
                     walkanswer: "Det blir morsomt!",
@@ -164,6 +167,7 @@ const model = {
                 password: 'password123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Nei, katten min liker ikke tur",
@@ -190,6 +194,7 @@ const model = {
                 password: 'catlover99',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Halllaien!",
                     walkanswer: "Ja, hunden min elsker tur",
@@ -216,6 +221,7 @@ const model = {
                 password: 'doggy123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Dessverre, jeg orker ikke",
@@ -242,6 +248,7 @@ const model = {
                 password: 'pawprint22',
                 img: 'img/userprofile/garfieldowner.png',
                 typeOfPet: "Katt",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hi",
                     walkanswer: "My cat just want to eat lasagna",
@@ -268,6 +275,7 @@ const model = {
                 password: 'martinpass',
                 img: 'img/userprofile/edgar.jpg',
                 typeOfPet: "Fugl",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Nevermore",
                     walkanswer: "NEVERMORE",
@@ -294,6 +302,7 @@ const model = {
                 password: 'julie123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -320,6 +329,7 @@ const model = {
                 password: 'sara567',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -346,6 +356,7 @@ const model = {
                 password: 'andy123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -372,6 +383,7 @@ const model = {
                 password: 'karolinepass',
                 img: 'img/userprofile/Joacim.jpg',
                 typeOfPet: "Gnagere",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Dessverre, jeg er opptatt med å rykke ned med Vålerenga",
@@ -398,6 +410,7 @@ const model = {
                 password: 'thomas456',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -424,6 +437,7 @@ const model = {
                 password: 'kristinepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Heia!",
                     walkanswer: "Ja, det blir morro!",
@@ -450,6 +464,7 @@ const model = {
                 password: 'oskarpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -476,6 +491,7 @@ const model = {
                 password: 'sandra89',
                 img: 'img/userprofile/clint.jpg',
                 typeOfPet: "Gnagere",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hi!",
                     walkanswer: "Yes, if we can annoy Tom the cat",
@@ -502,6 +518,7 @@ const model = {
                 password: 'christianpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Katt",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -528,6 +545,7 @@ const model = {
                 password: 'henriettepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -554,6 +572,7 @@ const model = {
                 password: 'emilpass',
                 img: 'img/userprofile/todd.jpg',
                 typeOfPet: "Hest",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hi!",
                     walkanswer: "Yes, but Bojack needs a drink first",
@@ -580,6 +599,7 @@ const model = {
                 password: 'martinepass',
                 img: 'img/userprofile/poseidon.jpg',
                 typeOfPet: "Hest",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Good day mortal!",
                     walkanswer: "We dont walk, we fly!",
@@ -606,6 +626,7 @@ const model = {
                 password: 'andyo123',
                 img: 'img/userprofile/gandalf.jpg',
                 typeOfPet: "Hest",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Greetings!",
                     walkanswer: "Fly you fools",
@@ -632,6 +653,7 @@ const model = {
                 password: 'anettepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -658,6 +680,7 @@ const model = {
                 password: 'fredrikpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -684,6 +707,7 @@ const model = {
                 password: 'vildepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -710,6 +734,7 @@ const model = {
                 password: 'tom123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -736,6 +761,7 @@ const model = {
                 password: 'maria123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -762,6 +788,7 @@ const model = {
                 password: 'simenpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hund",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -788,6 +815,7 @@ const model = {
                 password: 'oliver123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Gnagere",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Bonjour!",
                     walkanswer: "Remy liker ikke å gå tur",
@@ -814,6 +842,7 @@ const model = {
                 password: 'amanda123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -840,6 +869,7 @@ const model = {
                 password: 'petterpass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Sau",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -866,6 +896,7 @@ const model = {
                 password: 'louisepass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Fugl",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hallaien!",
                     walkanswer: "Ja, det blir morro!",
@@ -892,6 +923,7 @@ const model = {
                 password: 'trygve123',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Hest",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -919,6 +951,7 @@ const model = {
                 password: 'emilypass',
                 img: 'img/userprofile/aladdin.jpg',
                 typeOfPet: "Fugl",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hallaien!",
                     walkanswer: "Ja, det blir morro!",
@@ -945,6 +978,7 @@ const model = {
                 password: 'lucaspass',
                 img: 'img/userprofile/Harry.jpg',
                 typeOfPet: "Fugl",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -971,6 +1005,7 @@ const model = {
                 password: 'isabellapass',
                 img: 'img/userprofile/profilepic.png',
                 typeOfPet: "Fugl",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, det blir morro!",
@@ -997,6 +1032,7 @@ const model = {
                 password: 'oliver123',
                 img: 'img/userprofile/frode.jpg',
                 typeOfPet: "Fugl",
+                oldChats: [""],
                 chatAnswers: {
                     greeting: "Hei!",
                     walkanswer: "Ja, vi kan gå til Åråsen!",

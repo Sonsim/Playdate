@@ -111,6 +111,7 @@
 }
 #profile-picture {
     height: 100px;
+    border-radius: 5%;
 }
 #petprofile-picture {
     height: 250px;
