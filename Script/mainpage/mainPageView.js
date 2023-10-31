@@ -1,7 +1,7 @@
 function updateViewMain() {
 
   const path = model.app.allPages;
-    document.getElementById('app').innerHTML = /*HTML*/ `
+  document.getElementById('app').innerHTML = /*HTML*/ `
 
     <section id="page">
             <header>
@@ -43,18 +43,18 @@ function updateViewMain() {
 };
 
 
-function dogsByDefault () {
-    let users = document.getElementById('users');
-    users.innerHTML = "";
+function dogsByDefault() {
+  let users = document.getElementById('users');
+  users.innerHTML = "";
 
-    let owners = model.users.owners;
+  let owners = model.users.owners;
 
-    let arrayOfNames = Object.keys(owners);
+  let arrayOfNames = Object.keys(owners);
 
-    arrayOfNames.forEach(function (name) {
-        if (owners[name].typeOfPet == "Hund") {
-          let path = model.app.allPages;
-            users.innerHTML += /*HTML*/ `
+  arrayOfNames.forEach(function (name) {
+    if (owners[name].typeOfPet == "Hund") {
+      let path = model.app.allPages;
+      users.innerHTML += /*HTML*/ `
             <div id="fakeusers">
                 <div id="photo"><img id="petprofile-picture"src=${owners[name].pets[0].img} alt=""></div>
                 <div id="name">Navn: ${owners[name].pets[0].name}</div> <hr>
@@ -66,8 +66,8 @@ function dogsByDefault () {
                 <div id="chatbutton"><button onclick="updateView('${path.chatPage}'); addUsersToChat(this)">Send et ${owners[name].pets[0].chatbutton}</button></div>
             </div>
             `
-        }
-    });
+    }
+  });
 };
 //ikke slett
 function mainPageFunction() {
