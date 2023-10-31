@@ -2,11 +2,15 @@ function updateViewEditUser() {
     let app = document.getElementById('app');
     let path = model.app.allPages;
 
+    let user = model.app.currentUser;
+    let currentPic = model.users.owners[user].img;
+    let currentPetPic = model.users.owners[user].pets[0].img
+    
     app.innerHTML = /*HTML*/ `
     <div id="box">
     <div id="editpage">
         <div id="user">
-            <div><img id="userpic" src="img/userprofile/sondre.jpg" alt=""></div><br>
+            <div><img id="userpic" src="${currentPic}" alt=""></div><br>
             <div id="changeimg"><button>Endre bilde</button></div>
             
             <div id="edituser">
@@ -21,7 +25,7 @@ function updateViewEditUser() {
             </div>
         </div>
         <div id="pet">
-            <div><img id="petpic" src="img/petprofile/dogs/Easy1.jpg" alt=""></div><br>
+            <div><img id="petpic" src="${currentPetPic}" alt=""></div><br>
             <div id="changepetimg"><button>Endre bilde</button></div>
             <div id="editpet">
                 <div><input type="text" placeholder="Navn"></div>
@@ -34,7 +38,6 @@ function updateViewEditUser() {
                 <hr align="left">
             </div>
         </div>
-        
     </div>
     </div>
     <div id="allbuttons">
