@@ -28,16 +28,23 @@ function addPetToUser() {
 
     let ageRegex = /^\d+(\.\d{1,2})?$/;
     let ageVerify = typeRegex.test(age);
+    
+    const newPet = {
+        img: img,
+        type: typeofPet,
+        race: race,
+        name: name,
+        age: age
+    };
+    
 
     if(typeVerify && raceVerify && nameVerify && ageVerify) {
         //Dette lager et nytt objekt med input verdiene
-        const newPet = {
-            img: img,
-            type: typeofPet,
-            race: race,
-            name: name,
-            age: age
-        };
+        newPet.img = img;
+        newPet.typeofPet = typeofPet;
+        newPet.race = race;
+        newPet.name = name;
+        newPet.age = age;
     }
 
     //Dette lagrer newPet i newUser
