@@ -59,6 +59,7 @@
 <script>
     updateViewLogin();
     function updateView(pageFunction) {
+        console.log(model.app.currentUser);
         eval(pageFunction + '()');
     };
 </script>
