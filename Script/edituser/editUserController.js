@@ -20,8 +20,6 @@ function saveChanges() {
     const editPetAge = document.getElementById('petAge').value;
     const editPetToy = document.getElementById('petToy').value;
 
-
-
     let currentUser = model.app.currentUser;
     let currentUserProfile = model.users.owners[currentUser];
 
