@@ -21,6 +21,10 @@
     width: 212px;
     margin: 1%;
 }
+
+.wrongInput {
+  color: red;
+}
 #userData {
     display: flex;
     flex-direction: column;
