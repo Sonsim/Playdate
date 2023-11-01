@@ -13,7 +13,7 @@ function updateViewCreateUser() {
             <div id="userData">
                     <input id="nameInput"type="text" placeholder="Fullt navn">
                      <hr>
-                    <input id="birthdayInput" type="text" placeholder="Fødelsdato">
+                    <input id="birthdayInput" type="text" placeholder="Fødelsdato DD/MM/YYYY">
                      <hr>
                     <input id="locationInput" type="text" placeholder="Boststed">
                     <hr>
