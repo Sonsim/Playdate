@@ -17,7 +17,7 @@ function updateViewMain() {
                       <div id="settings" onclick="settingsDropdown()">Innstillinger<div>
                       <div class="settings-dropdown">
                         <div>Barkmode</div>
-                        <div onclick="updateView('${path.editUserPage}')">Bytte passord</div>
+                        <div onclick="updateView('${path.forgottenPasswordPage}')">Bytte passord</div>
                         <div>Tillat posisjon</div>
                         <div onclick="updateView('${path.feedbackPage}')">Send Tilbakemelding</div>
                       </div>
