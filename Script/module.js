@@ -129,7 +129,7 @@ const model = {
                         type: 'Dachshund',
                         name: "Frøya",
                         age: '3',
-                        favoriteToy: 'Puten hennes/ hånden min',
+                        favoriteToy: 'Puten hennes',
                         chatbutton: 'voff',
                     },
                 ],

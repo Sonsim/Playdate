@@ -55,5 +55,11 @@ function setProfilePicture() {
     })
 }
 
+function barkMode () {
+    const page = document.getElementById("app");
+    console.log("Hi  ");
+    page.style.backgroundColor = "rgb(24, 26, 27);";
+};
+
 
 

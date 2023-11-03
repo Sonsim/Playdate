@@ -111,14 +111,21 @@
          flex-direction: column;
          align-items: center;
          border-radius: 2%;
-         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
-         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
-         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
+         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
+         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
          background-color: whitesmoke;
          font-size: large;
          margin-left: 20%;
-         margin-top: 15%;
+         margin-top: 7%;
+         margin-bottom: 0;
+         padding-bottom: 5%;
      }
+
+     #fakeusers:nth-last-child(-n+3) {
+        margin-top: 0;
+        padding-bottom: 8%;
+      }
 
      #profile-picture {
          height: 5vw;
@@ -127,9 +134,9 @@
 
      #petprofile-picture {
          height: 13vw;
-         width: 10vw;
-         margin: 3%;
-         border-radius: 5%;
+         width: 10vw;        
+         margin-top: 8%;
+         border-radius: 8px;
      }
 
      #owner-profilepicture {
@@ -160,7 +167,7 @@
 
  }
 
- /* Lars Petter skjerm */
+ /* LaPtop-Skjerm */
  @media only screen and (min-width: 768px) and (max-width: 1290px) {
      #page {
          display: grid;
@@ -236,7 +243,7 @@
      #page>nav {
          grid-area: nav;
          height: 70%;
-         background-color: whitesmoke;
+         background-color: white;
      }
 
      #page>main {
@@ -246,6 +253,7 @@
      }
 
      #petcategories {
+        background-color: whitesmoke;
          height: 13.6%;
          display: flex;
          justify-content: center;
@@ -274,14 +282,20 @@
          flex-direction: column;
          align-items: center;
          border-radius: 2%;
-         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
-         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
-         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
+         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
+         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
          background-color: whitesmoke;
-         font-size: large;
+         font-size: small;
          margin-left: 20%;
-         margin-top: 15%;
+         margin-top: 7%;
+         margin-bottom: 0;
+         padding-bottom: 2%;
      }
+     #fakeusers:nth-last-child(-n+3) {
+        margin-top: 0;
+        padding-bottom: 4%;
+      }
 
      #profile-picture {
          height: 5vw;
@@ -293,23 +307,23 @@
          width: 7vw;
          margin: 3%;
          border-radius: 5%;
+         margin-top: 30%;
      }
 
      #owner-profilepicture {
-         height: 1vw;
-         width: 1.2vw;
+         height: 3vw;
+         width: 3.1vw;
          border-radius: 50%;
      }
 
      #owner {
          position: relative;
-         left: -35%;
-         top: -1%;
+         padding: 3%;
      }
 
      #chatbutton {
          position: relative;
-         top: -7%;
+         padding: -3%;
      }
 
      hr {
