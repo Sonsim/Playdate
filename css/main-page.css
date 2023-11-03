@@ -1,142 +1,323 @@
-#page {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas: 
-        "head head"
-        "nav main"
-        "nav main"
-        ;
-    grid-template-rows: 100px 1fr 30px;
-    grid-template-columns: 150px 1fr;
-}
+ @media only screen and (min-width: 768px) and (max-width: 2560px) {
+     #page {
+         display: grid;
+         width: 100%;
+         height: 100%;
+         grid-template-areas:
+             "head head"
+             "nav main"
+             "nav main"
+         ;
+         grid-template-rows: 8% 1fr 2.56%;
+         grid-template-columns: 10% 90%;
+     }
 
-#page > header {
-    grid-area: head;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    border-bottom: solid 1px black;
-}
+     #page>header {
+         grid-area: head;
+         display: flex;
+         justify-content: space-between;
+         background-color: white;
+         border-bottom: solid 1px black;
+     }
 
-/* User profile styles */
-#user-profile {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
+     /* User profile styles */
+     #user-profile {
+         display: flex;
+         align-items: center;
+         cursor: pointer;
+         height: 100%;
+     }
 
-.user-profile-dropdown {
-    display: none;
-    position: absolute;
-    background-color: darkgrey;
-    color: white;
-    padding: 10px;
-    right: 5px;
-    width: 150px;
-    text-decoration: none;
-}
+     #profile-picture-box {
+         height: 100%;
+     }
 
-.user-profile-dropdown div {
-    margin-bottom: 10px;
-    cursor: pointer;
-}
+     .user-profile-dropdown {
+         display: none;
+         position: absolute;
+         background-color: darkgrey;
+         color: white;
+         padding: 10px;
+         right: 5px;
+         width: 150px;
+         text-decoration: none;
+     }
 
-/* Settings dropdown */
-.settings-dropdown {
-    display: none;
-    padding-left: 20px;
-    margin-top: 10px;
-    color: black;
-}
+     .user-profile-dropdown div {
+         margin-bottom: 10px;
+         cursor: pointer;
+     }
 
-.show-hide-dropdown {
-    display: block;
-}
+     /* Settings dropdown */
+     .settings-dropdown {
+         display: none;
+         padding-left: 20px;
+         margin-top: 10px;
+         color: black;
+     }
 
-#user-profile-dropdown a {
-    color: white;
-    text-decoration: none;
-}
+     .show-hide-dropdown {
+         display: block;
+     }
 
-#settings-dropdown a {
-    color: black;
-    text-decoration: none;
-}
+     #user-profile-dropdown a {
+         color: white;
+         text-decoration: none;
+     }
 
+     #settings-dropdown a {
+         color: black;
+         text-decoration: none;
+     }
 
+     #page>nav {
+         grid-area: nav;
+         height: 100%;
+         background-color: whitesmoke;
+     }
 
-#page > nav {
-    grid-area: nav;
-    height: 100%;
-    background-color: whitesmoke;
-}
-#page > main {
-    grid: main;
-    height: 100%;
-    background-color: white;
-}
-#petcategories {
-    height: 170px;
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 1px black;
-    border-right: solid 1px black;
-    border-left: solid 1px black;
-    font-size: xx-large;
-    cursor: pointer;
-}
-#main-Logo {
-    height: 100px;
-}
-#users{
-    display: grid;
-    grid-template-columns: 550px 550px 550px;
-}
-#fakeusers {
-    height: 500px;
-    width: 350px;
-    margin: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 2%;
-    box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.13);
-    -webkit-box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.13);
-    -moz-box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.13);
-    background-color: whitesmoke;
-    font-size: large;
-    margin-left: 20%;
-    margin-top: 15%;
-}
-#profile-picture {
-    height: 100px;
-    border-radius: 5%;
-}
-#petprofile-picture {
-    height: 250px;
-    width: 200px;
-    margin: 3%;
-    border-radius: 5%;
-}
-#owner-profilepicture {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-}
-#owner{
-    position: relative;
-    left: -130px;
-    top: -16px;
-}
-#chatbutton {
-    position: relative;
-    top: -70px;
-}
-hr {
-    width: 200px;
-}
-#users a {
-    text-decoration: none;
-    color: black;
-}
+     #page>main {
+         grid: main;
+         height: 100%;
+         background-color: white;
+     }
+
+     #petcategories {
+         height: 13.6%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-bottom: solid 1px black;
+         border-right: solid 1px black;
+         border-left: solid 1px black;
+         font-size: xx-large;
+         cursor: pointer;
+     }
+
+     #main-Logo {
+         height: 100%;
+     }
+
+     #users {
+         display: grid;
+         grid-template-columns: 33.3% 33.3% 33.3%;
+     }
+
+     #fakeusers {
+         height: 80%;
+         width: 65%;
+         margin: 4%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border-radius: 2%;
+         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         background-color: whitesmoke;
+         font-size: large;
+         margin-left: 20%;
+         margin-top: 15%;
+     }
+
+     #profile-picture {
+         height: 5vw;
+         border-radius: 100%;
+     }
+
+     #petprofile-picture {
+         height: 13vw;
+         width: 10vw;
+         margin: 3%;
+         border-radius: 5%;
+     }
+
+     #owner-profilepicture {
+         height: 4vw;
+         width: 4.2vw;
+         border-radius: 50%;
+     }
+
+     #owner {
+         position: relative;
+         left: -35%;
+         top: -1%;
+     }
+
+     #chatbutton {
+         position: relative;
+         top: -11%;
+     }
+
+     hr {
+         width: 20%;
+     }
+
+     #users a {
+         text-decoration: none;
+         color: black;
+     }
+
+ }
+
+ /* Lars Petter skjerm */
+ @media only screen and (min-width: 768px) and (max-width: 1290px) {
+     #page {
+         display: grid;
+         width: 100%;
+         height: 100%;
+         grid-template-areas:
+             "head head"
+             "nav main"
+             "nav main"
+         ;
+         grid-template-rows: 8% 1fr 2.56%;
+         grid-template-columns: 10% 90%;
+     }
+
+     #page>header {
+         grid-area: head;
+         display: flex;
+         justify-content: space-between;
+         background-color: white;
+         border-bottom: solid 1px black;
+     }
+
+     /* User profile styles */
+     #user-profile {
+         display: flex;
+         align-items: center;
+         cursor: pointer;
+         height: 100%;
+     }
+
+     #profile-picture-box {
+         height: 100%;
+     }
+
+     .user-profile-dropdown {
+         display: none;
+         position: absolute;
+         background-color: darkgrey;
+         color: white;
+         padding: 10px;
+         right: 5px;
+         width: 150px;
+         text-decoration: none;
+     }
+
+     .user-profile-dropdown div {
+         margin-bottom: 10px;
+         cursor: pointer;
+     }
+
+     /* Settings dropdown */
+     .settings-dropdown {
+         display: none;
+         padding-left: 20px;
+         margin-top: 10px;
+         color: black;
+     }
+
+     .show-hide-dropdown {
+         display: block;
+     }
+
+     #user-profile-dropdown a {
+         color: white;
+         text-decoration: none;
+     }
+
+     #settings-dropdown a {
+         color: black;
+         text-decoration: none;
+     }
+
+     #page>nav {
+         grid-area: nav;
+         height: 70%;
+         background-color: whitesmoke;
+     }
+
+     #page>main {
+         grid: main;
+         height: 100%;
+         background-color: white;
+     }
+
+     #petcategories {
+         height: 13.6%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-bottom: solid 1px black;
+         border-right: solid 1px black;
+         border-left: solid 1px black;
+         font-size: x-large;
+         cursor: pointer;
+     }
+
+     #main-Logo {
+         height: 100%;
+     }
+
+     #users {
+         display: grid;
+         grid-template-columns: 33.3% 33.3% 33.3%;
+     }
+
+     #fakeusers {
+         height: 80%;
+         width: 65%;
+         margin: 4%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border-radius: 2%;
+         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+         background-color: whitesmoke;
+         font-size: large;
+         margin-left: 20%;
+         margin-top: 15%;
+     }
+
+     #profile-picture {
+         height: 5vw;
+         border-radius: 100%;
+     }
+
+     #petprofile-picture {
+         height: 10vw;
+         width: 7vw;
+         margin: 3%;
+         border-radius: 5%;
+     }
+
+     #owner-profilepicture {
+         height: 1vw;
+         width: 1.2vw;
+         border-radius: 50%;
+     }
+
+     #owner {
+         position: relative;
+         left: -35%;
+         top: -1%;
+     }
+
+     #chatbutton {
+         position: relative;
+         top: -7%;
+     }
+
+     hr {
+         width: 20%;
+     }
+
+     #users a {
+         text-decoration: none;
+         color: black;
+     }
+ }
