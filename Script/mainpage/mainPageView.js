@@ -4,7 +4,7 @@ function updateViewMain() {
   document.getElementById('app').innerHTML = /*HTML*/ `
 
     <section id="page">
-            <header>
+            <header class="header">
               <img id="main-Logo" src="img/Playdate.png" alt="logo">
               <div id="user-profile">
                 <div id="name">${model.app.currentUser}</div>
@@ -55,7 +55,7 @@ function dogsByDefault() {
     if (owners[name].typeOfPet == "Hund") {
       let path = model.app.allPages;
       users.innerHTML += /*HTML*/ `
-            <div id="fakeusers">
+            <div class="fakeUsers" id="fakeusers">
                 <div id="photo"><img id="petprofile-picture"src=${owners[name].pets[0].img} alt=""></div>
                 <div id="name">Navn: ${owners[name].pets[0].name}</div> <hr>
                 <div id="age">Alder: ${owners[name].pets[0].age}</div> <hr>

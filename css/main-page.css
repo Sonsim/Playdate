@@ -73,7 +73,7 @@
      #page>nav {
          grid-area: nav;
          height: 100%;
-         background-color: whitesmoke;
+         
      }
 
      #page>main {

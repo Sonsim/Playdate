@@ -11,7 +11,7 @@ function addUsers(htmlElement) {
     arrayOfNames.forEach(function (name) {
         if (owners[name].typeOfPet == htmlElement.textContent) {
             users.innerHTML += /*HTML*/ `
-            <div id="fakeusers">
+            <div class="fakeUsers" id="fakeusers">
                 <div id="photo"><img id="petprofile-picture"src=${owners[name].pets[0].img} alt=""></div>
                 <div id="name">Navn: ${owners[name].pets[0].name}</div> <hr>
                 <div id="age">Alder: ${owners[name].pets[0].age}</div> <hr>
@@ -55,10 +55,34 @@ function setProfilePicture() {
     })
 }
 
-function barkMode () {
-    const page = document.getElementById("app");
-    console.log("Hi  ");
-    page.style.backgroundColor = "rgb(24, 26, 27);";
+function barkMode() {
+    const page = document.body;
+    const header = document.querySelector(".header");
+    const sideBar = document.getElementById("sidebar");
+    const users = document.getElementById("users");
+    let fakeUsers = document.querySelectorAll(".fakeUsers");
+    const petcategories = document.querySelectorAll("#petcategories");
+    //Header
+    header.style.backgroundColor = "rgb(24, 26, 27)";
+    header.style.color = "#e8e6e3";
+    //Sidebar
+    sideBar.style.backgroundColor = "rgb(24, 26, 27)";
+    sideBar.style.color = "#e8e6e3";
+    //Page Background
+    users.style.backgroundColor = "rgb(24, 26, 27)";
+    users.style.color = "#e8e6e3";
+    //Page
+    page.style.backgroundColor = "rgb(24, 26, 27)";
+    //Fakeuser
+    for(let i = 0; i < fakeUsers.length; i++) {
+        fakeUsers[i].style.backgroundColor = "hsl(0, 0%, 71%)";
+
+    }
+    //Petcategories
+    for(let i = 0; i < petcategories.length; i++) {
+        petcategories[i].style.backgroundColor = "hsl(0, 0%, 71%)";
+
+    }
 };
 
 
