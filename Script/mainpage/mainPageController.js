@@ -61,7 +61,7 @@ function barkMode() {
     const sideBar = document.getElementById("sidebar");
     const users = document.getElementById("users");
     let fakeUsers = document.querySelectorAll(".fakeUsers");
-    const petcategories = document.querySelectorAll("#petcategories");
+    let petcategories = document.querySelectorAll("#petcategories");
     //Header
     header.style.backgroundColor = "rgb(24, 26, 27)";
     header.style.color = "#e8e6e3";
@@ -77,23 +77,23 @@ function barkMode() {
     for(let i = 0; i < fakeUsers.length; i++) {
         fakeUsers[i].style.backgroundColor = "hsl(0, 0%, 71%)";
 
-    }
+    };
     //Petcategories
     for(let i = 0; i < petcategories.length; i++) {
         petcategories[i].style.backgroundColor = "hsl(0, 0%, 71%)";
-
-    }
+    };
 };
 function categoriesBarkMode () {
     const page = document.body;
     const backgroundColor = window.getComputedStyle(page).backgroundColor;
     const desiredColor = "rgb(24, 26, 27)";
     
-    if (backgroundColor === desiredColor) {
-        page.style.backgroundColor = "rgb(24, 26, 27)";
-    }
-    else {
-        console.log("The element doesn't have the desired background color.");
+    if (backgroundColor == desiredColor) {
+       //Fakeuser
+       let fakeUsers = document.querySelectorAll(".fakeUsers");
+       for(let i = 0; i < fakeUsers.length; i++) {
+           fakeUsers[i].style.backgroundColor = "hsl(0, 0%, 71%)";
+       };
     }
 };
     
