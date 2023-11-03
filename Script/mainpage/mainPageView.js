@@ -30,12 +30,12 @@ function updateViewMain() {
            </div>
             </header>
               <nav id="sidebar">
-                <div id="petcategories" onclick="addUsers(this)">Hund</div>
-                <div id="petcategories" onclick="addUsers(this)">Katt</div>
-                <div id="petcategories" onclick="addUsers(this)">Gnagere</div> 
-                <div id="petcategories" onclick="addUsers(this)">Hest</div> 
-                <div id="petcategories" onclick="addUsers(this)">Sau</div> 
-                <div id="petcategories" onclick="addUsers(this)">Fugl</div> 
+                <div id="petcategories" onclick="addUsers(this)"; onclick="categoriesBarkMode()">Hund</div>
+                <div id="petcategories" onclick="addUsers(this)"; onclick="categoriesBarkMode()">Katt</div>
+                <div id="petcategories" onclick="addUsers(this)"; onclick="categoriesBarkMode()>Gnagere</div> 
+                <div id="petcategories" onclick="addUsers(this)"; onclick="categoriesBarkMode()>Hest</div> 
+                <div id="petcategories" onclick="addUsers(this)"; onclick="categoriesBarkMode()>Sau</div> 
+                <div id="petcategories" onclick="addUsers(this)"; onclick="categoriesBarkMode()>Fugl</div> 
               </nav>
             <main id="users"></main>
     </section>
