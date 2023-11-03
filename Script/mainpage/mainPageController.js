@@ -84,6 +84,18 @@ function barkMode() {
 
     }
 };
-
+function categoriesBarkMode () {
+    const page = document.body;
+    const backgroundColor = window.getComputedStyle(page).backgroundColor;
+    const desiredColor = "rgb(24, 26, 27)";
+    
+    if (backgroundColor === desiredColor) {
+        page.style.backgroundColor = "rgb(24, 26, 27)";
+    }
+    else {
+        console.log("The element doesn't have the desired background color.");
+    }
+};
+    
 
 
