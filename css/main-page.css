@@ -1,337 +1,341 @@
- @media only screen and (min-width: 768px) and (max-width: 2560px) {
-     #page {
-         display: grid;
-         width: 100%;
-         height: 100%;
-         grid-template-areas:
-             "head head"
-             "nav main"
-             "nav main"
-         ;
-         grid-template-rows: 8% 1fr 2.56%;
-         grid-template-columns: 10% 90%;
-     }
+/* Blå #65B7D6;, Rosa #e6c1ca;*/
+@media only screen and (min-width: 768px) and (max-width: 2560px) {
+    #page {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "head head"
+            "nav main"
+            "nav main"
+        ;
+        grid-template-rows: 8% 1fr 2.56%;
+        grid-template-columns: 10% 90%;
+        background-color: #65B7D6;
+    }
 
-     #page>header {
-         grid-area: head;
-         display: flex;
-         justify-content: space-between;
-         background-color: white;
-         border-bottom: solid 1px black;
-     }
+    #page>header {
+        grid-area: head;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-bottom: solid 1px black;
+        background-color: #65B7D6;
+    }
 
-     /* User profile styles */
-     #user-profile {
-         display: flex;
-         align-items: center;
-         cursor: pointer;
-         height: 100%;
-     }
+    /* User profile styles */
+    #user-profile {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 100%;
+    }
 
-     #profile-picture-box {
-         height: 100%;
-     }
+    #profile-picture-box {
+        height: 100%;
+    }
 
-     .user-profile-dropdown {
-         display: none;
-         position: absolute;
-         background-color: darkgrey;
-         color: white;
-         padding: 10px;
-         right: 5px;
-         width: 150px;
-         text-decoration: none;
-     }
+    .user-profile-dropdown {
+        display: none;
+        position: absolute;
+        background-color: hsl(171, 100%, 41%);
+        color: white;
+        padding: 10px;
+        right: 5px;
+        width: 150px;
+        text-decoration: none;
+    }
 
-     .user-profile-dropdown div {
-         margin-bottom: 10px;
-         cursor: pointer;
-     }
+    .user-profile-dropdown div {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
 
-     /* Settings dropdown */
-     .settings-dropdown {
-         display: none;
-         padding-left: 20px;
-         margin-top: 10px;
-         color: black;
-     }
+    /* Settings dropdown */
+    .settings-dropdown {
+        display: none;
+        padding-left: 20px;
+        margin-top: 10px;
+        color: white;
+    }
 
-     .show-hide-dropdown {
-         display: block;
-     }
+    .show-hide-dropdown {
+        display: block;
+    }
 
-     #user-profile-dropdown a {
-         color: white;
-         text-decoration: none;
-     }
+    #user-profile-dropdown a {
+        color: white;
+        text-decoration: none;
+    }
 
-     #settings-dropdown a {
-         color: black;
-         text-decoration: none;
-     }
+    #settings-dropdown a {
+        color: white;
+        text-decoration: none;
+    }
 
-     #page>nav {
-         grid-area: nav;
-         height: 100%;
-         
-     }
+    #page>nav {
+        grid-area: nav;
+        height: 100%;
 
-     #page>main {
-         grid: main;
-         height: 100%;
-         background-color: white;
-     }
+    }
 
-     #petcategories {
-         height: 13.6%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         border-bottom: solid 1px black;
-         border-right: solid 1px black;
-         border-left: solid 1px black;
-         font-size: xx-large;
-         cursor: pointer;
-     }
+    #page>main {
+        grid: main;
+        height: 100%;
+        background-color: #65B7D6;
+    }
 
-     #main-Logo {
-         height: 100%;
-     }
+    #petcategories {
+        height: 13.6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px black;
+        border-right: solid 1px black;
+        border-left: solid 1px black;
+        font-size: xx-large;
+        background-color: #e2bec7;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
 
-     #users {
-         display: grid;
-         grid-template-columns: 33.3% 33.3% 33.3%;
-     }
+    #main-Logo {
+        height: 100%;
+    }
 
-     #fakeusers {
-         height: 80%;
-         width: 65%;
-         margin: 4%;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         border-radius: 2%;
-         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
-         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
-         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
-         background-color: whitesmoke;
-         font-size: large;
-         margin-left: 20%;
-         margin-top: 7%;
-         margin-bottom: 0;
-         padding-bottom: 5%;
-     }
+    #users {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
 
-     #fakeusers:nth-last-child(-n+3) {
+    #fakeusers {
+        height: 80%;
+        width: 65%;
+        margin: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2%;
+        box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
+        -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
+        -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
+        background-color: #e6c1ca;
+        font-size: large;
+        margin-left: 20%;
+        margin-top: 7%;
+        margin-bottom: 0;
+        padding-bottom: 5%;
+    }
+
+    #fakeusers:nth-last-child(-n+3) {
         margin-top: 0;
         padding-bottom: 8%;
-      }
+    }
 
-     #profile-picture {
-         height: 5vw;
-         border-radius: 100%;
-     }
+    #profile-picture {
+        height: 5vw;
+        border-radius: 100%;
+    }
 
-     #petprofile-picture {
-         height: 13vw;
-         width: 10vw;        
-         margin-top: 8%;
-         border-radius: 8px;
-     }
+    #petprofile-picture {
+        height: 13vw;
+        width: 10vw;
+        margin-top: 8%;
+        border-radius: 8px;
+    }
 
-     #owner-profilepicture {
-         height: 4vw;
-         width: 4.2vw;
-         border-radius: 50%;
-     }
+    #owner-profilepicture {
+        height: 4vw;
+        width: 4.2vw;
+        border-radius: 50%;
+    }
 
-     #owner {
-         position: relative;
-         left: -35%;
-         top: -1%;
-     }
+    #owner {
+        position: relative;
+        left: -35%;
+        top: -1%;
+    }
 
-     #chatbutton {
-         position: relative;
-         top: -11%;
-     }
+    #chatbutton {
+        position: relative;
+        top: -11%;
+    }
 
-     hr {
-         width: 20%;
-     }
+    hr {
+        width: 20%;
+    }
 
-     #users a {
-         text-decoration: none;
-         color: black;
-     }
+    #users a {
+        text-decoration: none;
+        color: black;
+    }
 
- }
+}
 
- /* LaPtop-Skjerm */
- @media only screen and (min-width: 768px) and (max-width: 1290px) {
-     #page {
-         display: grid;
-         width: 100%;
-         height: 100%;
-         grid-template-areas:
-             "head head"
-             "nav main"
-             "nav main"
-         ;
-         grid-template-rows: 8% 1fr 2.56%;
-         grid-template-columns: 10% 90%;
-     }
+/* LaPtop-Skjerm */
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+    #page {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "head head"
+            "nav main"
+            "nav main"
+        ;
+        grid-template-rows: 8% 1fr 2.56%;
+        grid-template-columns: 10% 90%;
+    }
 
-     #page>header {
-         grid-area: head;
-         display: flex;
-         justify-content: space-between;
-         background-color: white;
-         border-bottom: solid 1px black;
-     }
+    #page>header {
+        grid-area: head;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-bottom: solid 1px black;
+        background-color: #65B7D6;
+    }
 
-     /* User profile styles */
-     #user-profile {
-         display: flex;
-         align-items: center;
-         cursor: pointer;
-         height: 100%;
-     }
+    /* User profile styles */
+    #user-profile {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 100%;
+    }
 
-     #profile-picture-box {
-         height: 100%;
-     }
+    #profile-picture-box {
+        height: 100%;
+    }
 
-     .user-profile-dropdown {
-         display: none;
-         position: absolute;
-         background-color: darkgrey;
-         color: white;
-         padding: 10px;
-         right: 5px;
-         width: 150px;
-         text-decoration: none;
-     }
+    .user-profile-dropdown {
+        display: none;
+        position: absolute;
+        background-color: hsl(171, 100%, 41%);
+        color: white;
+        padding: 10px;
+        right: 5px;
+        width: 150px;
+        text-decoration: none;
+    }
 
-     .user-profile-dropdown div {
-         margin-bottom: 10px;
-         cursor: pointer;
-     }
+    /* Settings dropdown */
+    .settings-dropdown {
+        display: none;
+        padding-left: 20px;
+        margin-top: 10px;
+        color: white;
+    }
 
-     /* Settings dropdown */
-     .settings-dropdown {
-         display: none;
-         padding-left: 20px;
-         margin-top: 10px;
-         color: black;
-     }
+    .show-hide-dropdown {
+        display: block;
+    }
 
-     .show-hide-dropdown {
-         display: block;
-     }
+    #user-profile-dropdown a {
+        color: white;
+        text-decoration: none;
+    }
 
-     #user-profile-dropdown a {
-         color: white;
-         text-decoration: none;
-     }
+    #settings-dropdown a {
+        color: black;
+        text-decoration: none;
+    }
 
-     #settings-dropdown a {
-         color: black;
-         text-decoration: none;
-     }
+    #page>nav {
+        grid-area: nav;
+        height: 70%;
+        background-color: #65B7D6;
+    }
 
-     #page>nav {
-         grid-area: nav;
-         height: 70%;
-         background-color: white;
-     }
+    #page>main {
+        grid: main;
+        height: 100%;
+        background-color: #65B7D6;
+    }
 
-     #page>main {
-         grid: main;
-         height: 100%;
-         background-color: white;
-     }
-
-     #petcategories {
+    #petcategories {
         background-color: whitesmoke;
-         height: 13.6%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         border-bottom: solid 1px black;
-         border-right: solid 1px black;
-         border-left: solid 1px black;
-         font-size: x-large;
-         cursor: pointer;
-     }
+        height: 13.6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px black;
+        border-right: solid 1px black;
+        border-left: solid 1px black;
+        background-color: #e6c1ca;
+        font-size: large;
+        color: black;
+        cursor: pointer;
+    }
 
-     #main-Logo {
-         height: 100%;
-     }
+    #main-Logo {
+        height: 100%;
+    }
 
-     #users {
-         display: grid;
-         grid-template-columns: 33.3% 33.3% 33.3%;
-     }
+    #users {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
 
-     #fakeusers {
-         height: 80%;
-         width: 65%;
-         margin: 4%;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         border-radius: 2%;
-         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
-         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
-         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
-         background-color: whitesmoke;
-         font-size: small;
-         margin-left: 20%;
-         margin-top: 7%;
-         margin-bottom: 0;
-         padding-bottom: 2%;
-     }
-     #fakeusers:nth-last-child(-n+3) {
+    #fakeusers {
+        height: 80%;
+        width: 65%;
+        margin: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2%;
+        box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
+        -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
+        -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
+        background-color: #e6c1ca;
+        font-size: small;
+        margin-left: 20%;
+        margin-top: 7%;
+        margin-bottom: 0;
+        padding-bottom: 2%;
+    }
+
+    #fakeusers:nth-last-child(-n+3) {
         margin-top: 0;
         padding-bottom: 4%;
-      }
+    }
 
-     #profile-picture {
-         height: 5vw;
-         border-radius: 100%;
-     }
+    #profile-picture {
+        height: 5vw;
+        border-radius: 100%;
+    }
 
-     #petprofile-picture {
-         height: 10vw;
-         width: 7vw;
-         margin: 3%;
-         border-radius: 5%;
-         margin-top: 30%;
-     }
+    #petprofile-picture {
+        height: 10vw;
+        width: 7vw;
+        margin: 3%;
+        border-radius: 5%;
+        margin-top: 30%;
+    }
 
-     #owner-profilepicture {
-         height: 3vw;
-         width: 3.1vw;
-         border-radius: 50%;
-     }
+    #owner-profilepicture {
+        height: 3vw;
+        width: 3.1vw;
+        border-radius: 50%;
+    }
 
-     #owner {
-         position: relative;
-         padding: 3%;
-     }
+    #owner {
+        position: relative;
+        padding: 3%;
+    }
 
-     #chatbutton {
-         position: relative;
-         padding: -3%;
-     }
+    #chatbutton {
+        position: relative;
+        padding: -3%;
+    }
 
-     hr {
-         width: 20%;
-     }
+    hr {
+        width: 20%;
+    }
 
-     #users a {
-         text-decoration: none;
-         color: black;
-     }
- }
+    #users a {
+        text-decoration: none;
+        color: black;
+    }
+}

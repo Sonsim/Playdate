@@ -41,8 +41,6 @@ function logoff() {
 }
 
 function setProfilePicture() {
-
-
     let ownerNames = model.users.owners;
     let ownerArray = Object.keys(ownerNames)
 

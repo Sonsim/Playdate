@@ -1,9 +1,15 @@
+/* Blå #65B7D6, Rosa #e6c1ca;*/
+#mainBody {
+    background-color: #65B7D6;
+}
+
 #loginBody {
     display: flex;
     height: 100vh;
     justify-content: center;
-    background-color: hsl(0, 0%, 96%);
-    font-family: 'Inter';
+    background-color: #65B7D6;
+    font-family: "Arial";
+    margin: 0;
 }
 
 .create-pet-frame {
@@ -21,6 +27,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #e6c1ca;
+    border-radius: 10px;
+    margin: 5%;
     width: 300px;
     height: 500px;
 }
@@ -44,6 +53,8 @@
     margin-top: 10px;
     font-size: 16px;
     padding: 14px 0 14px 5px;
+    border: none;
+    border-radius: 5px;
 }
 
 #inputDiv:focus {
@@ -54,13 +65,15 @@
     display: flex;
 }
 
-.loginBtn, .newUserBtn, .loginButtonForgotPass {
+.loginBtn,
+.newUserBtn,
+.loginButtonForgotPass {
     margin-top: 20px;
     padding: 10px 17px;
     border: none;
     border-radius: 5px;
     color: white;
-    background-color: hsl(204, 86%, 53%);
+    background-color: #65B7D6;
     font-family: 'Inter';
 }
 
