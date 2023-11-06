@@ -11,7 +11,7 @@
         ;
         grid-template-rows: 8% 1fr 2.56%;
         grid-template-columns: 10% 90%;
-        background-color: #65B7D6;
+        background-color: rgb(32, 43, 56);
     }
 
     #page>header {
@@ -20,7 +20,8 @@
         justify-content: space-between;
         background-color: white;
         border-bottom: solid 1px black;
-        background-color: #65B7D6;
+        background-color: rgb(32, 43, 56);
+        color: white;
     }
 
     /* User profile styles */
@@ -82,7 +83,7 @@
     #page>main {
         grid: main;
         height: 100%;
-        background-color: #65B7D6;
+        background-color: rgb(32, 43, 56);
     }
 
     #petcategories {
@@ -94,7 +95,7 @@
         border-right: solid 1px black;
         border-left: solid 1px black;
         font-size: xx-large;
-        background-color: #e2bec7;
+        background-color: rgb(65, 173, 255);
         color: rgb(0, 0, 0);
         cursor: pointer;
     }
@@ -169,11 +170,28 @@
         text-decoration: none;
         color: black;
     }
+    #sendChatBtn {
+        background-color: #65B7D6;
+        border: none;
+        color: black;
+        height: 30px;
+        width: 100px;
+        border-radius: 5%;
+    }
 
 }
 
 /* LaPtop-Skjerm */
 @media only screen and (min-width: 768px) and (max-width: 1290px) {
+
+    #mainBody {
+        background-color: rgb(32, 43, 56);
+    }
+    
+    #app {
+        background-color: rgb(32, 43, 56);
+    }
+    
     #page {
         display: grid;
         width: 100%;
@@ -185,15 +203,20 @@
         ;
         grid-template-rows: 8% 1fr 2.56%;
         grid-template-columns: 10% 90%;
+        background-color: rgb(32, 43, 56);
+
     }
 
     #page>header {
         grid-area: head;
         display: flex;
         justify-content: space-between;
-        background-color: white;
-        border-bottom: solid 1px black;
-        background-color: #65B7D6;
+        align-items: center;
+        background-color: rgb(65, 173, 255);
+    }
+
+    #name-header {
+        font-size: 25px;
     }
 
     /* User profile styles */
@@ -244,28 +267,34 @@
     #page>nav {
         grid-area: nav;
         height: 70%;
-        background-color: #65B7D6;
+        background-color: rgb(32, 43, 56);
+        margin-top: 26px;
     }
 
     #page>main {
         grid: main;
         height: 100%;
-        background-color: #65B7D6;
+        background-color: rgb(32, 43, 56);
     }
 
     #petcategories {
-        background-color: whitesmoke;
         height: 13.6%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: solid 1px black;
-        border-right: solid 1px black;
-        border-left: solid 1px black;
-        background-color: #e6c1ca;
+        background-color: rgb(65, 173, 255);
+        color: white;
         font-size: large;
-        color: black;
         cursor: pointer;
+        border-radius: 5%;
+    }
+    
+    .arrow-right {
+        position: relative;
+        border-top: 43px solid transparent;
+        border-bottom: 43px solid transparent;
+        border-left: 20px solid rgb(65, 173, 255);
+        border-radius: 15%;
     }
 
     #main-Logo {
@@ -289,11 +318,14 @@
         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.40);
         background-color: #e6c1ca;
+        background-color: rgb(65, 173, 255);
+        background-color: hsl(0, 0%, 96%);
         font-size: small;
         margin-left: 20%;
         margin-top: 7%;
         margin-bottom: 0;
         padding-bottom: 2%;
+        font-family: "Arial";
     }
 
     #fakeusers:nth-last-child(-n+3) {
@@ -318,6 +350,7 @@
         height: 3vw;
         width: 3.1vw;
         border-radius: 50%;
+        margin-top: 10px;
     }
 
     #owner {
@@ -326,16 +359,33 @@
     }
 
     #chatbutton {
-        position: relative;
         padding: -3%;
     }
-
+    #sendChatBtn {
+        position: relative;
+        background-color: #65B7D6;
+        border: none;
+        color: black;
+        height: 30px;
+        width: 100px;
+        border-radius: 5%;
+        font-size: 14px;
+        bottom: 7px;
+    }
+    
     hr {
         width: 20%;
+        border-color: black;
     }
 
     #users a {
         text-decoration: none;
         color: black;
+    }
+    .petcategorie-hund {
+        background-color: rgb(65, 173, 255);
+   
+        bor
+
     }
 }

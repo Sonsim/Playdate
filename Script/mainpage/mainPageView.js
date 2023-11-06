@@ -6,8 +6,8 @@ function updateViewMain() {
     <section id="page">
             <header class="header">
               <img id="main-Logo" src="img/Playdate.png" alt="logo">
+              <div id="name-header">${model.app.currentUser}</div>
               <div id="user-profile">
-                <div id="name">${model.app.currentUser}</div>
                 <div id="profile-picture-box">
                   <img id="profile-picture" onclick="userProfileDropdown()" src="img/userprofile/profilepic.png" alt="Profile Picture">
                   <div class="user-profile-dropdown">
@@ -30,12 +30,12 @@ function updateViewMain() {
            </div>
             </header>
               <nav id="sidebar">
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()">Hund</div>
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()">Katt</div>
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()">Gnagere</div> 
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()">Hest</div> 
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()">Sau</div> 
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()">Fugl</div> 
+                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()"><div class="petcategorie-hund">Hund</div></div>
+                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()"><div>Katt</div>   <div class="arrow-right"></div></div>
+                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()"><div>Gnagere</div><div class="arrow-right"></div></div>
+                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()"><div>Hest</div>   <div class="arrow-right"></div></div>
+                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()"><div>Sau</div>    <div class="arrow-right"></div></div>
+                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode()"><div>Fugl</div>   <div class="arrow-right"></div></div>
               </nav>
             <main id="users"></main>
     </section>
@@ -57,13 +57,14 @@ function dogsByDefault() {
       users.innerHTML += /*HTML*/ `
             <div class="fakeUsers" id="fakeusers">
                 <div id="photo"><img id="petprofile-picture"src=${owners[name].pets[0].img} alt=""></div>
-                  <div id="name">Navn: ${owners[name].pets[0].name}</div> <hr>
-                  <div id="age">Alder: ${owners[name].pets[0].age}</div> <hr>
-                  <div id="type">Rase: ${owners[name].pets[0].type}</div> <hr>
+                  <div id="name">${owners[name].pets[0].name}</div> <hr>
+                  <div id="age">${owners[name].pets[0].age} år</div> <hr>
+                  <div id="type">${owners[name].pets[0].type}</div> <hr>
                   <div id="toy">Favorittleke: ${owners[name].pets[0].favoriteToy}</div> <hr>
                   <div id="owner"><img id="owner-profilepicture" src=${owners[name].img} alt=""></div>
-                  <div id="chatbutton"><button onclick="updateView('${path.chatPage}');
-                       addUsersToChat(this)">Send et ${owners[name].pets[0].chatbutton}</button></div>
+                  <div id="chatbutton">
+                    <button  id="sendChatBtn" onclick="updateView('${path.chatPage}');addUsersToChat(this)">Send et ${owners[name].pets[0].chatbutton}</button>
+                  </div>
                   <div hidden>${owners[name]}</div>
             </div>
             `
