@@ -16,10 +16,18 @@ function updateViewMain() {
                     <div> 
                       <div id="settings" onclick="settingsDropdown()">Innstillinger<div>
                       <div class="settings-dropdown">
-                      <hr style="width:130px;"><div onclick="barkMode()">Barkmode</div>
+                      <hr style="width:130px;">
+                      <div class="barkmode-box">
+                        <span>Barkmode</span>
+                        <input onclick="barkMode()" type="checkbox" class="toggle-input" id="dark-mode-toggle">
+                        <label class="toggle-container" for="dark-mode-toggle">
+                            <div class="toggle-slider"></div>
+                        </label>
+                      </div>
                         <div onclick="updateView('${path.forgottenPasswordPage}')">Bytte passord</div>
                         <div>Tillat posisjon</div>
-                        <div onclick="updateView('${path.feedbackPage}')">Send Tilbakemelding</div><hr style="width:130px;">
+                        <div onclick="updateView('${path.feedbackPage}')">Send Tilbakemelding</div>
+                        <hr style="width:130px;">
                       </div>
                     </div>
                     <div onclick="updateView('${path.loginPage}')">Logg av</div>
