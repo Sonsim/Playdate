@@ -8,8 +8,7 @@
 #backbox {
     margin-top: 2%;
     border-radius: 2%;
-    height: 850px;
-    width: 600px;
+    width: 530px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,10 +16,32 @@
     -webkit-box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.33);
     -moz-box-shadow: 1px -1px 40px 5px rgba(0,0,0,0.33);
     background-color: #e6c1ca;
+    padding-bottom: 40px;
 }
+
+#logo-header-box {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+}
+
+#logo-box {
+    width: 34%;
+}
+
+#logo {
+    width: 25%;
+}
+
+.header-create-user {
+    font-size: 27px;
+    margin: 0;
+    margin-top: 7%;
+}
+
 #profilepic {
-    height: 250px;
-    width: 212px;
+    width: 100px;
+    height: 100px;
     margin: 1%;
 }
 
@@ -35,37 +56,48 @@
 }
 
 
-input[type="text"], input [type="date"], input[type="password"]{
+input[type="text"], input[type="date"], input[type="password"]{
     height: 20px;
     width: 200px;
-    
+    border: none;
+    border-radius: 2px;
+    padding: 8px 0 8px 8px;
 }
-#logo {
-    height: 100px;
-    width: 100px;
-}
+
+
 hr {
     width: 250px;
     color: black;
 }
+
 .Topline {
     display: flex;
     flex-direction: row;
 }
-#backbutton {
-    height: 20px;
-    
-}
+
 a {
     color: inherit;
     text-decoration: none;
-    cursor: pointer;
-}
-button {
     cursor: pointer;
 }
 
 input[type="file"] {
     height: 24px;
     width: 150px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgb(65, 173, 255);
+    color: white;
+    font-family: "Arial";
+}
+
+input[type="email"] {
+    border: none;
+    border-radius: 2px;
+    padding: 3px 0 3px 8px;
 }
