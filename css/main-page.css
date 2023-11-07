@@ -5,12 +5,12 @@
         width: 100%;
         height: 100%;
         grid-template-areas:
-            "head head"
-            "nav main"
-            "nav main"
+            "head head head"
+            "nav arw main"
+            "nav arw main"
         ;
         grid-template-rows: 8% 1fr 2.56%;
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 9% 1% 90%;
         background-color: rgb(32, 43, 56);
     }
 
@@ -18,11 +18,18 @@
         grid-area: head;
         display: flex;
         justify-content: space-between;
-        background-color: white;
-        border-bottom: solid 1px black;
-        background-color: rgb(32, 43, 56);
+        align-items: center;
+        background-color: rgb(65, 173, 255);
+        
         color: white;
     }
+
+    #page>article {
+        grid-area: arw;
+        margin-top: 25px;
+    }
+
+
 
     /* User profile styles */
     #user-profile {
@@ -91,13 +98,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: solid 1px black;
-        border-right: solid 1px black;
-        border-left: solid 1px black;
-        font-size: xx-large;
         background-color: rgb(65, 173, 255);
-        color: rgb(0, 0, 0);
+        color: white;
+        font-size: xx-large;
         cursor: pointer;
+        border-radius: 5%;
     }
 
     #main-Logo {
@@ -120,7 +125,7 @@
         box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
         -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
         -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.30);
-        background-color: #e6c1ca;
+        background-color: white;
         font-size: large;
         margin-left: 20%;
         margin-top: 7%;
@@ -170,6 +175,7 @@
         text-decoration: none;
         color: black;
     }
+
     #sendChatBtn {
         background-color: #65B7D6;
         border: none;
@@ -187,23 +193,29 @@
     #mainBody {
         background-color: rgb(32, 43, 56);
     }
-    
+
     #app {
         background-color: rgb(32, 43, 56);
     }
-    
+
     #page {
         display: grid;
         width: 100%;
         height: 100%;
         grid-template-areas:
-            "head head"
-            "nav main"
-            "nav main"
+            "head head head"
+            "nav arw main"
+            "nav arw main"
         ;
         grid-template-rows: 8% 1fr 2.56%;
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 9% 1% 90%;
         background-color: rgb(32, 43, 56);
+
+    }
+
+    #page>article {
+        grid: arw;
+        margin-top: 25px;
 
     }
 
@@ -288,13 +300,13 @@
         cursor: pointer;
         border-radius: 5%;
     }
-    
-    .arrow-right {
+
+    #arrow {
         position: relative;
         border-top: 43px solid transparent;
         border-bottom: 43px solid transparent;
-        border-left: 20px solid rgb(65, 173, 255);
-        border-radius: 15%;
+        border-left: 20px solid white;
+        border-radius: 10%;
     }
 
     #main-Logo {
@@ -361,6 +373,7 @@
     #chatbutton {
         padding: -3%;
     }
+
     #sendChatBtn {
         position: relative;
         background-color: #65B7D6;
@@ -372,7 +385,7 @@
         font-size: 14px;
         bottom: 7px;
     }
-    
+
     hr {
         width: 20%;
         border-color: black;
@@ -382,10 +395,9 @@
         text-decoration: none;
         color: black;
     }
-    .petcategorie-hund {
-        background-color: rgb(65, 173, 255);
-   
-        bor
+
+    .hidden {
+        visibility: hidden;
 
     }
 }

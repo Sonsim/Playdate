@@ -94,3 +94,17 @@ function categoriesBarkMode () {
        };
     }
 };
+
+function showCategoryArrow(element){
+    const arrowsArray = document.querySelectorAll(".arrow-right");
+
+    arrowsArray.forEach(arrow => {
+        arrow.style.visibility = "hidden";
+        
+        if(element.innerText == arrow.classList[0]) {
+            arrow.style.visibility = "visible";
+            console.log(arrow)
+        };
+    });
+};
+
