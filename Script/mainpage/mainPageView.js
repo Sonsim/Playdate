@@ -29,7 +29,7 @@ function updateViewMain() {
            </div>
            </div>
             </header>
-              <nav id="sidebar" class="barkmode-background-text">
+              <nav id="sidebar" class="barkmode-background">
                 <div id="petcategories" class="petcategorie-hund" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Hund</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Katt</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Gnagere</div></div>
@@ -45,7 +45,7 @@ function updateViewMain() {
                 <div id="arrow" class="Sau arrow-right hidden"></div>
                 <div id="arrow" class="Fugl arrow-right hidden"></div>
             </article>
-            <main id="users" class="barkmode-background-text"></main>
+            <main id="users" class="barkmode-background"></main>
     </section>
     `;
 };
