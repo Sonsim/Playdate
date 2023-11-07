@@ -5,9 +5,6 @@ function updateViewCreatePet() {
     page.innerHTML = /*HTML*/ `
     <div id=create-pet-background>
     <div class="create-pet-frame">
-
-
-
         <img class="pet-image" id="profilepic"
          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcvmtYx9E-2KYQ0xX8JN9JN4J8_n3FqbXsA&usqp=CAU"
          alt="Profilbilde Placeholder"><br>
@@ -41,5 +38,6 @@ function updateViewCreatePet() {
     </div>
     
     `
+}
 
 }
