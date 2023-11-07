@@ -8,12 +8,12 @@ let answerPlay="";
 let answerConfused = "";
 let answerLocation = "";
 let answerTime = "";
-let chosenusers = ""
 
 //Funksjon for å legge til brukeren man trykker på i Mainpage til i chatsiden
 function addUsersToChat(noe) {
     //Henter navnet og bilde av dyret ved å bruke this til å hente informasjonen fra kortet på mainpage
-    let petName = noe.parentNode.parentNode.children[1].textContent.slice(6);
+    let petName = noe.parentNode.parentNode.children[1].textContent;
+    console.log(petName)
     let petImg = noe.parentNode.parentNode.children[0].innerHTML;
 
     let oldchats =document.getElementById('chatoutput')
