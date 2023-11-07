@@ -73,7 +73,7 @@ function dogsByDefault() {
                   <div id="chatbutton">
                     <button  id="sendChatBtn" onclick="updateView('${path.chatPage}');addUsersToChat(this)">Send et ${owners[name].pets[0].chatbutton}</button>
                   </div>
-                  <div hidden>${owners[name]}</div>
+                  
             </div>
             `
     }

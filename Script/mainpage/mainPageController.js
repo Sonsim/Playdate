@@ -13,9 +13,9 @@ function addUsers(htmlElement) {
             users.innerHTML += /*HTML*/ `
             <div class="fakeUsers" id="fakeusers">
                 <div id="photo"><img id="petprofile-picture"src=${owners[name].pets[0].img} alt=""></div>
-                <div id="name"> ${owners[name].pets[0].name}</div> <hr>
-                <div id="age"> ${owners[name].pets[0].age} år</div> <hr>
-                <div id="type"> ${owners[name].pets[0].type}</div> <hr>
+                <div id="name">${owners[name].pets[0].name}</div> <hr>
+                <div id="age">${owners[name].pets[0].age} år</div> <hr>
+                <div id="type">${owners[name].pets[0].type}</div> <hr>
                 <div id="toy">Favorittleke: ${owners[name].pets[0].favoriteToy}</div> <hr>
                 <div id="owner"><img id="owner-profilepicture" src=${owners[name].img} alt=""></div>
                 <div id="chatbutton"><button id="sendChatBtn" onclick="updateView('${path.chatPage}'); addUsersToChat(this)">Send et ${owners[name].pets[0].chatbutton}</button></div>
