@@ -61,22 +61,25 @@ function barkMode() {
     let barkmodeBackgroundText = document.querySelectorAll(".barkmode-background-text");
 
     barkmodeBackground.forEach(element => {
-        element.style.backgroundColor = "rgb(24, 26, 27)";
+        let backgroundColor = window.getComputedStyle(element).backgroundColor;
+        //If light
+        if(backgroundColor == "rgb(32, 43, 56)") {
+            element.style.backgroundColor = "black";
+        }
+        else if (backgroundColor == "rgb(0, 0, 0)") {
+            element.style.backgroundColor = "rgb(32, 43, 56)";
+        }
     });
     barkmodeBackgroundText.forEach(element => {
         let backgroundColor = window.getComputedStyle(element).backgroundColor;
-        console.log(backgroundColor);
         //If light
         if(backgroundColor == "rgb(65, 173, 255)") {
-            element.style.backgroundColor = "rgb(24, 26, 27)";
-
+            element.style.backgroundColor = "rgb(32, 43, 56)";
         }
         //If dark
-        else if (backgroundColor == "rgb(24, 26, 27)") {
+        else if (backgroundColor == "rgb(32, 43, 56)") {
             element.style.backgroundColor = "rgb(65, 173, 255)";
         }
-        //element.style.backgroundColor = "rgb(24, 26, 27)";
-        //element.style.color = "white";
     });
 
     //Fakeuser
@@ -106,23 +109,58 @@ function barkMode() {
             petcategories[i].style.backgroundColor = "rgb(65, 173, 255)";
         }
     };
-};
-function categoriesBarkMode () {
-    const page = document.body;
+
+    const page = document.getElementById("users");
     const backgroundColor = window.getComputedStyle(page).backgroundColor;
-    const desiredColor = "rgb(24, 26, 27)";
+    console.log(backgroundColor);
+    const lightColor = "rgb(32, 43, 56)";
+    const darkColor = "rgb(0, 0, 0)";
     
-    if (backgroundColor == desiredColor) {
+    if (backgroundColor == darkColor) {
        //Fakeuser
        let fakeUsers = document.querySelectorAll(".fakeUsers");
        for(let i = 0; i < fakeUsers.length; i++) {
-           fakeUsers[i].style.backgroundColor = "hsl(0, 0%, 71%)";
+           fakeUsers[i].style.backgroundColor = "rgb(181, 181, 181)";
+           fakeUsers[i].style.color = "white";
+       };
+    }
+    else if (backgroundColor == lightColor) {
+        //Fakeuser
+       let fakeUsers = document.querySelectorAll(".fakeUsers");
+       for(let i = 0; i < fakeUsers.length; i++) {
+           fakeUsers[i].style.backgroundColor = "white";
+           fakeUsers[i].style.color = "black";
+       };
+    }
+};
+function categoriesBarkMode () {
+    const page = document.getElementById("users");
+    const backgroundColor = window.getComputedStyle(page).backgroundColor;
+    console.log(backgroundColor);
+    const lightColor = "rgb(32, 43, 56)";
+    const darkColor = "rgb(0, 0, 0)";
+    
+    if (backgroundColor == darkColor) {
+       //Fakeuser
+       let fakeUsers = document.querySelectorAll(".fakeUsers");
+       for(let i = 0; i < fakeUsers.length; i++) {
+           fakeUsers[i].style.backgroundColor = "rgb(181, 181, 181)";
+           fakeUsers[i].style.color = "white";
+       };
+    }
+    else if (backgroundColor == lightColor) {
+        //Fakeuser
+       let fakeUsers = document.querySelectorAll(".fakeUsers");
+       for(let i = 0; i < fakeUsers.length; i++) {
+           fakeUsers[i].style.backgroundColor = "white";
+           fakeUsers[i].style.color = "black";
        };
     }
 };
 
 function showCategoryArrow(element){
     const arrowsArray = document.querySelectorAll(".arrow-right");
+    console.log("Hi");
 
     arrowsArray.forEach(arrow => {
         arrow.style.visibility = "hidden";
