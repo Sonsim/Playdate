@@ -1059,6 +1059,9 @@ const model = {
         allEmails: [
             { name: "", email: "", subject: "", message: "", }
         ],
+        passwordChange: [
+            
+        ],
     },
     chat: {
         Aleksander_Sondre: [
