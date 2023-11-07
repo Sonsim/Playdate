@@ -3,10 +3,10 @@ function updateViewMain() {
   const path = model.app.allPages;
   document.getElementById('app').innerHTML = /*HTML*/ `
 
-    <section id="page">
-            <header class="header barkmode-background">
+    <section id="page" class="barkmode-background">
+            <header class="header barkmode-background-text">
               <img id="main-Logo" src="img/Playdate.png" alt="logo">
-              <div id="name-header" class="barkmode-text">${model.app.currentUser}</div>
+              <div id="name-header">${model.app.currentUser}</div>
               <div id="user-profile">
                 <div id="profile-picture-box">
                   <img id="profile-picture" onclick="userProfileDropdown()" src="img/userprofile/profilepic.png" alt="Profile Picture">
@@ -29,15 +29,15 @@ function updateViewMain() {
            </div>
            </div>
             </header>
-              <nav id="sidebar">
-                <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Hund</div></div>
+              <nav id="sidebar" class="barkmode-background-text">
+                <div id="petcategories" class="petcategorie-hund" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Hund</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Katt</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Gnagere</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Hest</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Sau</div></div>
                 <div id="petcategories" onclick="addUsers(this); categoriesBarkMode(); showCategoryArrow(this)"><div>Fugl</div></div>
               </nav>
-              <article>
+              <article class="barkmode-background">
                 <div id="arrow" class="Hund arrow-right"></div>
                 <div id="arrow" class="Katt arrow-right hidden"></div>
                 <div id="arrow" class="Gnagere arrow-right hidden"></div>
@@ -45,9 +45,7 @@ function updateViewMain() {
                 <div id="arrow" class="Sau arrow-right hidden"></div>
                 <div id="arrow" class="Fugl arrow-right hidden"></div>
             </article>
-            <main id="users"></main>
-
-            
+            <main id="users" class="barkmode-background-text"></main>
     </section>
     `;
 };

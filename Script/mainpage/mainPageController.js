@@ -54,31 +54,57 @@ function setProfilePicture() {
 }
 
 function barkMode() {
-    const page = document.body;
-    const header = document.querySelector(".header");
-    const sideBar = document.getElementById("sidebar");
-    const users = document.getElementById("users");
     let fakeUsers = document.querySelectorAll(".fakeUsers");
     let petcategories = document.querySelectorAll("#petcategories");
-    //Header
-    header.style.backgroundColor = "rgb(24, 26, 27)";
-    header.style.color = "#e8e6e3";
-    //Sidebar
-    sideBar.style.backgroundColor = "rgb(24, 26, 27)";
-    sideBar.style.color = "#e8e6e3";
-    //Page Background
-    users.style.backgroundColor = "rgb(24, 26, 27)";
-    users.style.color = "#e8e6e3";
-    //Page
-    page.style.backgroundColor = "rgb(24, 26, 27)";
+
+    let barkmodeBackground = document.querySelectorAll(".barkmode-background");
+    let barkmodeBackgroundText = document.querySelectorAll(".barkmode-background-text");
+
+    barkmodeBackground.forEach(element => {
+        element.style.backgroundColor = "rgb(24, 26, 27)";
+    });
+    barkmodeBackgroundText.forEach(element => {
+        let backgroundColor = window.getComputedStyle(element).backgroundColor;
+        console.log(backgroundColor);
+        //If light
+        if(backgroundColor == "rgb(65, 173, 255)") {
+            element.style.backgroundColor = "rgb(24, 26, 27)";
+
+        }
+        //If dark
+        else if (backgroundColor == "rgb(24, 26, 27)") {
+            element.style.backgroundColor = "rgb(65, 173, 255)";
+        }
+        //element.style.backgroundColor = "rgb(24, 26, 27)";
+        //element.style.color = "white";
+    });
+
     //Fakeuser
     for(let i = 0; i < fakeUsers.length; i++) {
-        fakeUsers[i].style.backgroundColor = "hsl(0, 0%, 71%)";
+        let backgroundColor = window.getComputedStyle(fakeUsers[i]).backgroundColor;
+        //If light
+        if(backgroundColor == "rgb(181, 181, 181)") {
+            fakeUsers[i].style.backgroundColor = "rgb(245, 245, 245)";
+            fakeUsers[i].style.color = "black";
+        }
+        //If dark
+        else if(backgroundColor == "rgb(245, 245, 245)") {
+            fakeUsers[i].style.backgroundColor = "rgb(181, 181, 181)";
+            fakeUsers[i].style.color = "white";
+        }
 
     };
     //Petcategories
     for(let i = 0; i < petcategories.length; i++) {
-        petcategories[i].style.backgroundColor = "hsl(0, 0%, 71%)";
+        let backgroundColor = window.getComputedStyle(petcategories[i]).backgroundColor;
+        //If light
+        if(backgroundColor == "rgb(65, 173, 255)") {
+            petcategories[i].style.backgroundColor = "rgb(32, 43, 56)";
+        }
+        //If dark
+        else if(backgroundColor == "rgb(32, 43, 56)") {
+            petcategories[i].style.backgroundColor = "rgb(65, 173, 255)";
+        }
     };
 };
 function categoriesBarkMode () {
@@ -100,10 +126,8 @@ function showCategoryArrow(element){
 
     arrowsArray.forEach(arrow => {
         arrow.style.visibility = "hidden";
-        
         if(element.innerText == arrow.classList[0]) {
             arrow.style.visibility = "visible";
-            console.log(arrow)
         };
     });
 };
