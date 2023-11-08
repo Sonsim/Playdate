@@ -379,7 +379,7 @@ const model = {
             },
             Joacim: {
                 age: '49',
-                location: 'Valle',
+                location: 'Oslo',
                 password: 'karolinepass',
                 img: 'img/userprofile/Joacim.jpg',
                 typeOfPet: "Gnagere",
@@ -395,11 +395,11 @@ const model = {
                 },
                 pets: [
                     {
-                        img: 'img/petprofile/hamsters/bakke.jpg',
+                        img: 'img/petprofile/hamsters/Geir.jpg',
                         type: 'Rotte', 
                         name: "Geir",
-                        age: '54',
-                        favoriteToy: 'Penga til Trøim',
+                        age: '5',
+                        favoriteToy: 'Løpehjul',
                         chatbutton: 'pip',
                     },
                 ],

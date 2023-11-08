@@ -121,8 +121,8 @@
 
     #arrow {
         position: relative;
-        border-top: 88px solid transparent;
-        border-bottom: 85px solid transparent;
+        border-top: 82px solid transparent; /*DO NOT TOUCH!!!!*/ 
+        border-bottom: 75px solid transparent;
         border-left: 30px solid rgb(65, 173, 255);
         border-radius: 15%;
         margin-top: 0;
@@ -161,7 +161,7 @@
 
     #fakeusers:nth-last-child(-n+3) {
         margin-top: 0;
-        padding-bottom: 4%;
+        padding-bottom: 6%;
     }
 
     #profile-picture {
@@ -220,11 +220,11 @@
         position: relative;
         margin-left: 5px;
     }
-    
+
     .toggle-input {
         display: none;
     }
-    
+
     .toggle-slider {
         width: 20px;
         height: 20px;
@@ -235,11 +235,11 @@
         left: 0;
         transition: 0.4s;
     }
-    
-    .toggle-input:checked + .toggle-container .toggle-slider {
+
+    .toggle-input:checked+.toggle-container .toggle-slider {
         left: 20px;
     }
-    
+
     .barkmode-box {
         display: flex;
         align-items: center;
@@ -266,10 +266,14 @@
         cursor: pointer;
     }
 
+    #fakeusers:nth-last-child(-n+3) {
+        padding-bottom: 4%;
+    }
+
     #arrow {
         border-top: 43.9px solid transparent;
         border-bottom: 43px solid transparent;
-        border-left: 20px solid white;
+        border-left: 20px solid rgb(65, 173, 255);;
         border-radius: 10%;
     }
 

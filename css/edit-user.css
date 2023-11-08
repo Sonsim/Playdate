@@ -1,121 +1,145 @@
 /* Blå #65B7D6, Rosa #e6c1ca;*/
-
-#editpage {
-    height: 650px;
-    width: 800px;
-    border-radius: 0.5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
-    -webkit-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
-    -moz-box-shadow: 1px -1px 40px 5px rgba(0, 0, 0, 0.13);
+@media only screen and (min-width: 768px) and (max-width: 2560px) {
+    #editpage {
+        height: 650px;
+        width: 800px;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 2%;
+        background-color: #e6c1ca;
+        margin-top: 2%;
+    }
+    
+    #user {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 600px;
+        width: 600px;
+    
+    }
+    
+    #pet {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 600px;
+        width: 600px;
+    }
+    
+    #userpic {
+        height: 300px;
+        width: 300px;
+        border-radius: 2%;
+        position: relative;
+    }
+    
+    #petpic {
+        height: 300px;
+        width: 250px;
+        border-radius: 2%;
+        position: relative;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+        height: 15px;
+        width: 150px;
+    }
+    
+    #changeimg {
+        margin-bottom: 5%;
+    }
+    
+    #changepetimg {
+        margin-bottom: 5%;
+    }
+    
+    #edituser {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+    
+    #editpet {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #userinput {
+        height: 500px;
+    }
+    
+    hr {
+        width: 175px;
+    }
+    
+    #mainline {
+        width: 300px;
+    }
+    
+    #box {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .arrow {
+        border: solid;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    
+    .editUserHeightBtn{
+        height: 35px;
+    }
+    
+    .saveChangesAndAddAnimals {
+        text-align: center;
+        height: 35px;
+    }
+    
+    .back-button {
+        margin-top: 1%;
+        text-align: center;
+    }
+    
+    #allbuttons {
+        background-color: #e6c1ca;
+        width: 800px;
+        margin: auto;
+        padding-bottom: 2%;
+        border-radius: 0 0 15px 15px;
+    }
 }
 
-#user {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 600px;
-    width: 600px;
-
-}
-
-#pet {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 600px;
-    width: 600px;
-}
-
-#userpic {
-    height: 300px;
-    width: 300px;
-    border-radius: 2%;
-    position: relative;
-
-}
-
-#petpic {
-    height: 300px;
-    width: 250px;
-    border-radius: 2%;
-    position: relative;
-
-}
-
-input[type="text"],
-input[type="number"] {
-    height: 15px;
-    width: 150px;
-}
-
-#changeimg {
-    margin-bottom: 5%;
-}
-
-#changepetimg {
-    margin-bottom: 5%;
-}
-
-#edituser {
-    display: flex;
-    flex-direction: column;
-    font-size: x-large;
-}
-
-#editpet {
-    display: flex;
-    flex-direction: column;
-    font-size: x-large;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-#userinput {
-    height: 500px;
-}
-
-hr {
-    width: 175px;
-}
-
-#mainline {
-    width: 300px;
-}
-
-#box {
-    display: flex;
-    justify-content: center;
-}
-
-.arrow {
-    border: solid;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-}
-
-.editUserHeightBtn{
-    height: 35px;
-}
-
-.saveChangesAndAddAnimals {
-    margin-top: 1%;
-    text-align: center;
-    height: 35px;
-}
-
-.back-button {
-    margin-top: 1%;
-    text-align: center;
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+    #editpage {
+        height: 570px;
+        width: 700px;
+    }
+    #allbuttons {
+        width: 700px;
+    }
+    #petpic {
+        height: 200px;
+        width: 150px;
+    }
+    #userpic {
+        height: 200px;
+        width: 200px;
+    }
 }

@@ -21,25 +21,25 @@ function createNewUser() {
   const path = model.app.allPages;
 
   //Verifisere bruker input
-  let imgRegex = /\bhttps?:\/\/\S+\.(?:png|jpg|jpeg|gif|bmp|svg|webp|tiff|ico)\b|\b\S+\.(?:png|jpg|jpeg|gif|bmp|svg|webp|tiff|ico)\b|https?:\/\/\S+\b|\S+\b/;
-  let imgVerify = imgRegex.test(img.src);
+  const imgRegex = /\bhttps?:\/\/\S+\.(?:png|jpg|jpeg|gif|bmp|svg|webp|tiff|ico)\b|\b\S+\.(?:png|jpg|jpeg|gif|bmp|svg|webp|tiff|ico)\b|https?:\/\/\S+\b|\S+\b/;
+  const imgVerify = imgRegex.test(img.src);
 
-  let nameRegex = /^[A-Za-z]+( [A-Za-z]+)+$/;
-  let nameVerify = nameRegex.test(name);
+  const nameRegex = /^[A-Za-z]+( [A-Za-z]+)+$/;
+  const nameVerify = nameRegex.test(name);
 
-  let birthdayRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/; //Matches dd/mm/yyyy
-  let birthdayVerify = birthdayRegex.test(birthday);
+  const birthdayRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/; //Matches dd/mm/yyyy
+  const birthdayVerify = birthdayRegex.test(birthday);
 
-  let locationRegex = /^[A-ZÅÄÖa-zåäö\s-]+$/;
-  let locationVerify = locationRegex.test(location);
+  const locationRegex = /^[A-ZÅÄÖa-zåäö\s-]+$/;
+  const locationVerify = locationRegex.test(location);
 
-  let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-  let emailVerify = emailRegex.test(email);
+  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  const emailVerify = emailRegex.test(email);
 
-  let passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/; //Must contain one big letter, one digit, must be 8 long
-  let passwordVerify = passwordRegex.test(password);
+  const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/; //Must contain one big letter, one digit, must be 8 long
+  const passwordVerify = passwordRegex.test(password);
 
-  let reapeatPasswordVerify = false;
+  const reapeatPasswordVerify = false;
   if(reapeatPassword) {
    reapeatPasswordVerify = password == reapeatPassword;
   }

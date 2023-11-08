@@ -14,9 +14,10 @@ function updateFeedbackView() {
           <input id="emailInput" class="feedbackInput" type="email" placeholder="Epost" />
           <input id="subjectInput" class="feedbackInput" type="text" placeholder="Emne" />
           <textarea id="contentInput" class="feedbackTextBox" rows="14" placeholder="Gi en tilbakemelding"></textarea>
+          <div class="wrong-input"></div>
           <div class="button-box">
             <button class="feedbackBackBtn" onclick="updateView('${path.mainPage}')"><i class="arrow left"></i>Tilbake</button>
-            <button class="feedback-main-button" onclick="sendFeedback(); updateView('${path.mainPage}')">Send inn</button>
+            <button class="feedback-main-button" onclick="sendFeedback()">Send inn</button>
           </div>
         </main>
       </div>
